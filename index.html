@@ -11,5 +11,103 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row header-menu">
+          <div class="col-xl-3 d-flex justify-content-evenly align-items-center">
+            <div class="header-city d-flex align-items-center">
+              <svg class="header__icon" width="14" height="14" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
+              </svg>
+              <button class="button header-city__btn">
+                Москва
+                <svg class="header-city__icon" width="13" height="13" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#caret-down-fill" />
+                </svg>
+              </button>
+            </div>
+            <!-- /.perheader__geo -->
+            <div class="header-callback d-flex align-items-center">
+              <svg class="header__icon" width="12" height="12" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
+              </svg>
+              <button class="button header-callback__btn">Заказать звонок</button>
+            </div>
+            <!-- /.callback -->
+          </div>
+          <!-- /.col-xl-3 -->
+          <div class="col-xl-9">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">Гастроплощадка</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">Акции</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">Новости</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">Услуги</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">О компании</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#!" class="nav-list__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav -->
+          </div>
+          <!-- /.col-xl-9 -->
+        </div>
+        <!-- /.row .perheader -->
+        <div class="row align-items-center">
+          <div class="col-xl-3">
+            <a href="#!" class="logo">
+              <img src="./assets/images/svg/logo.svg" alt="Логотип" />
+            </a>
+          </div>
+          <!-- /.col-xl-3 -->
+          <div class="col-xl-3">
+            <p class="header-text">Оборудование для баров, кафе, ресторанов, магазинов и производств</p>
+          </div>
+          <!-- /.col-xl-3 -->
+          <div class="col-xl-3 header-contacts">
+            <span class="header-contacts__adress">м. Коломенская пр. Андропова, 22</span>
+            <a class="header-contacts__tel" href="tel:+">+7 (495)136-66-22</a>
+            <a class="header-contacts__mail" href="mailto:">moscow@alfa-biz.ru</a>
+          </div>
+          <!-- /.col-xl-3 -->
+          <div class="col-xl-3 header-toolbar d-flex justify-content-between align-items-center">
+            <button class="button header-toolbar__btn">
+              <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
+              </svg>
+              Войти
+            </button>
+            <button class="button header-toolbar__btn">
+              <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-line" />
+              </svg>
+              Сравнить
+            </button>
+            <button class="button header-toolbar__btn">
+              <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+              </svg>
+              Корзина
+            </button>
+          </div>
+          <!-- /.col-xl-3 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+  </body>
 </html>
