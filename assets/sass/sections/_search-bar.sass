@@ -1,0 +1,62 @@
+.search
+  &-bar
+    padding-top: 20px
+    padding-bottom: 20px
+    background: linear-gradient(90deg, rgba(18,64,149,0.8015581232492998) 10%, rgba(192,8,8,0.8015581232492998) 50%, rgba(18,64,149,0.804359243697479) 90%)
+    &__catalog
+      &-btn
+        display: flex
+        align-items: center
+        padding: 10px 30px
+        font-family: $Roboto
+        font-size: 14px
+        font-weight: 500
+        font-style: normal
+        color: $light-color
+        background-color: $primary-color
+        text-transform: uppercase
+      &-icon
+        margin-right: 10px
+    &__btn
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-family: $Open-Sans
+      font-size: 13px
+      font-weight: 400
+      font-style: normal
+      background-color: transparent
+      color: $light-color
+      transition: $transition
+      +hover
+        color: $primary-color
+  &-form
+    position: relative
+    display: flex
+    max-width: 100%
+    height: 40px
+    margin-left: 30px
+    overflow: hidden
+    border-radius: $border-radius
+    &__input
+      width: 100%
+      height: 100%
+      padding-left: 23px
+      padding-right: 75px
+      font-family: $Open-Sans
+      font-size: 13px
+      font-weight: 400
+      font-style: normal
+      color: inherit
+      background-color: $light-color
+      border: none
+    &__btn
+      position: absolute
+      width: 65px
+      height: 100%
+      top: 0
+      right: 0
+      color: $light-color
+      background-color: $primary-color
+      cursor: pointer
+      border-radius: 0
