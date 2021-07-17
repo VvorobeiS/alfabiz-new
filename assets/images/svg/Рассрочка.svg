@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
+  <g>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="a" gradientUnits="userSpaceOnUse" x1="8.5" x2="589.749" y1="503.5" y2="-77.749" data-name="New Gradient Swatch 1">
+      <stop stop-opacity="1" stop-color="#124095" offset="0"/>
+      <stop stop-opacity="1" stop-color="#c00808" offset="0.518"/>
+      <stop stop-opacity="1" stop-color="#124095" offset="0.9884169884169884"/>
+    </linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="d" x1="-55.5" x2="525.749" xlink:href="#a" y1="439.5" y2="-141.749"/>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="e" x1="72.5" x2="653.749" xlink:href="#a" y1="567.5" y2="-13.749"/>
+    <g xmlns="http://www.w3.org/2000/svg">
+      <g fill="url(#a)">
+        <path d="m431.362 80.638a248 248 0 1 0 -350.724 350.724 248 248 0 1 0 350.724-350.724zm-11.313 339.411a232 232 0 0 1 -328.1-328.1 232 232 0 0 1 328.1 328.1z" fill=""/>
+        <path d="m256 56c-110.28 0-200 89.72-200 200s89.72 200 200 200 200-89.72 200-200-89.72-200-200-200zm0 384c-101.458 0-184-82.542-184-184s82.542-184 184-184 184 82.542 184 184-82.542 184-184 184z" fill=""/>
+        <path d="m357.823 176.8-22.623-22.623a8 8 0 0 0 -11.314 0l-169.7 169.705a8 8 0 0 0 0 11.314l22.614 22.627a8 8 0 0 0 11.314 0l169.705-169.7a8 8 0 0 0 .004-11.323zm-175.362 164.053-11.314-11.314 158.392-158.392 11.314 11.314z" fill=""/>
+      </g>
+      <path d="m192 216a24 24 0 1 0 -24-24 24.027 24.027 0 0 0 24 24zm0-32a8 8 0 1 1 -8 8 8.009 8.009 0 0 1 8-8z" fill="url(#d)" data-original="url(#d)" style=""/>
+      <path d="m320 296a24 24 0 1 0 24 24 24.027 24.027 0 0 0 -24-24zm0 32a8 8 0 1 1 8-8 8.009 8.009 0 0 1 -8 8z" fill="url(#e)" data-original="url(#e)" style=""/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g transform="matrix(-1,0,0,1,63.99999809265137,0)">
+    <linearGradient xmlns="http://www.w3.org/2000/svg" id="a" gradientUnits="userSpaceOnUse" x1="4.081" x2="73.175" y1="66.919" y2="-2.175">
+      <stop stop-opacity="1" stop-color="#124095" offset="0"/>
+      <stop stop-opacity="1" stop-color="#c00808" offset="0.518"/>
+      <stop stop-opacity="1" stop-color="#124095" offset="1"/>
+    </linearGradient>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="b" x1="-9.919" x2="59.175" xlink:href="#a" y1="52.919" y2="-16.175"/>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="c" x1="-7.919" x2="61.175" xlink:href="#a" y1="54.919" y2="-14.175"/>
+    <linearGradient xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="d" x1="-5.919" x2="63.175" xlink:href="#a" y1="56.919" y2="-12.175"/>
+    <path xmlns="http://www.w3.org/2000/svg" d="m59.46 14.112-27-14a1 1 0 0 0 -.92 0l-27 14a1 1 0 0 0 -.54.888v48a1 1 0 0 0 1 1h54a1 1 0 0 0 1-1v-48a1 1 0 0 0 -.54-.888zm-46.46 47.888v-33h38v10h-11a1 1 0 0 0 -1 1v10h-10a1 1 0 0 0 -1 1v11zm20-10h3v2h-3zm-1 4h5a1 1 0 0 0 1-1v-3h1v9h-9v-9h1v3a1 1 0 0 0 1 1zm12-15h3v2h-3zm-1 4h5a1 1 0 0 0 1-1v-3h1v9h-9v-9h1v3a1 1 0 0 0 1 1zm-2 7h1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3h1v9h-9zm3 0h3v2h-3zm8-25h-40v-2h40zm6 35h-5v-33a1 1 0 0 0 1-1v-4a1 1 0 0 0 -1-1h-42a1 1 0 0 0 -1 1v4a1 1 0 0 0 1 1v33h-5v-46.392l26-13.482 26 13.482z" fill="url(#a)" data-original="url(#a)" style="" class=""/>
+    <path xmlns="http://www.w3.org/2000/svg" d="m24 11a1 1 0 0 0 1 1h14a1 1 0 0 0 0-2h-14a1 1 0 0 0 -1 1z" fill="url(#b)" data-original="url(#b)" style=""/>
+    <path xmlns="http://www.w3.org/2000/svg" d="m39 14h-14a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z" fill="url(#c)" data-original="url(#c)" style=""/>
+    <path xmlns="http://www.w3.org/2000/svg" d="m39 18h-14a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2z" fill="url(#d)" data-original="url(#d)" style=""/>
+  </g>
+</svg>
