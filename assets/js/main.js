@@ -38,7 +38,7 @@ $(document).ready(function () {
     }
   });
 
-  const heroSlider = new Swiper('.goods-slider__container', {
+  const goodsSlider = new Swiper('.goods-slider__container', {
     // Optional parameters
     loop: false,
     slidesPerView: 4,
@@ -86,15 +86,73 @@ $(document).ready(function () {
     observeParents: true
   });
 
-  // Инициализируем табы
-  const tabItem = $('.goods-slider__tabs-item');
-  const tabContent = $('.goods-slider__container');
+  const eventsSlider = new Swiper('.events__slider-container', {
+    // Optional parameters
+    loop: false,
+    slidesPerView: 3,
+    speed: 700,
+    spaceBetween: 30,
 
-  tabItem.on('click', function (event) {
+    // // Настройки адаптивной версии
+    // breakpoints: {
+    //   // если браузер >= 320px
+    //   320: {
+    //     slidesPerView: 1,
+    //   },
+    //   // если браузер >= 320px
+    //   577: {
+    //     slidesPerView: 2,
+    //   },
+    //   // если браузер >= 768px
+    //   769: {
+    //     slidesPerView: 3,
+    //   },
+    //   992: {
+    //     slidesPerView: 4,
+    //   },
+    //   // если браузер >= 1200px
+    //   1200: {
+    //     slidesPerView: 4,
+    //   },
+    // },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.events__slider-btn--next',
+      prevEl: '.events__slider-btn--prev',
+      disabledClass: 'events__slider-btn--disabled'
+    },
+
+    // Управление клавиатурой
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+    },
+
+    observer: true,
+    observeParents: true
+  });
+
+  // Инициализируем табы
+  const tabGoodsItem = $('.goods-slider__tabs-item');
+  const tabGoodsContent = $('.goods-slider__container');
+  const tabEventsItem = $('.events-tabs__item');
+  const tabEventsContent = $('.events__slider-container');
+
+  tabGoodsItem.on('click', function (event) {
     const contentActive = $(this).attr('data-target');
-    tabItem.removeClass('goods-slider__tabs-item--active');
-    tabContent.removeClass('goods-slider__container--active');
+    tabGoodsItem.removeClass('goods-slider__tabs-item--active');
+    tabGoodsContent.removeClass('goods-slider__container--active');
     $(contentActive).addClass('goods-slider__container--active');
     $(this).addClass('goods-slider__tabs-item--active');
+  });
+
+  tabEventsItem.on('click', function (event) {
+    const contentActive = $(this).attr('data-target');
+    tabEventsItem.removeClass('events-tabs__item--active');
+    tabEventsContent.removeClass('events__slider-container--active');
+    $(contentActive).addClass('events__slider-container--active');
+    $(this).addClass('events-tabs__item--active');
   });
 });
