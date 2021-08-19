@@ -1,0 +1,115 @@
+.news
+  padding-top: 50px
+  padding-bottom: 50px
+  background: linear-gradient( 99.6deg, rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% )
+  &__title
+    font-family: $Open-Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    font-style: normal
+    letter-spacing: $letter-spacing
+    line-height: 60px
+  &__btn
+    padding: 11px 53px
+    font-family: $Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    font-style: normal
+    letter-spacing: $letter-spacing
+    line-height: 20px
+    color: $primary-color
+    border: 2px solid $primary-color
+    border-radius: 22px
+    text-decoration: none
+    transition: $transition
+    +hover
+      background-color: $primary-color
+      color: $light-color
+  &-main
+    &__img
+      margin-bottom: 30px
+      border-radius: 8px
+    &__title
+      margin-bottom: 16px
+      padding-left: 10px
+      font-family: $Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 32px
+    &__text
+      max-width: 536px
+      max-height: 100px
+      padding-left: 10px
+      font-family: $Open-Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 32px
+      overflow: auto
+  &-item
+    display: flex
+    justify-content: space-between
+    // +hover
+    //   transform: translate(0, -5px)
+    &:not(:last-child)
+      margin-bottom: 30px
+    &__img
+      width: 250px
+      height: 170px
+      border-radius: $border-radius
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-around
+    &__date
+      font-family: $Open-Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 20px
+    &__title
+      max-width: 268px
+      max-height: 70px
+      font-family: $Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 32px
+      overflow: auto
+    &__link
+      position: relative
+      font-family: $Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 20px
+      color: $primary-color
+      text-decoration: none
+      text-transform: uppercase
+      &:after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translate(-50%, 30px)
+        width: 95%
+        border: 1px solid rgba(#fff, 0)
+        transition: $transition
+      +hover
+        &:after
+          transform: translate(-50%, 5px)
+          border: 1px solid $primary-color
