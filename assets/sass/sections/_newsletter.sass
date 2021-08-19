@@ -1,0 +1,58 @@
+.newsletter
+  padding-top: 50px
+  padding-bottom: 50px
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 60px 63px 80px 60px
+    background: linear-gradient(90deg, rgba(192,8,8,0.9) 0%, rgba(18,64,149,0.9) 100%)
+    border-radius: $border-radius
+  &__title
+    max-width: 450px
+    font-family: $Open-Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    letter-spacing: $letter-spacing
+    color: $light-color
+  &__form
+    position: relative
+    display: flex
+    height: 56px
+    overflow: hidden
+    border-radius: $border-radius
+  &__input
+    width: 447px
+    height: 100%
+    padding-left: 48px
+    padding-right: 185px
+    font-family: $Montserrat
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    color: #959EAD
+    border: none
+    outline: none
+  &__btn
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 4px
+    padding: 13px 28px
+    font-family: $Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    color: $light-color
+    background-color: $primary-color
+    border-radius: $border-radius
+    +hover
+      color: $blue-color
+  &__icon
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 20px
+    width: 16px
+    color: inherit

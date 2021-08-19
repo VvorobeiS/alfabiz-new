@@ -1498,6 +1498,38 @@
       <!-- /.container -->
     </section>
     <!-- /.news -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="newsletter-wrapper">
+              <h2 class="newsletter__title" data-aos="fade-right" data-aos-delay="200">
+                Будь первым, кто узнает о&nbsp;наших акциях
+              </h2>
+              <form
+                action="./send.php"
+                method="POST"
+                class="newsletter__form form"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              >
+                <input type="hidden" name="form" value="1" />
+                <input type="email" class="newsletter__input" placeholder="Ваш Email" required name="subscribe" />
+                <button class="button newsletter__btn" type="submit">Регистрация</button>
+                <svg class="newsletter__icon" width="14" height="14" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
+                </svg>
+              </form>
+            </div>
+            <!-- /.newsletter-wrapper -->
+          </div>
+          <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.newsletter -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
