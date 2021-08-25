@@ -162,4 +162,6 @@ $(document).ready(function () {
   btnSeo.addEventListener('click', function () {
     seoDescription.classList.toggle('seo-description--visible');
   });
+
+  AOS.init();
 });
