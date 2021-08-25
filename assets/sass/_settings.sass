@@ -20,7 +20,7 @@ a, button
   cursor: pointer
 
 .button
-  border-radius: 8px
+  border-radius: $border-radius
   border: none
   white-space: nowrap
   overflow: hidden
@@ -48,6 +48,21 @@ a, button
   color: $light-color
   border-radius: 0 4px 4px 0
 
+.catalog
+  &-list
+    list-style: initial
+    padding-inline-start: 40px
+    &__item
+      font-family: $Montserrat
+      font-size: 16px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 24px
+      text-align: justify
+    &__link
+      text-decoration: none
+      color: inherit
 // .test
 //   background-image: url(../images/svg/bold-arrows.svg)
 //   background-position: bottom

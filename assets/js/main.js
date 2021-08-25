@@ -155,4 +155,11 @@ $(document).ready(function () {
     $(contentActive).addClass('events__slider-container--active');
     $(this).addClass('events-tabs__item--active');
   });
+
+  // Инициализируем сворачиваемый контент
+  const btnSeo = document.querySelector('[data-toggle=collapse]');
+  const seoDescription = document.querySelector('.seo-description');
+  btnSeo.addEventListener('click', function () {
+    seoDescription.classList.toggle('seo-description--visible');
+  });
 });
