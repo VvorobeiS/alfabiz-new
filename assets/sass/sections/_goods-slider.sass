@@ -4,6 +4,7 @@
     padding-top: 50px
     padding-bottom: 50px
     background: linear-gradient( 99.6deg, rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% )
+    overflow: hidden
     &__tabs
       position: relative
       display: flex
@@ -47,10 +48,20 @@
             background-color: $primary-color
             border-radius: $border-radius
     &__container
-      display: none
       position: static
+      width: 0
+      height: 0
+      transition: transform .5s ease
+      &--stock
+        transform: translateX(-100%)
+      &--hits
+        transform: translateY(100%)
+      &--novelties
+        transform: translateX(100%)
       &--active
-        display: block
+        width: initial
+        height: initial
+        transform: initial
     &__slide
       position: relative
       display: flex

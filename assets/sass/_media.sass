@@ -1,4 +1,4 @@
-@media ( max-width: 1200px )
+@media ( max-width: 1199px )
   .header
     &-text
       margin-left: 0
@@ -21,3 +21,25 @@
   .search
     &-form
       margin-left: 0
+
+@media (max-width: 991px)
+  .header
+    &-text
+      max-width: 100%
+      font-size: 11px
+      font-weight: 400
+  .search
+    &-form
+      &__input
+        font-size: 12px
+
+@media (max-width: 576px)
+  .header
+    &-toolbar
+      justify-content: flex-end
+
+@media ( min-width: 320px )  and ( max-width: 480px )
+  .menu
+    &-burger
+      width: 36px
+      height: 36px

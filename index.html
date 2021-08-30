@@ -18,8 +18,10 @@
     <div class="body">
       <header class="header">
         <div class="container">
-          <div class="row mb-3">
-            <div class="col-lg-3 d-flex justify-content-evenly align-items-center">
+          <div class="row d-none d-lg-flex mb-3">
+            <div
+              class="col-md-3 col-lg-3 d-flex justify-content-md-between justify-content-xl-evenly align-items-center"
+            >
               <div class="header-city">
                 <svg class="header__icon" width="14" height="14" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
@@ -40,8 +42,8 @@
               </div>
               <!-- /.callback -->
             </div>
-            <!-- /.col-xl-3 -->
-            <div class="col-lg-9">
+            <!-- /.col-md-9 .col-xl-3 -->
+            <div class="col-md-9 col-lg-9">
               <nav class="nav">
                 <ul class="nav-list">
                   <li class="nav-list__item">
@@ -66,10 +68,10 @@
               </nav>
               <!-- /.nav -->
             </div>
-            <!-- /.col-xl-9 -->
+            <!-- /.col-md-9 .col-xl-9 -->
           </div>
-          <!-- /.row .perheader -->
-          <div class="row align-items-center">
+          <!-- /.row -->
+          <div class="row d-none d-lg-flex align-items-center">
             <div class="col-lg-3">
               <a href="#!" class="logo">
                 <img src="./assets/images/svg/logo.svg" alt="Логотип" />
@@ -109,23 +111,81 @@
             <!-- /.col-xl-3 -->
           </div>
           <!-- /.row -->
+          <div class="row d-lg-none justify-content-between align-items-center">
+            <div
+              class="
+                col-4 col-sm-3 col-md-2
+                d-flex
+                justify-content-around justify-content-sm-between
+                align-items-center
+              "
+            >
+              <a href="#!" class="logo-mobile">
+                <img src="./assets/images/svg/logo-mini.svg" alt="Логотип" />
+              </a>
+              <div class="menu-burger">
+                <span class="menu-burger__line"></span>
+                <span class="menu-burger__line"></span>
+                <span class="menu-burger__line"></span>
+              </div>
+              <!-- ./menu-burger -->
+            </div>
+            <!-- /.col-sm-2 -->
+            <div class="col-sm-4 col-md-6 d-none d-sm-block">
+              <p class="header-text header-text--mobile">
+                Оборудование для баров, кафе, ресторанов, магазинов и производств
+              </p>
+            </div>
+            <!-- /.col-md-3 -->
+            <div class="col-8 col-sm-5 col-md-4 header-toolbar">
+              <button class="button header-toolbar__btn header-toolbar__btn--mobile">
+                <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
+                </svg>
+                Войти
+              </button>
+              <button class="button header-toolbar__btn header-toolbar__btn--mobile">
+                <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                </svg>
+                Сравнить
+              </button>
+              <button class="button header-toolbar__btn header-toolbar__btn--mobile">
+                <svg class="header-toolbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                </svg>
+                Корзина
+              </button>
+            </div>
+            <!-- /.col-sm-4 -->
+          </div>
+          <!-- /.row -->
         </div>
         <!-- /.container -->
       </header>
       <!-- /.header -->
       <section class="search-bar">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-3 d-flex justify-content-center align-items-center">
-              <button class="button search-bar__catalog-btn">
-                <svg class="search-bar__catalog-icon" width="25" height="25" fill="currentColor">
+          <div class="row align-items-center flex-column flex-sm-row">
+            <div class="col-lg-3 d-none d-lg-flex justify-content-center align-items-center">
+              <button class="button catalog-btn">
+                <svg class="catalog-icon" width="25" height="25" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#list" />
                 </svg>
                 Каталог
               </button>
             </div>
             <!-- /.col-xl-3 -->
-            <div class="col-lg-6">
+            <div class="col-12 col-sm-3 col-md-3 d-lg-none mb-2 mb-sm-0">
+              <button class="button catalog-btn catalog-btn--mobile">
+                Каталог
+                <svg class="catalog-icon catalog-icon--mobile" width="14" height="14" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#caret-down-fill" />
+                </svg>
+              </button>
+            </div>
+            <!-- /.col-md-3 -->
+            <div class="col-12 col-sm-9 col-md-9 col-lg-6">
               <form action="#!" class="search-form">
                 <input type="text" class="search-form__input" placeholder="Название товара" required />
                 <button class="button search-form__btn">
@@ -136,7 +196,7 @@
               </form>
             </div>
             <!-- /.col-xl-7 -->
-            <div class="col-lg-3 d-flex justify-content-around align-items-center">
+            <div class="col-lg-3 d-none d-lg-flex justify-content-around align-items-center">
               <button class="button search-bar__btn">
                 <svg class="search-bar__icon" width="25" height="25" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cup-straw" />
@@ -288,7 +348,13 @@
           <!-- /.row -->
           <div class="row">
             <div class="col-lg-12 col-lg-12--pr">
-              <div class="swiper-container goods-slider__container goods-slider__container--active" id="stock">
+              <div
+                class="
+                  swiper-container
+                  goods-slider__container goods-slider__container--stock goods-slider__container--active
+                "
+                id="stock"
+              >
                 <div class="swiper-wrapper goods-slider__wrapper">
                   <div class="swiper-slide goods-slider__slide">
                     <a href="#!" class="goods-slider__good-link">
@@ -490,7 +556,10 @@
                 </button>
               </div>
               <!-- /.swiper-container goods-slider__container -->
-              <div class="swiper-container goods-slider__container goods-slider__container" id="hits">
+              <div
+                class="swiper-container goods-slider__container goods-slider__container--hits goods-slider__container"
+                id="hits"
+              >
                 <div class="swiper-wrapper goods-slider__wrapper">
                   <div class="swiper-slide goods-slider__slide">
                     <a href="#!" class="goods-slider__good-link">
@@ -692,7 +761,13 @@
                 </button>
               </div>
               <!-- /.swiper-container goods-slider__container -->
-              <div class="swiper-container goods-slider__container goods-slider__container" id="novelties">
+              <div
+                class="
+                  swiper-container
+                  goods-slider__container goods-slider__container--novelties goods-slider__container
+                "
+                id="novelties"
+              >
                 <div class="swiper-wrapper goods-slider__wrapper">
                   <div class="swiper-slide goods-slider__slide">
                     <a href="#!" class="goods-slider__good-link">
@@ -1637,6 +1712,139 @@
         <!-- /.container -->
       </section>
       <!-- /.seo -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3">
+              <a href="#!" class="footer__logo">
+                <img src="./assets/images/svg/logo-vertical.svg" alt="Логотип" class="footer__img" />
+              </a>
+              <h3 class="footer__title footer__title--small">Офис продаж:</h3>
+              <div class="footer-contacts d-flex flex-column">
+                <span class="footer-contacts__adress">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
+                  </svg>
+                  м. Коломенская пр. Андропова, 22
+                </span>
+                <a class="footer-contacts__tel" href="tel:+">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-outbound-fill" />
+                  </svg>
+                  +7 (495)136-66-22
+                </a>
+                <a class="footer-contacts__mail" href="mailto:">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
+                  </svg>
+                  moscow@alfa-biz.ru
+                </a>
+              </div>
+              <!-- /.footer-contacts -->
+              <div class="footer-socials">
+                <h3 class="footer__title footer-socials__title">Мы в социальных сетях</h3>
+                <ul class="footer-socials__list">
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#instagram" /></svg
+                    ></a>
+                  </li>
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#facebook" /></svg
+                    ></a>
+                  </li>
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#youtube" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer-socials -->
+            </div>
+            <!-- /.col-md-3 -->
+            <div class="col-md-9 d-flex justify-content-between">
+              <div>
+                <h3 class="footer__title">Каталог</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Тепловое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Холодильное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Нейтральное технологическое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Электромеханическое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Барное и кофейное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Весовое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Моечное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Посуда, кухоный и барный инвертарь</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Униформа и одежда для персонала ресторона</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+              <div>
+                <h3 class="footer__title">Услуги</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Аренда гастроплощадки</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Рассрочка без банков</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Тест-драйв оборудования</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+              <div>
+                <h3 class="footer__title">О компании</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Расписание мастер-классов</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Новости</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Доставка и оплата</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">О компании</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+            </div>
+            <!-- /.col-md-4 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /.footer -->
     </div>
     <!-- /.body -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
