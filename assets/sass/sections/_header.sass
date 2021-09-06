@@ -1,9 +1,12 @@
 .header
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
   padding-top: 17px
   padding-bottom: 17px
-  &__icon
-    color: $primary-color
-    margin-right: 5px
+  background-color: $light-color
+  z-index: 100
   &-city
     display: flex
     align-items: center
@@ -21,23 +24,28 @@
       transition: $transition
       +hover
         color: $primary-color
+    &__icon
+      color: $primary-color
+      &--mr-5
+        margin-right: 5px
   &-callback
     display: flex
     align-items: center
-    &__btn
-      padding: 0
-      font-family: $Montserrat
-      font-size: 14px
-      font-weight: 400
-      font-style: normal
-      letter-spacing: $letter-spacing
-      background-color: $light-color
-      color: $text-color
-      border-bottom: 2px dotted $text-color
-      transition: $transition
-      +hover
-        color: $primary-color
-        border-bottom: 2px dotted $primary-color
+    padding: 5px 10px
+    font-family: $Montserrat
+    font-size: 14px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: $letter-spacing
+    background-color: $light-color
+    color: $blue-color
+    border: 1px solid $blue-color
+    transition: $transition
+    &__icon
+      margin-right: 5px
+    +hover
+      color: $light-color
+      background-color: $blue-color
   &-text
     display: block
     max-width: 208px
@@ -103,15 +111,17 @@
     align-items: center
     list-style: none
     &__link
+      @include link
       font-family: $Open-Sans
       font-size: 16px
       font-weight: 600
       font-style: normal
-      letter-spacing: $letter-spacing
-      line-height: 20px
-      text-decoration: none
       text-transform: uppercase
-      color: inherit
+      color: $blue-color
+      +hover
+        color: $primary-color
+        &:before
+          width: 0
 .logo
   display: block
   text-align: center

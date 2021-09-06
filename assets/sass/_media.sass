@@ -1,4 +1,13 @@
+@media (max-width: 1399px)
+  .news
+    &-item
+      &__info
+        height: 282px
+
 @media ( max-width: 1199px )
+  .title
+    &--h2
+      font-size: 26px
   .header
     &-text
       margin-left: 0
@@ -21,8 +30,73 @@
   .search
     &-form
       margin-left: 0
+  .advantages
+    &__title
+      font-size: 28px
+    &__text
+      font-size: 15px
+    &-list
+      &__link
+        font-size: 13px
+        padding: 0 7px
+  .brands
+    &-list
+      &__item
+        padding: 15px
+  .events
+    height: 675px
+    &-tabs
+      max-width: 60%
+    &-card
+      &__img
+        height: 220px
+      &__title
+        font-size: 16px
+      &__link
+        font-size: 15px
+      &__list
+        &-item
+          font-size: 14px
+  .enterprises
+    &-list
+      &__icon
+        width: 70px
+      &__text
+        font-size: 13px
+  .news
+    &-item
+      &__info
+        height: 237px
+      &__title
+        font-size: 16px
+  .newsletter
+    &__title
+      font-size: 28px
+    &__input
+      font-size: 14px
+    &__btn
+      font-size: 15px
+  .seo
+    &__title
+      font-size: 28px
+    &-description
+      &__text
+        font-size: 15px
+      &__list
+        &-item
+          font-size: 15px
+  .catalog
+    &-list
+      &__link
+        font-size: 15px
+  .footer
+    &__title
+      font-size: 15px
 
 @media (max-width: 991px)
+  .title
+    &--h2
+      font-size: 20px
   .header
     &-text
       max-width: 100%
@@ -32,14 +106,251 @@
     &-form
       &__input
         font-size: 12px
+  .advantages
+    padding-top: 25px
+    padding-bottom: 25px
+    &__title
+      font-size: 22px
+    &__text
+      font-size: 13px
+    &-list
+      flex-wrap: wrap
+      &__item
+        &:nth-child(-n+3)
+          margin-bottom: 20px
+      &__icon
+        margin-bottom: 10px
+  .brands
+    &-list
+      &__item
+        padding: 10px
+  .events
+    padding-top: 25px
+    &-tabs
+      max-width: 65%
+      &__item
+        font-size: 16px
+    &-card
+      &__title
+        font-size: 15px
+      &__link
+        font-size: 14px
+      &__list
+        &-item
+          font-size: 13px
+  .news
+    &-item
+      &__info
+        height: 165px
+      &__title
+        max-width: 153px
+        max-height: 35px
+        font-size: 14px
+      &__date
+        font-size: 12px
+        top: 65%
+        transform: translateY(-65%)
+  .newsletter
+    flex-direction: column
+    padding-top: 40px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 20px
+      font-size: 26px
+    &__form
+      height: 50px
+    &__btn
+      font-size: 14px
+  .seo
+    padding-top: 25px
+    padding-bottom: 25px
+    &__title
+      font-size: 22px
+    &-description
+      &__text
+        font-size: 14px
+        &__list
+          &-item
+            font-size: 14px
+  .catalog
+    &-list
+      &__link
+        font-size: 14px
+  .footer
+    padding-top: 25px
+    padding-bottom: 25px
+    &-list
+      &__link
+        font-size: 13px
 
-@media (max-width: 576px)
+@media (max-width: 767px)
+  .title
+    &--h2
+      font-size: 18px
+  .advantages
+    &-list
+      &__item
+        width: 175px
+        flex-basis: 33.3%
+      &__icon
+        width: 70px
+  .goods-slider
+    &__tabs
+      max-width: 100%
+      &-item
+        font-size: 16px
+    &__good
+      &-link
+        font-size: 14px
+  .events
+    &-tabs
+      max-width: 85%
+      justify-content: space-around
+      &__item
+        font-size: 16px
+    &-card
+      &__wrapper
+        padding: 15px
+  .row--mb-5
+    margin-bottom: 6rem
+  .news
+    &-item
+      &:nth-child(-n+2)
+        margin-bottom: 20px
+      &__info
+        height: 265px
+      &__title
+        max-width: 240px
+        max-height: 35px
+      &__date
+        top: 75%
+        transform: translateY(-75%)
+  .seo
+    &-description
+      &__text
+        font-size: 13px
+      &__list
+        &-item
+          font-size: 13px
+  .catalog
+    &-list
+      &__link
+        font-size: 13px
+  .footer
+    &__logo
+      margin-bottom: 0
+    &__img
+      width: 140px
+    &-contacts
+      margin-bottom: 0
+      &__adress
+        font-size: 13px
+      &__tel
+        font-size: 15px
+    &-socials
+      &__list
+        flex-direction: column
+        &-item
+          &:not(:last-child)
+            margin-right: 0
+            margin-bottom: 15px
+
+@media (max-width: 575px)
   .header
     &-toolbar
       justify-content: flex-end
+  .goods-slider
+    padding-top: 25px
+    padding-bottom: 100px
+    &__tabs
+      justify-content: space-around
+    &__img
+      width: 150px
+    &__good
+      &-link
+        font-size: 13px
+    &__btn
+      top: 105%
+      &--prev
+        left: 40%
+        transform: translateX(-50%)
+      &--next
+        right: 40%
+        transform: translateX(50%)
+  .events
+    height: 630px
+    &-tabs
+      max-width: 100%
+      justify-content: space-between
+    &-card
+      &__title
+        font-size: 14px
+      &__img
+        height: 180px
+  .enterprises
+    &-list
+      &__icon
+        width: 60px
+  .newsletter
+    &__form
+      height: 112px
+      background-color: $light-color
+    &__input
+      width: 330px
+      height: 56px
+      padding-right: 11px
+      padding-left: 48px
+      align-items: start
+    &__btn
+      top: 83%
+      right: 11px
+      transform: translateY(-83%)
+      width: 92%
+      padding-top: 10px
+      padding-bottom: 10px
+    &__icon
+      top: 21px
+      left: 20px
+      transform: none
+  .footer
+    &__logo
+      margin-bottom: 20px
+    &__img
+      width: 160px
+    &-contacts
+      margin-bottom: 20px
+    &-socials
+      &__list
+        flex-direction: row
+        &-item
+          &:not(:last-child)
+            margin-right: 45px
+            margin-bottom: 0
 
 @media ( min-width: 320px )  and ( max-width: 480px )
   .menu
     &-burger
       width: 36px
       height: 36px
+  .advantages
+    &-list
+      justify-content: around
+      &__item
+        flex-basis: 50%
+      &__link
+  .events
+    height: 620px
+    &-tabs
+      flex-direction: column
+      &__item
+        &:nth-child(-n+1)
+          margin-bottom: 10px
+  .newsletter
+    padding: 30px 20px 40px
+    &__title
+      font-size: 22px
+    &__input
+      width: 265px
+  .seo
+    &__title
+      font-size: 18px

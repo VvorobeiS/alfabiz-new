@@ -7,7 +7,7 @@ body
   margin: 0
   color: $text-color
 
-h1, h2, h3, h4, h5, h6, p, ul, hr
+h1, h2, h3, h4, h5, h6, p, ul, ol, hr
   margin: 0
   padding: 0
   list-style: none
@@ -20,7 +20,11 @@ a, button
   cursor: pointer
 
 .body
+  padding-top: 227px
   overflow: hidden
+
+.title
+  @include title
 
 .button
   border-radius: $border-radius
@@ -38,6 +42,8 @@ a, button
 
 .col-lg-12--pr, .col-md-12--pr
   position: relative
+.row--mb-5
+  margin-bottom: 5rem
 
 .vendor-code
   position: absolute
@@ -54,18 +60,13 @@ a, button
 .catalog
   &-list
     list-style: initial
-    padding-inline-start: 40px
+    padding-inline-start: 20px
     &__item
-      font-family: $Montserrat
-      font-size: 16px
-      font-weight: 400
-      font-style: normal
-      letter-spacing: $letter-spacing
       line-height: 24px
       text-align: justify
+      color: $primary-color
     &__link
-      text-decoration: none
-      color: inherit
+      @include link
 // .test
 //   background-image: url(../images/svg/bold-arrows.svg)
 //   background-position: bottom
@@ -87,8 +88,12 @@ a, button
     font-style: normal
     letter-spacing: $letter-spacing
     color: $light-color
-    background-color: $primary-color
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+    background-size: 200% auto
+    box-shadow: 0 0 5px #eee
     text-transform: uppercase
+    +hover
+      background-position: right center; /* change the direction of the change here */
     &--mobile
       width: 100%
       padding: 10px

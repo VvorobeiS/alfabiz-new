@@ -1,5 +1,10 @@
 .search
   &-bar
+    position: fixed
+    top: 142px
+    right: 0
+    left: 0
+    z-index: 100
     padding-top: 20px
     padding-bottom: 20px
     background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
@@ -16,7 +21,7 @@
       color: $light-color
       transition: $transition
       +hover
-        color: $primary-color
+        color: $yellow-color
   &-form
     position: relative
     display: flex
@@ -45,6 +50,9 @@
       top: 0
       right: 0
       color: $light-color
-      background-color: $primary-color
+      background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+      background-size: 200% auto
       cursor: pointer
       border-radius: 0
+      +hover
+        background-position: right center; /* change the direction of the change here */

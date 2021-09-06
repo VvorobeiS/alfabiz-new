@@ -1,6 +1,5 @@
 .goods
   &-slider
-    // position: relative
     padding-top: 50px
     padding-bottom: 50px
     background: linear-gradient( 99.6deg, rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% )
@@ -12,14 +11,14 @@
       align-items: center
       max-width: 50%
       margin: 0 auto
-      font-family: $Open-Sans
-      font-size: 18px
-      font-weight: 600
-      font-style: normal
-      letter-spacing: $letter-spacing
       list-style: none
       &-item
         position: relative
+        font-family: $Open-Sans
+        font-size: 18px
+        font-weight: 600
+        font-style: normal
+        letter-spacing: $letter-spacing
         cursor: pointer
         &:after
           position: absolute
@@ -47,6 +46,8 @@
             height: 2px
             background-color: $primary-color
             border-radius: $border-radius
+    &__img
+      width: 200px
     &__container
       position: static
       width: 0
@@ -90,10 +91,10 @@
         width: 76px
         height: 76px
       &--prev
-        left: 0
+        left: 15px
         transform: translate(-50%, -50%)
       &--next
-        right: 0
+        right: 15px
         transform: translate(50%, -50%)
       &--disabled
         display: none

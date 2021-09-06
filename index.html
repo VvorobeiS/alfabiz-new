@@ -18,12 +18,12 @@
     <div class="body">
       <header class="header">
         <div class="container">
-          <div class="row d-none d-lg-flex mb-3">
+          <div class="row d-none d-lg-flex mb-3 align-items-center">
             <div
               class="col-md-3 col-lg-3 d-flex justify-content-md-between justify-content-xl-evenly align-items-center"
             >
               <div class="header-city">
-                <svg class="header__icon" width="14" height="14" fill="currentColor">
+                <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
                 </svg>
                 <button class="button header-city__btn">
@@ -34,13 +34,12 @@
                 </button>
               </div>
               <!-- /.perheader__geo -->
-              <div class="header-callback">
-                <svg class="header__icon" width="12" height="12" fill="currentColor">
+              <button class="button header-callback">
+                <svg class="header__icon header-callback__icon" width="12" height="12" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
                 </svg>
-                <button class="button header-callback__btn">Заказать звонок</button>
-              </div>
-              <!-- /.callback -->
+                Заказать звонок
+              </button>
             </div>
             <!-- /.col-md-9 .col-xl-3 -->
             <div class="col-md-9 col-lg-9">
@@ -258,10 +257,10 @@
       </section>
       <!-- /.main-slider -->
       <section class="advantages">
-        <div class="container">
-          <div class="row mb-3">
+        <div class="container-md container-xl">
+          <div class="row d-none d-md-block mb-3">
             <div class="col-lg-12">
-              <h1 class="advantages__title">
+              <h2 class="advantages__title">
                 Продажа технологического и холодильного оборудования<br />
                 - наша работа!
               </h1>
@@ -269,7 +268,7 @@
             <!-- /.col-lg-12 -->
           </div>
           <!-- /.row -->
-          <div class="row mb-4">
+          <div class="row d-none d-md-block mb-4">
             <div class="col-lg-12">
               <p class="advantages__text">
                 Компания «Альфа-Бизнес» является одним из лидеров по продажам<br />
@@ -286,13 +285,13 @@
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
                     <img src="./assets/images/svg/Рекомендуем.svg" alt="" class="advantages-list__icon" />
-                    Более 20 лет на рынке HoReCa & Retail
+                    Более 20&nbsp;лет на&nbsp;рынке HoReCa&nbsp;&amp;&nbsp;Retail
                   </a>
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link"
-                    ><img src="./assets/images/svg/Склад.svg" alt="" class="advantages-list__icon" /> Большой
-                    ассортимент товара в наличии</a
+                    ><img src="./assets/images/svg/Склад.svg" alt="" class="advantages-list__icon" />Большой ассортимент
+                    товара в&nbsp;наличии</a
                   >
                 </li>
                 <li class="advantages-list__item">
@@ -310,7 +309,7 @@
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
                     <img src="./assets/images/svg/Рассрочка.svg" alt="" class="advantages-list__icon" />Рассрочка без
-                    банков и лизинговых компаний</a
+                    банков</a
                   >
                 </li>
                 <li class="advantages-list__item">
@@ -979,80 +978,124 @@
       </section>
       <!-- /.goods-slider -->
       <section class="brands">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 mb-4">
-              <h2 class="brands__title">Популярные бренды</h2>
+        <div class="container-fluid">
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <h2 class="brands__title title title--h2">Популярные бренды</h2>
             </div>
             <!-- /.col-md-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col">
-              <ul class="brands-list">
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/abat.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/alto-shaam.jpg" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/atesy.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/cas.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/fimar.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/finist.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/hicold.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/hurakan.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/nordika.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/retigo.jpg" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/robot-coupe.png" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-                <li class="brands-list__item">
-                  <a href="#!" class="brands-list__link">
-                    <img src="./assets/images/brands/vesta.jpg" alt="Логотип" class="brands-list__logo" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.col -->
+            <ul class="brands-list">
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/abat.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/alto-shaam.jpg" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/atesy.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/cas.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/fimar.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/finist.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/hicold.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/hurakan.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/nordika.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/retigo.jpg" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/robot-coupe.png" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link">
+                  <img src="./assets/images/brands/vesta.jpg" alt="Логотип" class="brands-list__logo" />
+                </a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/SMEG.png" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/apach-cook-line.png" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/сheckedout.svg" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/mhm.svg" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/polair.png" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+
+              <li class="col-4 col-md-2 brands-list__item">
+                <a href="#!" class="brands-list__link"
+                  ><img src="./assets/images/brands/rational.png" alt="Логотип" class="brands-list__logo"
+                /></a>
+              </li>
+            </ul>
           </div>
           <!-- /.row -->
           <div class="row">
@@ -1066,8 +1109,8 @@
       </section>
       <!-- /.brands -->
       <section class="events">
-        <div class="container">
-          <div class="row mb-4">
+        <div class="container-xl">
+          <div class="row row--mb-5">
             <div class="col-md-12">
               <ul class="events-tabs">
                 <li class="events-tabs__item events-tabs__item--active" data-target="#announcements">
@@ -1090,18 +1133,18 @@
                   <div class="swiper-slide events__slider-slide">
                     <div class="events-card">
                       <img
-                        src="./assets/images/events/mc-picture.jpg"
+                        src="./assets/images/events/03_09-spb.jpg"
                         alt="Обложка мастер-класса"
                         class="events-card__img"
                       />
                       <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <h3 class="events-card__title">Как превратить столовую в Market Plaсe</h3>
                         <ul class="events-card__list">
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                             </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
+                            <span class="events-card__list-date">3 сентября 2021</span>
                           </li>
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -1113,17 +1156,22 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
                             </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
+                            <span class="events-card__list-address">Лахтинский проспект, 2/1</span>
+                          </li>
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">Бесплатно</span>
                           </li>
                         </ul>
                         <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
                           <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
                         </div>
                         <!-- /.events-card__footer -->
                       </div>
                       <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
+                      <span class="events-card__city">Санкт-Петербург</span>
                     </div>
                     <!-- /.events-card -->
                   </div>
@@ -1142,7 +1190,7 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                             </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
+                            <span class="events-card__list-date">8 сентября 2021</span>
                           </li>
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -1154,11 +1202,16 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
                             </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
+                            <span class="events-card__list-address">проспект Андропова, 22</span>
+                          </li>
+                        <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">Бесплатно</span>
                           </li>
                         </ul>
                         <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
                           <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
                         </div>
                         <!-- /.events-card__footer -->
@@ -1172,18 +1225,64 @@
                   <div class="swiper-slide events__slider-slide">
                     <div class="events-card">
                       <img
-                        src="./assets/images/events/mc-picture.jpg"
+                        src="./assets/images/events/09_09-msk-min.jpg"
                         alt="Обложка мастер-класса"
                         class="events-card__img"
                       />
                       <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <h3 class="events-card__title">Как открыть топовый ресторан с бургерами и секреты технологий приготовления сочных Бургеров</h3>
                         <ul class="events-card__list">
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                             </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
+                            <span class="events-card__list-date">9 сентября 2021</span>
+                          </li>
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
+                            </svg>
+                            <span class="events-card__list-time">в 14:00</span>
+                          </li>
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
+                            </svg>
+                            <span class="events-card__list-address">Лахтинский проспект, 2/1</span>
+                          </li>
+                        <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">Бесплатно</span>
+                          </li>
+                        </ul>
+                        <div class="events-card__footer">
+                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                        </div>
+                        <!-- /.events-card__footer -->
+                      </div>
+                      <!-- /.events-card__wrapper -->
+                      <span class="events-card__city">Санкт-Петербург</span>
+                    </div>
+                    <!-- /.events-card -->
+                  </div>
+                  <!-- /.events__slider-slide -->
+                  <div class="swiper-slide events__slider-slide">
+                    <div class="events-card">
+                      <img
+                        src="./assets/images/events/10_09-msk-min.jpg"
+                        alt="Обложка мастер-класса"
+                        class="events-card__img"
+                      />
+                      <div class="events-card__wrapper">
+                        <h3 class="events-card__title">Новинки осени для кондитеров</h3>
+                        <ul class="events-card__list">
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
+                            </svg>
+                            <span class="events-card__list-date">10 сентября 2021</span>
                           </li>
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -1195,11 +1294,16 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
                             </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
+                            <span class="events-card__list-address">проспект Андропова, 22</span>
+                          </li>
+                        <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">Бесплатно</span>
                           </li>
                         </ul>
                         <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
                           <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
                         </div>
                         <!-- /.events-card__footer -->
@@ -1213,18 +1317,18 @@
                   <div class="swiper-slide events__slider-slide">
                     <div class="events-card">
                       <img
-                        src="./assets/images/events/mc-picture.jpg"
+                        src="./assets/images/events//15_09.jpg"
                         alt="Обложка мастер-класса"
                         class="events-card__img"
                       />
                       <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <h3 class="events-card__title">Хлеб и выпечка по рецептам Вячеслава Погорелого</h3>
                         <ul class="events-card__list">
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                             </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
+                            <span class="events-card__list-date">15 сентября 2021</span>
                           </li>
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -1236,11 +1340,16 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
                             </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
+                            <span class="events-card__list-address">проспект Андропова, 22</span>
+                          </li>
+                        <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">Бесплатно</span>
                           </li>
                         </ul>
                         <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
                           <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
                         </div>
                         <!-- /.events-card__footer -->
@@ -1254,18 +1363,18 @@
                   <div class="swiper-slide events__slider-slide">
                     <div class="events-card">
                       <img
-                        src="./assets/images/events/mc-picture.jpg"
+                        src="./assets/images/events/29_09-msk-min.jpg"
                         alt="Обложка мастер-класса"
                         class="events-card__img"
                       />
                       <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <h3 class="events-card__title">Авторский курс «Ремесленный колбасник»</h3>
                         <ul class="events-card__list">
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                             </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
+                            <span class="events-card__list-date">29 сентября 2021</span>
                           </li>
                           <li class="events-card__list-item">
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -1277,52 +1386,16 @@
                             <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                               <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
                             </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
+                            <span class="events-card__list-address">проспект Андропова, 22</span>
+                          </li>
+                        <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                            </svg>
+                            <span class="events-card__list-cost">70 000 ₽</span>
                           </li>
                         </ul>
                         <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/mc-picture.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22, г. Москва</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <span class="events-card__cost">Бесплатно</span>
                           <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
                         </div>
                         <!-- /.events-card__footer -->
@@ -1405,43 +1478,50 @@
       </section>
       <!-- /.events -->
       <section class="enterprises">
-        <div class="container">
-          <div class="row">
+        <div class="container-xl">
+          <div class="row mb-4">
             <div class="col-md-12">
-              <h2 class="enterprises__title">Подбор оборудования по типу предприятия</h2>
+              <h2 class="enterprises__title title title--h2">Подбор оборудования по типу предприятия</h2>
             </div>
             <!-- /.col-md-12 -->
           </div>
           <!-- /.row -->
-          <div class="row">
-            <div class="col">
-              <ul class="enterprises-list">
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+          <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2 enterprises-list">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/beer.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Бары и пабы</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/cafe.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Кафе</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/cake.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Кондитерские магазины</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/coffee.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Кофейни</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img
                       src="./assets/images/svg/meat-grinder.svg"
                       alt="Иконка категории"
@@ -1449,22 +1529,27 @@
                     />
                     <span class="enterprises-list__text">Мясопереработка</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/bread.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Пекарни</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/pizza.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Пиццерии</span>
                   </a>
+                  </div>
                 </li>
-
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img
                       src="./assets/images/svg/food-and-restaurant.svg"
                       alt="Иконка категории"
@@ -1472,15 +1557,19 @@
                     />
                     <span class="enterprises-list__text">Рестораны</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img src="./assets/images/svg/soup.svg" alt="Иконка категории" class="enterprises-list__icon" />
                     <span class="enterprises-list__text">Столовые</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img
                       src="./assets/images/svg/grocery-cart.svg"
                       alt="Иконка категории"
@@ -1488,9 +1577,11 @@
                     />
                     <span class="enterprises-list__text">Супермаркеты</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img
                       src="./assets/images/svg/fast-food.svg"
                       alt="Иконка категории"
@@ -1498,9 +1589,11 @@
                     />
                     <span class="enterprises-list__text">Фастфуды</span>
                   </a>
+                  </div>
                 </li>
-                <li class="enterprises-list__item">
-                  <a href="#!" class="enterprises-list__link">
+                <li class="col enterprises-list__item">
+                  <div class="enterprises-list__content">
+                    <a href="#!" class="enterprises-list__link">
                     <img
                       src="./assets/images/svg/food-truck.svg"
                       alt="Иконка категории"
@@ -1508,89 +1601,60 @@
                     />
                     <span class="enterprises-list__text">Фуд-траки</span>
                   </a>
+                  </div>
                 </li>
-              </ul>
-            </div>
-            <!-- /.col -->
-          </div>
-          <!-- /.row -->
+          </ul>
+          <!-- /.row .enterprises-list-->
         </div>
         <!-- /.container -->
       </section>
       <!-- /.enterprises -->
       <section class="news">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 d-flex justify-content-start align-items-center">
-              <h2 class="news__title" data-aos="fade-right" data-aos-delay="200">Новости</h2>
+        <div class="container-lg">
+          <div class="row mb-5 justify-content-between">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+              <h2 class="news__title title title--h2" data-aos="fade-right" data-aos-delay="200">Новости</h2>
             </div>
             <!-- /.col-md-6 -->
-            <div class="col-md-6 d-flex justify-content-end align-items-center">
-              <a href="#!" class="button news__btn" data-aos="fade-left" data-aos-delay="200">Все Новости</a>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <a href="#!" class="news__link" data-aos="fade-left" data-aos-delay="200">Все Новости</a>
             </div>
             <!-- /.col-md-6 -->
           </div>
           <!-- /.row -->
-          <div class="row mb-5">
-            <div class="col-lg-12 d-flex justify-content-between align-items-center">
-              <div class="news-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="row justify-content-between align-items-center mb-5">
+              <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
                 <div class="news-item__info">
-                  <img
-                    loading="lazy"
-                    src="./assets/images/news/item-1.jpg"
-                    alt="Изображение статьи"
-                    class="news-item__img"
-                  />
                   <span class="news-item__date">23 МАРТА 2020</span>
                   <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
                 </div>
                 <!-- /.news-item__info -->
                 <a href="" class="news-item__link">Подробнее</a>
               </div>
-              <div class="news-item" data-aos="fade-left" data-aos-delay="200">
+              <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
                 <div class="news-item__info">
-                  <img
-                    loading="lazy"
-                    src="./assets/images/news/item-1.jpg"
-                    alt="Изображение статьи"
-                    class="news-item__img"
-                  />
                   <span class="news-item__date">23 МАРТА 2020</span>
                   <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
                 </div>
                 <!-- /.news-item__info -->
                 <a href="" class="news-item__link">Подробнее</a>
               </div>
-              <div class="news-item" data-aos="fade-left" data-aos-delay="200">
+              <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
                 <div class="news-item__info">
-                  <img
-                    loading="lazy"
-                    src="./assets/images/news/item-1.jpg"
-                    alt="Изображение статьи"
-                    class="news-item__img"
-                  />
                   <span class="news-item__date">23 МАРТА 2020</span>
                   <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
                 </div>
                 <!-- /.news-item__info -->
                 <a href="" class="news-item__link">Подробнее</a>
               </div>
-              <div class="news-item" data-aos="fade-left" data-aos-delay="200">
+              <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
                 <div class="news-item__info">
-                  <img
-                    loading="lazy"
-                    src="./assets/images/news/item-1.jpg"
-                    alt="Изображение статьи"
-                    class="news-item__img"
-                  />
                   <span class="news-item__date">23 МАРТА 2020</span>
                   <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
                 </div>
                 <!-- /.news-item__info -->
                 <a href="" class="news-item__link">Подробнее</a>
               </div>
-            </div>
-            <!-- /.col-lg-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
@@ -1623,7 +1687,7 @@
       </section>
       <!-- /.news -->
       <section class="seo">
-        <div class="container">
+        <div class="container-xl">
           <div class="row">
             <div class="col-md-12">
               <h1 class="seo__title">Оборудование для ресторанов, пекарен, кафе и столовых</h1>
@@ -1648,7 +1712,7 @@
                   предложения, в том числе рассрочка, возможность тест-драйва и поддержка нашими бренд-шефами, позволят
                   оптимизировать издержки и идеально подобрать необходимое для Вашей кухни.
                 </p>
-                <h2 class="seo-description__title">Направления:</h2>
+                <h2 class="seo-description__title title title--h2">Направления:</h2>
                 <ol class="seo-description__list">
                   <li class="seo-description__list-item">
                     Профессиональное кухонное оборудование для ресторанов, столовых, баров и других заведений
@@ -1677,11 +1741,11 @@
                         <a href="" class="catalog-list__link">Моечное оборудование</a>
                       </li>
                       <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Посуда, кухонный и барный инвертарь, столовые приборы</a>
+                        <a href="" class="catalog-list__link">Кухонный инвентарь</a>
                       </li>
                       <li class="catalog-list__item">
                         <a href="" class="catalog-list__link"
-                          >Униформа и одежда для персонала ресторана, бара или гостиницы</a
+                          >Униформа и одежда для персонала</a
                         >
                       </li>
                     </ul>
@@ -1694,7 +1758,7 @@
                   </li>
                   <li class="seo-description__list-item">Гарантийное и сервисное обслуживание.</li>
                 </ol>
-                <h2 class="seo-description__title">Все услуги для ресторанного бизнеса в одном месте</h2>
+                <h2 class="seo-description__title title title--h2">Все услуги для ресторанного бизнеса в одном месте</h2>
                 <p class="seo-description__text">
                   «Альфа-Бизнес» — надежный помощник в сфере ресторанного обслуживания и HoReCa. Получите детальную
                   информацию об ассортименте продукции, ценах и скидках от наших менеджеров. Мы поможем на всех этапах
@@ -1715,12 +1779,12 @@
       <footer class="footer">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-md-3">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex flex-column flex-sm-row d-md-block justify-content-between mb-4 mb-sm-5 mb-md-0">
               <a href="#!" class="footer__logo">
                 <img src="./assets/images/svg/logo-vertical.svg" alt="Логотип" class="footer__img" />
               </a>
-              <h3 class="footer__title footer__title--small">Офис продаж:</h3>
               <div class="footer-contacts d-flex flex-column">
+                <h3 class="footer__title footer__title--small">Офис продаж:</h3>
                 <span class="footer-contacts__adress">
                   <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
@@ -1742,7 +1806,6 @@
               </div>
               <!-- /.footer-contacts -->
               <div class="footer-socials">
-                <h3 class="footer__title footer-socials__title">Мы в социальных сетях</h3>
                 <ul class="footer-socials__list">
                   <li class="footer-socials__list-item">
                     <a href="#!" class="footer-socials__list-link"
@@ -1767,7 +1830,7 @@
               <!-- /.footer-socials -->
             </div>
             <!-- /.col-md-3 -->
-            <div class="col-md-9 d-flex justify-content-between">
+            <div class="col-12 col-sm-8 col-md-5 col-lg-4">
               <div>
                 <h3 class="footer__title">Каталог</h3>
                 <ul class="footer-list">
@@ -1801,6 +1864,9 @@
                 </ul>
               </div>
               <!-- / -->
+            </div>
+            <!-- /.col-md-4 -->
+            <div class=" col-12 col-sm-4 col-md-3 col-lg-5 d-flex flex-column flex-lg-row justify-content-lg-around">
               <div>
                 <h3 class="footer__title">Услуги</h3>
                 <ul class="footer-list">
@@ -1820,7 +1886,7 @@
                 <h3 class="footer__title">О компании</h3>
                 <ul class="footer-list">
                   <li class="footer-list__item">
-                    <a href="#!" class="footer-list__link">Расписание мастер-классов</a>
+                    <a href="#!" class="footer-list__link">Мастер-классы</a>
                   </li>
                   <li class="footer-list__item">
                     <a href="#!" class="footer-list__link">Новости</a>
@@ -1838,7 +1904,7 @@
               </div>
               <!-- / -->
             </div>
-            <!-- /.col-md-4 -->
+            <!-- /.col-md-5 -->
           </div>
           <!-- /.row -->
         </div>

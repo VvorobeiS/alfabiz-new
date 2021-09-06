@@ -43,30 +43,34 @@ $(document).ready(function () {
     loop: false,
     slidesPerView: 4,
     speed: 700,
-    spaceBetween: 25,
+    spaceBetween: 15,
 
-    // // Настройки адаптивной версии
-    // breakpoints: {
-    //   // если браузер >= 320px
-    //   320: {
-    //     slidesPerView: 1,
-    //   },
-    //   // если браузер >= 320px
-    //   577: {
-    //     slidesPerView: 2,
-    //   },
-    //   // если браузер >= 768px
-    //   769: {
-    //     slidesPerView: 3,
-    //   },
-    //   992: {
-    //     slidesPerView: 4,
-    //   },
-    //   // если браузер >= 1200px
-    //   1200: {
-    //     slidesPerView: 4,
-    //   },
-    // },
+    // Настройки адаптивной версии
+    breakpoints: {
+      // если браузер >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // если браузер >= 576px
+      480: {
+        slidesPerView: 2
+      },
+      576: {
+        slidesPerView: 2
+      },
+      // если браузер >= 768px
+      769: {
+        slidesPerView: 2
+      },
+      // если браузер >= 768px
+      992: {
+        slidesPerView: 3
+      },
+      // если браузер >= 1200px
+      1200: {
+        slidesPerView: 4
+      }
+    },
 
     // Navigation arrows
     navigation: {
@@ -91,30 +95,23 @@ $(document).ready(function () {
     loop: false,
     slidesPerView: 3,
     speed: 700,
-    spaceBetween: 30,
+    spaceBetween: 15,
 
-    // // Настройки адаптивной версии
-    // breakpoints: {
-    //   // если браузер >= 320px
-    //   320: {
-    //     slidesPerView: 1,
-    //   },
-    //   // если браузер >= 320px
-    //   577: {
-    //     slidesPerView: 2,
-    //   },
-    //   // если браузер >= 768px
-    //   769: {
-    //     slidesPerView: 3,
-    //   },
-    //   992: {
-    //     slidesPerView: 4,
-    //   },
-    //   // если браузер >= 1200px
-    //   1200: {
-    //     slidesPerView: 4,
-    //   },
-    // },
+    // Настройки адаптивной версии
+    breakpoints: {
+      // если браузер >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // если браузер >= 480px
+      550: {
+        slidesPerView: 2
+      },
+      // если браузер >= 850px
+      850: {
+        slidesPerView: 3
+      }
+    },
 
     // Navigation arrows
     navigation: {
