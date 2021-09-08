@@ -139,18 +139,18 @@ $(document).ready(function () {
 
   tabGoodsItem.on('click', function (event) {
     const contentActive = $(this).attr('data-target');
-    tabGoodsItem.removeClass('goods-slider__tabs-item--active');
+    tabGoodsItem.removeClass('tabs__item--active');
     tabGoodsContent.removeClass('goods-slider__container--active');
     $(contentActive).addClass('goods-slider__container--active');
-    $(this).addClass('goods-slider__tabs-item--active');
+    $(this).addClass('tabs__item--active');
   });
 
   tabEventsItem.on('click', function (event) {
     const contentActive = $(this).attr('data-target');
-    tabEventsItem.removeClass('events-tabs__item--active');
+    tabEventsItem.removeClass('tabs__item--active');
     tabEventsContent.removeClass('events__slider-container--active');
     $(contentActive).addClass('events__slider-container--active');
-    $(this).addClass('events-tabs__item--active');
+    $(this).addClass('tabs__item--active');
   });
 
   // Инициализируем сворачиваемый контент

@@ -1,12 +1,15 @@
 .header
-  position: fixed
-  top: 0
-  right: 0
-  left: 0
-  padding-top: 17px
-  padding-bottom: 17px
   background-color: $light-color
-  z-index: 100
+  &__container
+    padding-top: 10px
+    padding-bottom: 10px
+  &__logo
+    display: block
+    text-align: left
+    &-mobile
+      display: block
+      width: 45%
+      text-align: center
   &-city
     display: flex
     align-items: center
@@ -46,44 +49,46 @@
     +hover
       color: $light-color
       background-color: $blue-color
-  &-text
-    display: block
-    max-width: 208px
-    max-height: 58px
-    margin-left: 30px
-    font-family: $Montserrat
-    font-size: 13px
-    font-weight: 300
+.navbar
+  padding-top: 20px
+  padding-bottom: 20px
+  background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
+  &__btn
+    display: flex
+    align-items: center
+    padding: 10px 30px
+    font-family: $Open-Sans
+    font-size: 14px
+    font-weight: 600
     font-style: normal
     letter-spacing: $letter-spacing
-    line-height: 18px
-  &-contacts
-    &__adress
-      display: block
-      font-family: $Montserrat
+    color: $light-color
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+    background-size: 200% auto
+    box-shadow: 0 0 5px #eee
+    text-transform: uppercase
+    +hover
+      background-position: right center; /* change the direction of the change here */
+    &--mobile
+      width: 100%
+      padding: 10px
       font-size: 13px
-      font-weight: 300
-      font-style: normal
-      letter-spacing: $letter-spacing
-    &__tel
-      display: block
-      font-family: $Montserrat
-      font-size: 18px
-      font-weight: 500
-      font-style: normal
-      letter-spacing: $letter-spacing
-      color: inherit
-      text-decoration: none
-    &__mail
-      display: block
-      font-family: $Montserrat
-      font-size: 13px
-      font-weight: 400
-      font-style: normal
-      letter-spacing: $letter-spacing
-      color: inherit
-      text-decoration: none
-  &-toolbar
+      justify-content: center
+      align-items: center
+      text-align: center
+  &-menu
+    &__list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-link
+        @include link
+        color: $light-color
+        &:before
+          background-color: $light-color
+        +hover
+          color: $yellow-color
+  &-user
     display: flex
     justify-content: space-between
     align-items: center
@@ -96,39 +101,13 @@
       font-weight: 400
       font-style: normal
       letter-spacing: $letter-spacing
-      background-color: $light-color
-      color: $text-color
+      background-color: transparent
+      color: $light-color
       transition: $transition
       +hover
-        color: $primary-color
+        color: $yellow-color
       &--mobile
         font-size: 12px
-.nav
-  margin-left: 30px
-  &-list
-    display: flex
-    justify-content: space-between
-    align-items: center
-    list-style: none
-    &__link
-      @include link
-      font-family: $Open-Sans
-      font-size: 16px
-      font-weight: 600
-      font-style: normal
-      text-transform: uppercase
-      color: $blue-color
-      +hover
-        color: $primary-color
-        &:before
-          width: 0
-.logo
-  display: block
-  text-align: center
-  &-mobile
-    display: block
-    width: 45%
-    text-align: center
 .menu
   &-burger
     display: flex
