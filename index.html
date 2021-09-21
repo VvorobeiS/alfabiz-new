@@ -38,11 +38,11 @@
             <div
               class="col-md-3 col-lg-3 d-flex justify-content-between align-items-center"
             >
-            <button class="button header-callback">
-                <svg class="header__icon header-callback__icon" width="12" height="12" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
+              <button class="button header-user__btn">
+                <svg class="navbar-user__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
                 </svg>
-                Заказать звонок
+                Войти
               </button>
               <div class="header-city">
                 <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
@@ -165,12 +165,6 @@
             <div class="col-lg-2 navbar-user">
               <button class="button navbar-user__btn">
                 <svg class="navbar-user__icon" width="25" height="25" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
-                </svg>
-                Войти
-              </button>
-              <button class="button navbar-user__btn">
-                <svg class="navbar-user__icon" width="25" height="25" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
                 </svg>
                 Сравнить
@@ -191,10 +185,11 @@
       <!-- /.navbar -->
       </header>
       <!-- /.header -->     
-      <section class="main-slider">
-        <div class="container-fluid">
+      <section class="main">
+        <div class="container">
           <div class="row">
-            <div class="swiper-container main-slider__container">
+           <div class="col-8 main-slider">
+              <div class="swiper-container main-slider__container">
               <div class="swiper-wrapper main-slider__wrapper">
                 <div class="swiper-slide main-slider__slide">
                   <a href="#!" class="main-slider__link">
@@ -225,12 +220,27 @@
               </button>
             </div>
             <!-- /.swiper-container main-slider__container -->
+           </div>
+           <!-- /.col-8 -->
+             <form action="#!" class="col-4 main-callback__form form-callback">
+              <h3 class="form-callback__title">Заказ обратного звонка</h3>
+              <input type="text" class="form-callback__input" placeholder="ФИО">
+              <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__">
+              <input type="email" class="form-callback__input" placeholder="email">
+              <button class="button form-callback__btn">
+                <svg class="form-callback__icon" width="12" height="12" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
+                </svg>
+                Заказать звонок
+              </button>
+             </form>
+           <!-- /.col-4 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.main-slider -->
+      <!-- /.main -->
       <section class="advantages">
         <div class="container-md container-xl">
           <div class="row d-none d-md-block mb-3">
@@ -1886,7 +1896,7 @@
         <!-- /.container -->
       </footer>
       <!-- /.footer -->
-      <div class="popup">
+      <div class="popup d-none">
         <div class="container-fluid popup-catalog">
           <div class="row align-items-center mb-4">
             <div class="col-3">

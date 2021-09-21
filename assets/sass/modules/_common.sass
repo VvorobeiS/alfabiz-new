@@ -19,6 +19,8 @@
   position: relative
 .row--mb-5
   margin-bottom: 5rem
+input
+  @include input-text
 .contacts
   &__adress
     display: block
@@ -95,11 +97,6 @@
       height: 100%
       padding-left: 23px
       padding-right: 75px
-      font-family: $Montserrat
-      font-size: 13px
-      font-weight: 300
-      font-style: normal
-      letter-spacing: $letter-spacing
       color: inherit
       background-color: $light-color
       border: none
@@ -116,6 +113,43 @@
       border-radius: 0
       +hover
         background-position: right center; /* change the direction of the change here */
+  &-callback
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    padding: 0 70px
+    background: linear-gradient( 99.6deg, rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% )
+    border: 1px solid $blue-color
+    border-radius: $border-radius
+    &__title
+      text-align: center
+    &__input
+      width: 100%
+      height: 35px
+      padding: 0 15px
+      border: none
+      border: 1px solid $blue-color
+      border-radius: $border-radius
+    &__btn
+      display: flex
+      align-items: center
+      margin: 0 auto
+      padding: 5px 10px
+      font-family: $Montserrat
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      background-color: $light-color
+      color: $blue-color
+      border: 1px solid $blue-color
+      transition: $transition
+      +hover
+        color: $light-color
+        background-color: $blue-color
+    &__icon
+      margin-right: 5px
 // .test
 //   background-image: url(../images/svg/bold-arrows.svg)
 //   background-position: bottom
