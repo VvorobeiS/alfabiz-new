@@ -150,6 +150,22 @@ input
         background-color: $blue-color
     &__icon
       margin-right: 5px
+.popup
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(18, 64, 149, 0.4 )
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+
 // .test
 //   background-image: url(../images/svg/bold-arrows.svg)
 //   background-position: bottom
