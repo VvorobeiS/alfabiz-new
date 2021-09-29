@@ -6,10 +6,12 @@
   &__logo
     display: block
     text-align: left
-    &-mobile
+    &--mobile
       display: block
-      width: 45%
+      width: 43px
       text-align: center
+      &>img
+        display: block
   &-city
     display: flex
     align-items: center
@@ -31,63 +33,6 @@
       color: $primary-color
       &--mr-5
         margin-right: 5px
-  &__user
-    &-btn
-      display: flex
-      align-items: flex-end
-      font-family: $Montserrat
-      font-size: 13px
-      font-weight: 400
-      font-style: normal
-      letter-spacing: $letter-spacing
-      background-color: transparent
-      color: inherit
-      transition: $transition
-      +hover
-        color: $yellow-color
-    &-icon
-      margin-right: 5px
-.navbar
-  position: relative
-  padding-top: 20px
-  padding-bottom: 20px
-  background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
-  &__catalog-btn
-    display: flex
-    align-items: center
-    padding: 10px 30px
-    font-family: $Open-Sans
-    font-size: 14px
-    font-weight: 600
-    font-style: normal
-    letter-spacing: $letter-spacing
-    color: $light-color
-    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
-    background-size: 200% auto
-    box-shadow: 0 0 5px #eee
-    text-transform: uppercase
-    z-index: 101
-    +hover
-      background-position: right center; /* change the direction of the change here */
-    &--mobile
-      width: 100%
-      padding: 10px
-      font-size: 13px
-      justify-content: center
-      align-items: center
-      text-align: center
-  &-menu
-    &__list
-      display: flex
-      justify-content: space-between
-      align-items: center
-      &-link
-        @include link
-        color: $light-color
-        &:before
-          background-color: $light-color
-        +hover
-          color: $yellow-color
   &__btn
     display: flex
     flex-direction: column
@@ -102,8 +47,36 @@
     transition: $transition
     +hover
       color: $yellow-color
-      &--mobile
-        font-size: 12px
+    &--mobile
+      font-size: 12px
+      color: $text-color
+    &--user
+      flex-direction: row
+      align-items: flex-end
+      font-size: 14px
+      color: inherit
+      +hover
+        color: $primary-color
+    &-icon
+      &--user
+        margin-right: 5px
+.navbar
+  position: relative
+  padding-top: 20px
+  padding-bottom: 20px
+  background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
+  &-menu
+    &__list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-link
+        @include link
+        color: $light-color
+        &:before
+          background-color: $light-color
+        +hover
+          color: $yellow-color
   &-catalog
     position: absolute
     top: 85px
@@ -171,23 +144,3 @@
         text-decoration: none
         color: inherit
         transition: $transition
-.menu
-  &-burger
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    width: 40px
-    height: 40px
-    padding-left: 8px
-    padding-right: 8px
-    background-color: $blue-color
-    border-radius: 50%
-    &__line
-      display: block
-      width: 100%
-      height: 3px
-      background-color: $light-color
-      border-radius: $border-radius
-      &:not(:last-child)
-        margin-bottom: 3px
