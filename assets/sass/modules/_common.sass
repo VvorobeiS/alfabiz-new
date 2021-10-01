@@ -48,7 +48,7 @@
 .row--mb-5
   margin-bottom: 5rem
 input
-  @include input-text
+  @include input
 .contacts
   &__adress
     display: block
@@ -177,6 +177,47 @@ input
         background-color: $blue-color
     &__icon
       margin-right: 5px
+  &-user
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &__input
+      height: 45px
+      margin-bottom: 15px
+      padding-left: 15px
+      font-size: 14px
+      border-radius: $border-radius
+      border: 1px solid $blue-color
+      &:focus
+        box-shadow: 0px 0px 10px 5px rgba(18, 64, 149, 0.2)
+    &__checkbox
+      margin-bottom: 15px
+      font-family: $Montserrat
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      color: inherit
+    &__buttons
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__btn
+      padding: 10px 30px
+      font-family: $Open-Sans
+      font-size: 14px
+      font-weight: 600
+      font-style: normal
+      letter-spacing: $letter-spacing
+      color: $light-color
+      background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+      background-size: 200% auto
+      box-shadow: 0 0 5px #eee
+      text-transform: uppercase
+      +hover
+        background-position: right center; /* change the direction of the change here */
+      &--registration
+        background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
 .menu
   &-burger
     display: flex
@@ -203,6 +244,20 @@ input
         background-color: $primary-color
       &--blue
         background-color: $blue-color
+.modal
+  &-close
+    position: absolute
+    top: 10px
+    right: 10px
+    display: flex
+    justify-content: center
+    align-content: center
+    padding: 5px
+    background: transparent
+    color: inherit
+    z-index: 100
+    +hover
+      transform: rotate(180deg)
 .overlay
   position: fixed
   top: 0
@@ -213,10 +268,32 @@ input
   z-index: 100
   visibility: hidden
   opacity: 0
-  transition: 0.3s
+  transition: $transition
   &--visible
     visibility: visible
     opacity: 1
+.dropdown
+  &-menu
+    &__link
+      position: relative
+      display: block
+      padding: 5px 10px
+      font-family: $Montserrat
+      font-weight: 500
+      font-size: 14px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      text-decoration: none
+      color: $text-color
+      transition: $transition
+      +hover
+        background-color: #e9ecef
+      &--active
+        background-color: $primary-color
+        color: $light-color
+.overflow
+  &--hidden
+    overflow: hidden
 
 // .test
 //   background-image: url(../images/svg/bold-arrows.svg)

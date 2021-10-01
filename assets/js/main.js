@@ -160,5 +160,14 @@ $(document).ready(function () {
     seoDescription.classList.toggle('seo-description--visible');
   });
 
-  AOS.init();
+  // Инициализируем кноаку Каталог
+  const btnCatalog = document.querySelector('[data-toggle=catalog]'),
+    body = document.querySelector('body'),
+    overlay = document.querySelector('.overlay'),
+    navbarCatalog = document.querySelector('.navbar-catalog');
+  btnCatalog.addEventListener('click', () => {
+    body.classList.toggle('overflow--hidden');
+    overlay.classList.toggle('overlay--visible');
+    navbarCatalog.classList.toggle('navbar-catalog--visible');
+  });
 });

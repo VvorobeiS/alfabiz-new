@@ -12,7 +12,19 @@
   &--h2
     font-size: 28px
     text-shadow: 1px 1px 2px $blue-color
-
+  &--modal
+    position: relative
+    font-size: 18px
+    margin-bottom: 30px
+    &:before
+      content: ""
+      position: absolute
+      bottom: -6px
+      left: 0
+      width: 60px
+      height: 3px
+      background-color: $primary-color
+      border-radius: $border-radius
 @mixin link
   position: relative
   font-family: $Montserrat
@@ -69,10 +81,11 @@
       &:before
         width: 0
 
-@mixin input-text
+@mixin input
   font-family: $Montserrat
   font-size: 13px
-  font-weight: 300
+  font-weight: 400
   font-style: normal
   letter-spacing: $letter-spacing
   outline: none
+  color: inherit
