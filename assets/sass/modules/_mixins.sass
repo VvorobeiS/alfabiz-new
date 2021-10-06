@@ -2,16 +2,17 @@
   @media (min-width: 992px)
     &:not([disabled]):hover
       @content
-
 @mixin title
   font-family: $Open-Sans
   font-style: normal
   font-weight: 700
   letter-spacing: $letter-spacing
   color: inherit
+  text-shadow: 1px 1px 2px $blue-color
   &--h2
     font-size: 28px
-    text-shadow: 1px 1px 2px $blue-color
+  &--h3
+    font-size: 16px
   &--modal
     position: relative
     font-size: 18px

@@ -1,0 +1,20 @@
+.breadcrumb
+  padding-top: 15px
+  padding-bottom: 15px
+  &-list
+    display: flex
+    align-items: center
+    &__item
+      &:not(:last-child)
+        &:after
+          content: '/'
+          margin-right: 4px
+    &__link
+      font-family: $Montserrat
+      font-weight: 500
+      font-size: 12px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      text-decoration: none
+      color: inherit
+      transition: $transition
