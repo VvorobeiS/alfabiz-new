@@ -1,0 +1,244 @@
+.goods
+  padding-bottom: 50px
+  &>.container>.row>.offset-lg-3>.d-flex
+    padding: 10px 15px
+    background-color: $light-color
+    box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
+    border-radius: $border-radius
+    overflow: hidden
+  &-sorting
+    display: flex
+    align-items: center
+    justify-content: start
+    &__title
+      margin-right: 10px
+      font-family: $Open-Sans
+      font-size: 14px
+      font-weight: 600
+      font-style: normal
+      letter-spacing: $letter-spacing
+    &__select
+      padding: 2px 5px
+      font-family: $Montserrat
+      font-size: 12px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      color: inherit
+      border: none
+      border: 1px solid $blue-color
+      outline: none
+      border-radius: 3px
+      cursor: pointer
+  &-view
+    display: flex
+    align-items: center
+    justify-content: end
+    &__btn
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: transparent
+      padding: 5px
+      color: inherit
+      +hover
+        background-color: $blue-color
+        color: $light-color
+      &--active
+        background-color: $blue-color
+        color: $light-color
+  &-filters
+    padding: 15px 15px
+    background-color: $light-color
+    box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
+    border-radius: $border-radius
+    overflow: hidden
+    &__list
+      margin-bottom: 30px
+      &-item
+        display: flex
+        flex-direction: column
+      &-title
+        font-family: $Open-Sans
+        font-size: 18px
+        font-weight: 600
+        font-style: normal
+        letter-spacing: $letter-spacing
+        color: $text-color
+      &-label
+        display: flex
+        justify-content: start
+        align-items: center
+        padding: 5px 0
+        cursor: pointer
+        &:not(.goods-filters__list-label--slider)
+          +hover
+            background: rgba(0,0,0,0.05)
+        &--slider
+          justify-content-between
+          width: 133px
+          height: 40px
+          padding: 0 10px
+          margin-bottom: 0
+          border: 1px solid $blue-color
+          border-radius: $border-radius
+          overflow: hidden
+      &-input
+        &--slider
+          width: 100%
+          height: 100%
+          padding: 0 10px
+          border: none
+        &--pointer
+          cursor: pointer
+      &-text
+        font-family: $Montserrat
+        font-size: 13px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: $letter-spacing
+        outline: none
+        color: inherit
+      &-slider
+        margin: 15px 0
+      &-btn
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 15px
+        padding-bottom: 15px
+        border-top: 1px solid rgba(117, 117, 117, 0.2)
+        background-color: transparent
+        cursor: pointer
+        border-radius: 0px
+        +hover
+          background: rgba(0,0,0,0.05)
+      &-icon
+        color: $text-color
+        transition: $transition
+        transform: rotate(0deg)
+        pointer-events: none
+        &--active
+          transform: rotate(180deg)
+    &__btn
+      display: block
+      font-family: $Open-Sans
+      font-size: 14px
+      font-weight: 600
+      font-style: normal
+      letter-spacing: $letter-spacing
+      width: 100%
+      padding: 11px 0
+      text-align: center
+      border-radius: $border-radius
+      &--show
+        @include btn-blue
+        margin-bottom: 10px
+      &--reset
+        @include btn-red
+  &-cards
+    &__item
+      display: flex
+      justify-content: space-between
+      align-items: start
+      padding: 15px
+      background-color: $light-color
+      box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
+      border-radius: $border-radius
+      overflow: hidden
+      &:not(:last-child)
+        margin-bottom: 20px
+      &-link
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        transition: $transition
+        &--img
+          flex-shrink: 0
+          width: 200px
+          height: 200px
+          margin-right: 10px
+      &-img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: initial
+      &-title
+        max-width: 250px
+        font-family: $Montserrat
+        font-size: 18px
+        font-weight: 500
+        font-style: normal
+        letter-spacing: $letter-spacing
+        color: $blue-color
+      &-info
+        font-family: $Montserrat
+        font-size: 13px
+        font-weight: 500
+        font-style: normal
+        letter-spacing: $letter-spacing
+        outline: none
+        color: inherit
+        &:not(:last-child)
+          margin-bottom: 5px
+        &--data
+          color: $blue-color
+        &--atribbute
+          font-weight: 400
+      &-input
+        @include input
+        width: 40px
+        height: 40px
+        padding: 0 8px
+        text-align: center
+        border: 1px solid $blue-color
+        border-radius: 3px
+        overflow: hidden
+      &-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        padding: 10px 0
+        font-family: $Open-Sans
+        font-size: 14px
+        font-weight: 600
+        font-style: normal
+        letter-spacing: $letter-spacing
+        padding: 11px 0
+        text-align: center
+        border-radius: $border-radius
+        text-transform: uppercase
+        @include btn-blue
+        &--cart
+          @include btn-red
+          margin-left: 10px
+          padding: 10px 15px
+      &-icon
+        margin-right: 5px
+.noUi
+  &-connect
+    background-color: $blue-color
+  &-target
+    background-color: rgba(117, 117, 117, 0.2)
+    border: none
+    box-shadow: none
+    height: 5px
+  &-handle
+    border: none
+    border-radius: 50%
+    background-color: $blue-color
+    box-shadow: none
+    &:before, &:after
+      display: none
+.noUi-horizontal .noUi-handle
+  width: 20px
+  height: 20px
+  top: -7px
+.noUi-horizontal .noUi-handle-lower
+  right: -4px
+// .noUi-horizontal .noUi-handle-upper
+//   padding: 0 16px
+#range-slider
+  padding: 0 16px

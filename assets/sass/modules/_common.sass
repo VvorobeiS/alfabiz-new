@@ -36,6 +36,19 @@
       align-items: center
       text-align: center
       border-radius: 0
+  &--close
+    position: absolute
+    top: 10px
+    right: 10px
+    display: flex
+    justify-content: center
+    align-content: center
+    padding: 5px
+    background: transparent
+    color: inherit
+    z-index: 100
+    +hover
+      transform: rotate(180deg)
 .tabs
   @include tab
 .line
@@ -47,7 +60,7 @@
   position: relative
 .row--mb-5
   margin-bottom: 5rem
-input
+input, .input
   @include input
 .contacts
   &__adress
@@ -85,6 +98,42 @@ input
   font-style: normal
   letter-spacing: $letter-spacing
   line-height: 18px
+.cost
+  display: block
+  font-family: $Montserrat
+  font-size: 18px
+  font-weight: 500
+  font-style: normal
+  letter-spacing: $letter-spacing
+  flex-shrink: 0
+  &--primary
+    color: $primary-color
+  &--old
+    display: block
+    font-family: $Montserrat
+    font-size: 14px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: $letter-spacing
+    text-decoration: line-through
+.availability
+  display: flex
+  justify-content: center
+  align-items: center
+  font-family: $Open-Sans
+  font-size: 13px
+  font-weight: 600
+  font-style: normal
+  letter-spacing: $letter-spacing
+  text-align: center
+  border-radius: $border-radius
+  overflow: hidden
+  &--success
+    color: #5cb85c
+  &--warning
+    color: #f0ad4e
+  &--danger
+    color: #d9534f
 .vendor-code
   position: absolute
   top: 20px
@@ -210,9 +259,7 @@ input
       font-style: normal
       letter-spacing: $letter-spacing
       color: $light-color
-      background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
-      background-size: 200% auto
-      box-shadow: 0 0 5px #eee
+      @include btn-red
       text-transform: uppercase
       +hover
         background-position: right center; /* change the direction of the change here */
@@ -244,20 +291,6 @@ input
         background-color: $primary-color
       &--blue
         background-color: $blue-color
-.modal
-  &-close
-    position: absolute
-    top: 10px
-    right: 10px
-    display: flex
-    justify-content: center
-    align-content: center
-    padding: 5px
-    background: transparent
-    color: inherit
-    z-index: 100
-    +hover
-      transform: rotate(180deg)
 .overlay
   position: fixed
   top: 0

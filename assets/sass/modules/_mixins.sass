@@ -90,3 +90,19 @@
   letter-spacing: $letter-spacing
   outline: none
   color: inherit
+
+@mixin btn-red
+  color: $light-color
+  background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+  background-size: 200% auto
+  box-shadow: 0 0 5px #eee
+  +hover
+    background-position: right center; /* change the direction of the change here */
+
+@mixin btn-blue
+  color: $light-color
+  background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
+  background-size: 200% auto
+  box-shadow: 0 0 5px #eee
+  +hover
+    background-position: right center; /* change the direction of the change here */

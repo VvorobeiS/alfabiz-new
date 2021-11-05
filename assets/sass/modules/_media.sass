@@ -1,10 +1,31 @@
 @media (max-width: 1399px)
+  .cost
+    font-size: 16px
   .news
     &-item
       &__info
         height: 282px
+  .goods
+    &-filters
+      &__list
+        &-title
+          font-size: 16px
+        &-label
+          &--slider
+            width: 110px
+        &-input
+          &--slider
+            font-size: 12px
+        &-text
+          font-size: 12px
+    &-cards
+      &__item
+        &-title
+          font-size: 16px
 
 @media ( max-width: 1199px )
+  .availability
+    font-size: 12px
   .title
     &--h2
       font-size: 26px
@@ -31,6 +52,35 @@
       &__link
         font-size: 13px
         padding: 0 7px
+  .goods
+    &-filters
+      &__list
+        &-title
+          font-size: 14px
+        &-label
+          &--slider
+            width: 90px
+            padding: 0 5px
+        &-input
+          &--slider
+            padding: 0 5px
+        &__btn
+          font-size: 13px
+    &-cards
+      &__item
+        &-link
+          &--img
+            width: 170px
+            height: 170px
+        &-title
+          max-width: 200px
+          font-size: 14px
+        &-info
+          font-size: 12px
+        &-btn
+          font-size: 13px
+          &--cart
+            padding: 10px 10px
   .brands
     &-list
       &__item
@@ -114,6 +164,10 @@
           margin-bottom: 20px
       &__icon
         margin-bottom: 10px
+  .goods
+    &-sorting
+      &__title
+        font-size: 13px
   .brands
     &-list
       &__item
@@ -188,14 +242,22 @@
         flex-basis: 33.3%
       &__icon
         width: 70px
-  .goods-slider
-    &__tabs
-      max-width: 100%
-      &-item
-        font-size: 16px
-    &__good
-      &-link
-        font-size: 14px
+  .goods
+    &-slider
+      &__tabs
+        max-width: 100%
+        &-item
+          font-size: 16px
+      &__good
+        &-link
+          font-size: 14px
+    &-cards
+      &__item
+        &-btn
+          &--cart
+            margin-left: 0
+        &-icon
+          margin-right: 0
   .events
     &-tabs
       max-width: 85%
@@ -236,6 +298,8 @@
       margin-bottom: 0
       &__link
         height: 160px
+  .banner
+    display: none
   .footer
     &__logo
       margin-bottom: 0
@@ -267,24 +331,40 @@
   .menu-burger
     width: 36px
     height: 36px
-  .goods-slider
-    padding-top: 25px
-    padding-bottom: 100px
-    &__tabs
-      justify-content: space-around
-    &__img
-      width: 150px
-    &__good
-      &-link
-        font-size: 13px
-    &__btn
-      top: 105%
-      &--prev
-        left: 40%
-        transform: translateX(-50%)
-      &--next
-        right: 40%
-        transform: translateX(50%)
+  .availability
+    display: none
+  .goods
+    &-slider
+      padding-top: 25px
+      padding-bottom: 100px
+      &__tabs
+        justify-content: space-around
+      &__img
+        width: 150px
+      &__good
+        &-link
+          font-size: 13px
+      &__btn
+        top: 105%
+        &--prev
+          left: 40%
+          transform: translateX(-50%)
+        &--next
+          right: 40%
+          transform: translateX(50%)
+    &-cards
+      &__item
+        flex-wrap: wrap
+        &-link
+          &--img
+            width: 140px
+            height: 140px
+        &-title
+          max-width: 100%
+        &-btn
+          width: initial
+          padding: 10px 10px
+          margin-left: 10px
   .events
     height: 630px
     &-tabs
@@ -363,6 +443,22 @@
       &__item
         flex-basis: 50%
       &__link
+  .goods
+    &-sorting
+      &__title
+        display: none
+      &__select
+        font-size: 11px
+    &-cards
+      &__item
+        &-link
+          &--img
+            width: 120px
+            height: 120px
+        &-title
+          font-size: 13px
+        &-info
+          font-size: 11px
   .events
     height: 620px
     &-tabs

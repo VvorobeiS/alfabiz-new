@@ -297,12 +297,18 @@
               <li class="breadcrumb-list__item">
                 <a href="#!" class="breadcrumb-list__link">Каталог</a>
               </li>
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__link">Тепловое оборудование</a>
+              </li>
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__link">Пароконвектоматы</a>
+              </li>
             </ul>
           </div>
           <!-- /.row -->
           <div class="row">
             <div class="col-12">
-              <h2 class="title title--h2">Каталог</h2>
+              <h2 class="title title--h2">Пароконвектоматы</h2>
             </div>
             <!-- /.col-12 -->
           </div>
@@ -326,122 +332,628 @@
         <!-- /.container -->
       </div>
       <!-- /.banner -->
-      <section class="categories">
+      <div class="goods">
         <div class="container">
-          <ul class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 gy-3 categories-list">
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category.jpg" alt="" class="categories-list__img" />
+          <div class="row mb-3">
+            <div class="col-12 col-lg-9 offset-lg-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="goods-sorting">
+                  <h3 class="goods-sorting__title">Сортировка:</h3>
+                  <select action="#!" class="goods-sorting__select">
+                    <option selected>Цена во возрастанию</option>
+                    <option value="1">Цена по уменьшению</option>
+                    <option value="2">По наименованию</option>
+                  </select>
                 </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Барное и кофейное оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-2.jpg" alt="" class="categories-list__img" />
+                <!-- /.goods-sorting -->
+                <div class="goods-view">
+                  <button
+                    class="button goods-view__btn d-flex d-lg-none"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                  >
+                    <svg class="goods-view__icon" width="20" height="20" fill="currentColor">
+                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#funnel-fill" />
+                    </svg>
+                  </button>
+                  <button class="button goods-view__btn goods-view__btn--active">
+                    <svg class="goods-view__icon" width="20" height="20" fill="currentColor">
+                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#card-list" />
+                    </svg>
+                  </button>
+                  <button class="button goods-view__btn">
+                    <svg class="goods-view__icon" width="20" height="20" fill="currentColor">
+                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#table" />
+                    </svg>
+                  </button>
                 </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Весовое оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-3.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Моечное оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-4.png" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Нейтральное оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-5.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Оборудование для раздачи готовых блюд</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-6.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Посуда и инвентарь</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-7.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Санитарно-гигиеническое оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-8.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Тепловое оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-9.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Упаковочное оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-10.jpg" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Холодильное оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-11.png" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Электромеханическое оборудование</h3>
-              </a>
-            </li>
-            <li class="col categories-list__item">
-              <a href="" class="categories-list__link">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/images/categories/category-12.png" alt="" class="categories-list__img" />
-                </div>
-                <!-- /.d-flex -->
-                <h3 class="categories-list__title">Униформа и одежда для персонала</h3>
-              </a>
-            </li>
-          </ul>
+                <!-- /.goods-view -->
+              </div>
+              <!-- /.d-flex justify-content-betwee align-items-center -->
+            </div>
+            <!-- /.col-9 offset-3 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="d-none d-lg-block col-3">
+              <div class="goods-filters">
+                <ul class="goods-filters__list">
+                  <li class="goods-filters__list-item">
+                    <h3 class="goods-filters__list-title mb-2">Цена</h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                        <input
+                          type="number"
+                          min="0"
+                          max="1000000"
+                          class="goods-filters__list-input goods-filters__list-input--slider"
+                          data-input="input-from"
+                        />
+                        <span class="goods-filters__list-text">₽</span>
+                      </label>
+                      <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                        <input
+                          type="number"
+                          min="0"
+                          max="1000000"
+                          class="goods-filters__list-input goods-filters__list-input--slider"
+                          data-input="input-to"
+                        />
+                        <span class="goods-filters__list-text">₽</span>
+                      </label>
+                    </div>
+                    <!-- ./d-flex .justify-content-between .align-items-center -->
+                    <div class="goods-filters__list-slider" id="range-slider"></div>
+                    <!-- /.goods-filters__list-range -->
+                  </li>
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-1"
+                    >
+                      <h3 class="goods-filters__list-title">Производитель</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-1">
+                      <label for="filter-1_Check-1" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-1_Check-1"
+                        />
+                        <span class="goods-filters__list-text">Abat</span>
+                      </label>
+                      <label for="filter-1_Check-2" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-1_Check-2"
+                        />
+                        <span class="goods-filters__list-text">Rational</span>
+                      </label>
+                      <label for="filter-1_Check-3" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-1_Check-3"
+                        />
+                        <span class="goods-filters__list-text">Retigo</span>
+                      </label>
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-2"
+                    >
+                      <h3 class="goods-filters__list-title">Страна изготовитель</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-2">
+                      <label for="filter-2_Check-1" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-2_Check-1"
+                        />
+                        <span class="goods-filters__list-text">Германия</span>
+                      </label>
+                      <label for="filter-2_Check-2" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-2_Check-2"
+                        />
+                        <span class="goods-filters__list-text">Италия</span>
+                      </label>
+                      <label for="filter-2_Check-3" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-2_Check-3"
+                        />
+                        <span class="goods-filters__list-text">Россия</span>
+                      </label>
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-3"
+                    >
+                      <h3 class="goods-filters__list-title">Мощность</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-3">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                          <input
+                            type="number"
+                            min="0"
+                            max="100"
+                            class="goods-filters__list-input goods-filters__list-input--slider"
+                            data-input="input-from"
+                          />
+                          <span class="goods-filters__list-text">кВт</span>
+                        </label>
+                        <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                          <input
+                            type="number"
+                            min="0"
+                            max="100"
+                            class="goods-filters__list-input goods-filters__list-input--slider"
+                            data-input="input-to"
+                          />
+                          <span class="goods-filters__list-text">кВт</span>
+                        </label>
+                      </div>
+                      <!-- ./.goods-filters__list-wrapper .d-flex .justify-content-between .align-items-center -->
+                      <div class="goods-filters__list-slider" id="range-slider"></div>
+                      <!-- /.goods-filters__list-range -->
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-4"
+                    >
+                      <h3 class="goods-filters__list-title">Напряжение</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-4">
+                      <label for="filter-3_Check-1" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-3_Check-1"
+                        />
+                        <span class="goods-filters__list-text">220 В</span>
+                      </label>
+                      <label for="filter-3_Check-2" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-3_Check-2"
+                        />
+                        <span class="goods-filters__list-text">380 В</span>
+                      </label>
+                      <label for="filter-3_Check-3" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-3_Check-3"
+                        />
+                        <span class="goods-filters__list-text">Газ</span>
+                      </label>
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-5"
+                    >
+                      <h3 class="goods-filters__list-title">Материал</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-5">
+                      <label for="filter-4_Check-1" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-4_Check-1"
+                        />
+                        <span class="goods-filters__list-text">Нержавеющая сталь</span>
+                      </label>
+                      <label for="filter-4_Check-2" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-4_Check-2"
+                        />
+                        <span class="goods-filters__list-text">Оцинкованная сталь</span>
+                      </label>
+                      <label for="filter-4_Check-3" class="goods-filters__list-label">
+                        <input
+                          type="checkbox"
+                          class="goods-filters__list-input goods-filters__list-input--pointer"
+                          id="filter-4_Check-3"
+                        />
+                        <span class="goods-filters__list-text">Аллюминий</span>
+                      </label>
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+
+                  <li class="goods-filters__list-item">
+                    <button
+                      class="button goods-filters__list-btn"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse-6"
+                    >
+                      <h3 class="goods-filters__list-title">Вес</h3>
+                      <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                      </svg>
+                    </button>
+                    <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-6">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                          <input
+                            type="number"
+                            min="0"
+                            max="100"
+                            class="goods-filters__list-input goods-filters__list-input--slider"
+                            data-input="input-from"
+                          />
+                          <span class="goods-filters__list-text">кг</span>
+                        </label>
+                        <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                          <input
+                            type="number"
+                            min="0"
+                            max="100"
+                            class="goods-filters__list-input goods-filters__list-input--slider"
+                            data-input="input-to"
+                          />
+                          <span class="goods-filters__list-text">кг</span>
+                        </label>
+                      </div>
+                      <!-- ./d-flex .justify-content-between .align-items-center -->
+                      <div class="goods-filters__list-slider" id="range-slider"></div>
+                      <!-- /.goods-filters__list-range -->
+                    </div>
+                    <!-- /.goods-filters__list-wrapper -->
+                  </li>
+                </ul>
+                <button class="button goods-filters__btn goods-filters__btn--show">Показать</button>
+                <button class="button goods-filters__btn goods-filters__btn--reset">Сбросить</button>
+              </div>
+              <!-- /.goods-filters -->
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-12 col-lg-9">
+              <ul class="goods-cards">
+                <li class="goods-cards__item">
+                  <div class="d-flex justify-content-start align-items-start mb-2 mb-sm-0">
+                    <a href="#!" class="goods-cards__item-link goods-cards__item-link--img">
+                    <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="goods-cards__item-img" />
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                    <a href="#!" class="goods-cards__item-link mb-2">
+                      <h3 class="goods-cards__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                    </a>
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Артикул:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute">B5473</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Бренд: <span class="goods-cards__item-info goods-cards__item-info--atribbute">Retigo</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Страна:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute"
+                        >Чешская республика</span
+                      ></span
+                    >
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start -->
+                  </div>
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="d-flex d-none d-md-block">
+                    <span class="cost">324 065 ₽</span>
+                  </div>
+                  <!-- /.d-flex !wrapper for cost-->
+                  <div class="d-none d-md-flex flex-column align-items-end">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <input type="number" class="goods-cards__item-input" value="1" />
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-cards__item-btn mb-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div class="d-flex d-md-none flex-sm-column flex-grow-1 flex-sm-grow-0 justify-content-end align-items-center">
+                    <span class="cost d-md-none mb-sm-2">324 065 ₽</span>
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart mb-sm-2">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                    <button class="button goods-cards__item-btn mb-sm-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+                <li class="goods-cards__item">
+                  <div class="d-flex justify-content-start align-items-start mb-2 mb-sm-0">
+                    <a href="#!" class="goods-cards__item-link goods-cards__item-link--img">
+                    <img src="./assets/images/goods/good-2.png" alt="Изображение товара" class="goods-cards__item-img" />
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                    <a href="#!" class="goods-cards__item-link mb-2">
+                      <h3 class="goods-cards__item-title">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</h3>
+                    </a>
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Артикул:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute">215189</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Бренд: <span class="goods-cards__item-info goods-cards__item-info--atribbute">Rational</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Страна:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute"
+                        >Германия</span
+                      ></span
+                    >
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start -->
+                  </div>
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="d-none d-md-flex flex-column">
+                    <span class="cost cost--primary">1 131 861 ₽</span>
+                  <span class="cost cost--old">1 200 000 ₽</span>
+                  </div>
+                  <!-- /.d-flex !wrapper for cost-->
+                  <div class="d-none d-md-flex flex-column align-items-end">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <input type="number" class="goods-cards__item-input" value="1" />
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-cards__item-btn mb-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div class="d-flex d-md-none flex-sm-column flex-grow-1 flex-sm-grow-0 justify-content-end align-items-center">
+                     <div class="d-flex d-md-none flex-column mb-sm-2">
+                    <span class="cost cost--primary">1 131 861 ₽</span>
+                  <span class="cost cost--old">1 200 000 ₽</span>
+                  </div>
+                  <!-- /.d-flex -->
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart mb-sm-2">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                    <button class="button goods-cards__item-btn mb-sm-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+                <li class="goods-cards__item">
+                  <div class="d-flex justify-content-start align-items-start mb-2 mb-sm-0">
+                    <a href="#!" class="goods-cards__item-link goods-cards__item-link--img">
+                    <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="goods-cards__item-img" />
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                    <a href="#!" class="goods-cards__item-link mb-2">
+                      <h3 class="goods-cards__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                    </a>
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Артикул:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute">B5473</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Бренд: <span class="goods-cards__item-info goods-cards__item-info--atribbute">Retigo</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Страна:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute"
+                        >Чешская республика</span
+                      ></span
+                    >
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start -->
+                  </div>
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="d-flex d-none d-md-block">
+                    <span class="cost">324 065 ₽</span>
+                  </div>
+                  <!-- /.d-flex !wrapper for cost-->
+                  <div class="d-none d-md-flex flex-column align-items-end">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <input type="number" class="goods-cards__item-input" value="1" />
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-cards__item-btn mb-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div class="d-flex d-md-none flex-sm-column flex-grow-1 flex-sm-grow-0 justify-content-end align-items-center">
+                    <span class="cost d-md-none mb-sm-2">324 065 ₽</span>
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart mb-sm-2">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                    <button class="button goods-cards__item-btn mb-sm-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+                <li class="goods-cards__item">
+                  <div class="d-flex justify-content-start align-items-start mb-2 mb-sm-0">
+                    <a href="#!" class="goods-cards__item-link goods-cards__item-link--img">
+                    <img src="./assets/images/goods/good-2.png" alt="Изображение товара" class="goods-cards__item-img" />
+                  </a>
+                  <div class="d-flex flex-column align-items-start">
+                    <a href="#!" class="goods-cards__item-link mb-2">
+                      <h3 class="goods-cards__item-title">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</h3>
+                    </a>
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Артикул:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute">215189</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Бренд: <span class="goods-cards__item-info goods-cards__item-info--atribbute">Rational</span></span
+                    >
+                    <span class="goods-cards__item-info goods-cards__item-info--data"
+                      >Страна:
+                      <span class="goods-cards__item-info goods-cards__item-info--atribbute"
+                        >Германия</span
+                      ></span
+                    >
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start -->
+                  </div>
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="d-none d-md-flex flex-column">
+                    <span class="cost cost--primary">1 131 861 ₽</span>
+                  <span class="cost cost--old">1 200 000 ₽</span>
+                  </div>
+                  <!-- /.d-flex !wrapper for cost-->
+                  <div class="d-none d-md-flex flex-column align-items-end">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <input type="number" class="goods-cards__item-input" value="1" />
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-cards__item-btn mb-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div class="d-flex d-md-none flex-sm-column flex-grow-1 flex-sm-grow-0 justify-content-end align-items-center">
+                     <div class="d-flex d-md-none flex-column mb-sm-2">
+                    <span class="cost cost--primary">1 131 861 ₽</span>
+                  <span class="cost cost--old">1 200 000 ₽</span>
+                  </div>
+                  <!-- /.d-flex -->
+                      <button class="button goods-cards__item-btn goods-cards__item-btn--cart mb-sm-2">
+                        <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                    <button class="button goods-cards__item-btn mb-sm-2">
+                      <svg class="goods-cards__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+              </ul>
+            </div>
+            <!-- /.col-9 -->
+          </div>
+          <!-- /.row -->
         </div>
         <!-- /.container -->
-      </section>
-      <!-- /.categories -->
+      </div>
+      <!-- /.goods -->
       <section class="goods-slider">
         <div class="container">
           <div class="row mb-4">
@@ -1087,96 +1599,6 @@
         <div class="test"></div>
       </section>
       <!-- /.goods-slider -->
-      <section class="seo">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="seo__title">Оборудование для ресторанов, пекарен, кафе и столовых</h1>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="seo-description">
-                <p class="seo-description__text">
-                  Компания «Альфа-Бизнес» работает в сфере HoReCa и Retail с 1999 года. Основным видом деятельности
-                  является поставка торгового и пищевого оборудования, комплексное оснащение предприятий торговли,
-                  общественного питания и пищевых производств.
-                </p>
-                <p class="seo-description__text">
-                  Присутствуем в 6 городах: Москве, Санкт-Петербурге, Новосибирске, Омске, Тюмени, Кургане. География
-                  наших поставок простирается от Калининграда до Владивостока. Работаем со многими транспортными
-                  компаниями, поэтому Вы получите заказ в максимально возможные быстрые сроки.<br />
-                  Сотрудничество с нами позволяет по-новому взглянуть на выбор оборудования для Ваших объектов. Мы
-                  предоставляем всестороннюю поддержку при подборе, монтаже и эксплуатации спецоборудования. Наши
-                  предложения, в том числе рассрочка, возможность тест-драйва и поддержка нашими бренд-шефами, позволят
-                  оптимизировать издержки и идеально подобрать необходимое для Вашей кухни.
-                </p>
-                <h2 class="seo-description__title title title--h2">Направления:</h2>
-                <ol class="seo-description__list">
-                  <li class="seo-description__list-item">
-                    Профессиональное кухонное оборудование для ресторанов, столовых, баров и других заведений
-                    общественного питания от ведущих российских и зарубежных производителей по выгодным ценам. В
-                    каталоге интернет-магазина более 22000 позиций.
-                    <ul class="catalog-list">
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Тепловое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Холодильное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Нейтральное технологическое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Электромеханическое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Барное и кофейное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Весовое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Моечное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Кухонный инвентарь</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Униформа и одежда для персонала</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="seo-description__list-item">
-                    Разработка проектного решения ресторанного и торгового бизнеса с нуля «под ключ»;
-                  </li>
-                  <li class="seo-description__list-item">
-                    Доставка оборудования по всей России, монтаж и пуско-наладочные работы;
-                  </li>
-                  <li class="seo-description__list-item">Гарантийное и сервисное обслуживание.</li>
-                </ol>
-                <h2 class="seo-description__title title title--h2">
-                  Все услуги для ресторанного бизнеса в одном месте
-                </h2>
-                <p class="seo-description__text">
-                  «Альфа-Бизнес» — надежный помощник в сфере ресторанного обслуживания и HoReCa. Получите детальную
-                  информацию об ассортименте продукции, ценах и скидках от наших менеджеров. Мы поможем на всех этапах
-                  создания и реализации концепции Вашего заведения, оснастим его профессиональной техникой на выгодных
-                  условиях.
-                </p>
-              </div>
-              <!-- /.seo-description__description -->
-              <button class="button seo__btn" type="button" data-toggle="collapse">Подробнее</button>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.seo -->
       <footer class="footer">
         <div class="container">
           <div class="row justify-content-between">
@@ -1326,7 +1748,7 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <button type="button" class="button modal-close" data-bs-dismiss="modal">
+            <button type="button" class="button button--close" data-bs-dismiss="modal">
               <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
               </svg>
@@ -1349,10 +1771,275 @@
           </div>
         </div>
       </div>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="title title--h2" id="offcanvasExampleLabel">Фильтра</h5>
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+              </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="goods-filters__list">
+            <li class="goods-filters__list-item">
+              <h3 class="goods-filters__list-title mb-2">Цена</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                  <input
+                    type="number"
+                    min="0"
+                    max="1000000"
+                    class="goods-filters__list-input goods-filters__list-input--slider"
+                    data-input="input-from"
+                  />
+                  <span class="goods-filters__list-text">₽</span>
+                </label>
+                <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                  <input
+                    type="number"
+                    min="0"
+                    max="1000000"
+                    class="goods-filters__list-input goods-filters__list-input--slider"
+                    data-input="input-to"
+                  />
+                  <span class="goods-filters__list-text">₽</span>
+                </label>
+              </div>
+              <!-- ./d-flex .justify-content-between .align-items-center -->
+              <div class="goods-filters__list-slider" id="range-slider"></div>
+              <!-- /.goods-filters__list-range -->
+            </li>
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                <h3 class="goods-filters__list-title">Производитель</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-1">
+                <label for="filter-1_Check-1" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-1_Check-1"
+                  />
+                  <span class="goods-filters__list-text">Abat</span>
+                </label>
+                <label for="filter-1_Check-2" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-1_Check-2"
+                  />
+                  <span class="goods-filters__list-text">Rational</span>
+                </label>
+                <label for="filter-1_Check-3" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-1_Check-3"
+                  />
+                  <span class="goods-filters__list-text">Retigo</span>
+                </label>
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                <h3 class="goods-filters__list-title">Страна изготовитель</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-2">
+                <label for="filter-2_Check-1" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-2_Check-1"
+                  />
+                  <span class="goods-filters__list-text">Германия</span>
+                </label>
+                <label for="filter-2_Check-2" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-2_Check-2"
+                  />
+                  <span class="goods-filters__list-text">Италия</span>
+                </label>
+                <label for="filter-2_Check-3" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-2_Check-3"
+                  />
+                  <span class="goods-filters__list-text">Россия</span>
+                </label>
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+                <h3 class="goods-filters__list-title">Мощность</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      class="goods-filters__list-input goods-filters__list-input--slider"
+                      data-input="input-from"
+                    />
+                    <span class="goods-filters__list-text">кВт</span>
+                  </label>
+                  <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      class="goods-filters__list-input goods-filters__list-input--slider"
+                      data-input="input-to"
+                    />
+                    <span class="goods-filters__list-text">кВт</span>
+                  </label>
+                </div>
+                <!-- ./.goods-filters__list-wrapper .d-flex .justify-content-between .align-items-center -->
+                <div class="goods-filters__list-slider" id="range-slider"></div>
+                <!-- /.goods-filters__list-range -->
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-4">
+                <h3 class="goods-filters__list-title">Напряжение</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-4">
+                <label for="filter-3_Check-1" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-3_Check-1"
+                  />
+                  <span class="goods-filters__list-text">220 В</span>
+                </label>
+                <label for="filter-3_Check-2" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-3_Check-2"
+                  />
+                  <span class="goods-filters__list-text">380 В</span>
+                </label>
+                <label for="filter-3_Check-3" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-3_Check-3"
+                  />
+                  <span class="goods-filters__list-text">Газ</span>
+                </label>
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-5">
+                <h3 class="goods-filters__list-title">Материал</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-5">
+                <label for="filter-4_Check-1" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-4_Check-1"
+                  />
+                  <span class="goods-filters__list-text">Нержавеющая сталь</span>
+                </label>
+                <label for="filter-4_Check-2" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-4_Check-2"
+                  />
+                  <span class="goods-filters__list-text">Оцинкованная сталь</span>
+                </label>
+                <label for="filter-4_Check-3" class="goods-filters__list-label">
+                  <input
+                    type="checkbox"
+                    class="goods-filters__list-input goods-filters__list-input--pointer"
+                    id="filter-4_Check-3"
+                  />
+                  <span class="goods-filters__list-text">Аллюминий</span>
+                </label>
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+
+            <li class="goods-filters__list-item">
+              <button class="button goods-filters__list-btn" data-bs-toggle="collapse" data-bs-target="#collapse-6">
+                <h3 class="goods-filters__list-title">Вес</h3>
+                <svg class="goods-filters__list-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                </svg>
+              </button>
+              <div class="goods-filters__list-wrapper accordion-collapse collapse" id="collapse-6">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      class="goods-filters__list-input goods-filters__list-input--slider"
+                      data-input="input-from"
+                    />
+                    <span class="goods-filters__list-text">кг</span>
+                  </label>
+                  <label for="" class="goods-filters__list-label goods-filters__list-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="100"
+                      class="goods-filters__list-input goods-filters__list-input--slider"
+                      data-input="input-to"
+                    />
+                    <span class="goods-filters__list-text">кг</span>
+                  </label>
+                </div>
+                <!-- ./d-flex .justify-content-between .align-items-center -->
+                <div class="goods-filters__list-slider" id="range-slider"></div>
+                <!-- /.goods-filters__list-range -->
+              </div>
+              <!-- /.goods-filters__list-wrapper -->
+            </li>
+          </ul>
+          <button class="button goods-filters__btn goods-filters__btn--show">Показать</button>
+          <button class="button goods-filters__btn goods-filters__btn--reset">Сбросить</button>
+        </div>
+      </div>
     </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/nouislider/dist/nouislider.min.js"></script>
     <!-- <script src="./assets/js/aos.js"></script> -->
     <script src="./assets/js/main.js"></script>
   </body>
