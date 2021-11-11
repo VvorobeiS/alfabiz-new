@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Добавляем noUiSlider
   const rangeSlider = () => {
-    const rangeSlidersTrack = document.querySelectorAll('.goods-filters__list-slider'),
+    const rangeSlidersTrack = document.querySelectorAll('.filters-list__item-slider'),
       rangeSlidersInputFrom = document.querySelectorAll('[data-input=input-from]'),
       rangeSlidersInputTo = document.querySelectorAll('[data-input=input-to]'),
       rangeSliderInputs = [];
@@ -238,13 +238,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Табы
   const tabs = () => {
-    const goodsSliderTabs = document.querySelector('.goods-slider__tabs'),
-      goodsSliderTab = document.querySelectorAll('.goods-slider__tabs-item'),
+    const goodsSliderTabs = document.querySelector('.goods-tabs'),
+      goodsSliderTab = document.querySelectorAll('.goods-tabs__item'),
       goodsSliderContent = document.querySelectorAll('.goods-slider__container'),
       eventsSliderTabs = document.querySelector('.events-tabs'),
       eventsSliderTab = document.querySelectorAll('.events-tabs__item'),
-      eventsSliderContent = document.querySelectorAll('.events__slider-container');
-
+      eventsSliderContent = document.querySelectorAll('.events__slider-container'),
+      goodsTabs = document.querySelector('.goods-view'),
+      goodsTab = document.querySelectorAll('[data-toggle=goods-tab]'),
+      goodsContent = document.querySelectorAll('[data-target=goods-content]');
     const toggleGoodsSlider = (index) => {
       for (let i = 0; i < goodsSliderContent.length; i++) {
         if (index === i) {
@@ -260,7 +262,7 @@ window.addEventListener('DOMContentLoaded', () => {
     goodsSliderTabs.addEventListener('click', () => {
       let target = event.target;
 
-      target = target.closest('.goods-slider__tabs-item');
+      target = target.closest('.goods-tabs__item');
 
       if (target) {
         goodsSliderTab.forEach((item, i) => {
@@ -299,6 +301,43 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+    const toggleGoodsContent = (index) => {
+      for (let i = 0; i < goodsContent.length; i++) {
+        if (index === i) {
+          goodsTab[i].classList.add('goods-view__btn--active');
+          goodsContent[i].classList.remove('d-none');
+
+          let op = 0;
+
+          function startAnimation() {
+            if (op !== 9) {
+              requestAnimationFrame(startAnimation);
+            }
+            op++;
+            goodsContent[i].style.opacity = `${op / 10}`;
+          }
+          startAnimation();
+        } else {
+          goodsTab[i].classList.remove('goods-view__btn--active');
+          goodsContent[i].classList.add('d-none');
+        }
+      }
+    };
+
+    goodsTabs.addEventListener('click', () => {
+      let target = event.target;
+
+      target = target.closest('.goods-view__btn');
+
+      if (target) {
+        goodsTab.forEach((item, i) => {
+          if (item === target) {
+            toggleGoodsContent(i);
+          }
+        });
+        return;
+      }
+    });
   };
   tabs();
 
@@ -306,9 +345,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const accodions = () => {
     const btnSeo = document.querySelector('[data-toggle=collapse]'),
       seoDescription = document.querySelector('.seo-description'),
-      goodsFiltersList = document.querySelector('.goods-filters__list'),
-      goodsFiltersBtn = document.querySelectorAll('.goods-filters__list-btn'),
-      goodsFiltersIcon = document.querySelectorAll('.goods-filters__list-icon');
+      goodsFiltersList = document.querySelector('.filters-list'),
+      goodsFiltersBtn = document.querySelectorAll('.filters-list__item-btn'),
+      goodsFiltersIcon = document.querySelectorAll('.filters-list__item-icon');
     if (document.querySelector(['[data-toggle=collapse]'])) {
       btnSeo.addEventListener('click', function () {
         seoDescription.classList.toggle('seo-description--visible');
@@ -318,7 +357,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const toggleGoodsFilter = (index) => {
       for (let i = 0; i < goodsFiltersBtn.length; i++) {
         if (index === i) {
-          goodsFiltersIcon[i].classList.toggle('goods-filters__list-icon--active');
+          goodsFiltersIcon[i].classList.toggle('filters-list__item-icon--active');
         }
       }
     };
@@ -326,7 +365,7 @@ window.addEventListener('DOMContentLoaded', () => {
     goodsFiltersList.addEventListener('click', () => {
       let target = event.target;
 
-      if (target.closest('.goods-filters__list-btn')) {
+      if (target.closest('.filters-list__item-btn')) {
         goodsFiltersBtn.forEach((item, i) => {
           if (item === target) {
             toggleGoodsFilter(i);

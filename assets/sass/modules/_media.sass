@@ -6,8 +6,17 @@
       &__info
         height: 282px
   .goods
-    &-filters
-      &__list
+    &-list
+      &__item
+        &-title
+          font-size: 16px
+    &-table
+      &__item
+        &-img
+          height: 200px
+  .filters
+    &-list
+      &__item
         &-title
           font-size: 16px
         &-label
@@ -18,10 +27,6 @@
             font-size: 12px
         &-text
           font-size: 12px
-    &-cards
-      &__item
-        &-title
-          font-size: 16px
 
 @media ( max-width: 1199px )
   .availability
@@ -53,20 +58,7 @@
         font-size: 13px
         padding: 0 7px
   .goods
-    &-filters
-      &__list
-        &-title
-          font-size: 14px
-        &-label
-          &--slider
-            width: 90px
-            padding: 0 5px
-        &-input
-          &--slider
-            padding: 0 5px
-        &__btn
-          font-size: 13px
-    &-cards
+    &-list
       &__item
         &-link
           &--img
@@ -81,6 +73,26 @@
           font-size: 13px
           &--cart
             padding: 10px 10px
+    &-table
+      &__item
+        &-wrapper
+          padding: 10px
+        &-btn
+          padding: 10px
+  .filters
+    &-list
+      &__item
+        &-title
+          font-size: 14px
+          &-label
+            &--slider
+              width: 90px
+              padding: 0 5px
+          &-input
+            &--slider
+              padding: 0 5px
+          &__btn
+            font-size: 13px
   .brands
     &-list
       &__item
@@ -243,21 +255,26 @@
       &__icon
         width: 70px
   .goods
-    &-slider
-      &__tabs
-        max-width: 100%
-        &-item
-          font-size: 16px
-      &__good
-        &-link
-          font-size: 14px
-    &-cards
+    &-tabs
+      max-width: 100%
+      &__item
+        font-size: 16px
+      &-slider
+        &__good
+          &-link
+            font-size: 14px
+    &-list
       &__item
         &-btn
           &--cart
             margin-left: 0
         &-icon
           margin-right: 0
+    &-table
+      grid-template-columns: 1fr 1fr
+      &-item
+        &__img
+          height: 190px
   .events
     &-tabs
       max-width: 85%
@@ -334,11 +351,12 @@
   .availability
     display: none
   .goods
-    &-slider
+    &--slider
       padding-top: 25px
       padding-bottom: 100px
-      &__tabs
-        justify-content: space-around
+    &-tabs
+      justify-content: space-around
+    &-slider
       &__img
         width: 150px
       &__good
@@ -352,7 +370,7 @@
         &--next
           right: 40%
           transform: translateX(50%)
-    &-cards
+    &-list
       &__item
         flex-wrap: wrap
         &-link
@@ -449,7 +467,7 @@
         display: none
       &__select
         font-size: 11px
-    &-cards
+    &-list
       &__item
         &-link
           &--img
@@ -459,6 +477,13 @@
           font-size: 13px
         &-info
           font-size: 11px
+    &-table
+      grid-template-columns: 1fr
+      &__item
+        &-img
+          width: 180px
+          height: 180px
+          margin: 0 auto
   .events
     height: 620px
     &-tabs

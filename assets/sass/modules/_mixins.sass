@@ -91,6 +91,12 @@
   outline: none
   color: inherit
 
+@mixin btn-font
+  font-family: $Open-Sans
+  font-weight: 600
+  font-style: normal
+  letter-spacing: $letter-spacing
+
 @mixin btn-red
   color: $light-color
   background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
@@ -106,3 +112,9 @@
   box-shadow: 0 0 5px #eee
   +hover
     background-position: right center; /* change the direction of the change here */
+
+@mixin wrapper
+  background-color: $light-color
+  box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
+  border-radius: $border-radius
+  overflow: hidden

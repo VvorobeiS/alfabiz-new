@@ -9,12 +9,15 @@
         &:after
           content: '/'
           margin-right: 4px
-    &__link
+    &__page
       font-family: $Montserrat
       font-weight: 500
       font-size: 12px
       font-style: normal
       letter-spacing: $letter-spacing
-      text-decoration: none
       color: inherit
-      transition: $transition
+      &--link
+        transition: $transition
+        text-decoration: none
+        +hover
+          color: $primary-color

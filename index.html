@@ -18,8 +18,8 @@
     <div class="body">
       <header class="header">
         <div class="container header__container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-3 d-none d-lg-block">
+          <div class="row [ align-items-center justify-content-between ]">
+            <div class="col-3 [ d-none d-lg-block ]">
               <a href="#!" class="header__logo">
                 <img src="./assets/images/svg/logo.svg" alt="Логотип" />
               </a>
@@ -27,10 +27,16 @@
             <!-- /.col-lg-3 -->
             <div
               class="
+                [
                 col-4 col-sm-3 col-md-2
+                ]
+                [
                 d-flex d-lg-none
+                ]
+                [
                 justify-content-start justify-content-sm-between
                 align-items-center
+                ]
               "
             >
               <a href="#!" class="header__logo header__logo--mobile">
@@ -44,11 +50,11 @@
               <!-- /.menu-burger -->
             </div>
             <!-- /.col-2 -->
-            <div class="col-4 col-md-6 col-lg-5 col-xl-3 d-none d-sm-block">
+            <div class="[ col-4 col-md-6 col-lg-5 col-xl-3 ] [ d-none d-sm-block ]">
               <p class="activity">Оборудование для баров, кафе, ресторанов, магазинов и производств</p>
             </div>
             <!-- /.col-lg-3 -->
-            <div class="col-3 d-none d-xl-block contacts">
+            <div class="contacts [ col-3 d-none d-xl-block ]">
               <span class="contacts__adress">м. Коломенская пр. Андропова, 22</span>
               <a class="contacts__tel" href="tel:+">+7 (495)136-66-22</a>
               <a class="contacts__email" href="mailto:">moscow@alfa-biz.ru</a>
@@ -56,10 +62,16 @@
             <!-- /.col-lg-3 .contacts -->
             <div
               class="
+                [
                 col-4 col-xl-3
+                ]
+                [
                 d-none d-lg-flex
+                ]
+                [
                 justify-content-between justify-content-xl-around
                 align-items-center
+                ]
               "
             >
               <button
@@ -103,10 +115,16 @@
             <!-- /.col-md-3 .col-lg-3 -->
             <div
               class="
+                [
                 col-8 col-sm-5 col-md-4
+                ]
+                [
                 d-flex d-lg-none
+                ]
+                [
                 justify-content-end justify-content-sm-between
                 align-items-center
+                ]
               "
             >
               <button class="button header__btn header__btn--mobile">
@@ -135,8 +153,8 @@
         <!-- /.container -->
         <div class="navbar">
           <div class="container">
-            <div class="row align-items-center flex-column flex-sm-row">
-              <div class="col-2 d-none d-lg-flex justify-content-center align-items-center">
+            <div class="row align-items-center [ flex-column flex-sm-row ]">
+              <div class="col-2 [ d-none d-lg-flex ] [ justify-content-center align-items-center ]">
                 <button class="button button-catalog" data-toggle="catalog">
                   <svg class="button-catalog__icon" width="25" height="25" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#list" />
@@ -145,7 +163,7 @@
                 </button>
               </div>
               <!-- /.col-2 -->
-              <div class="col-5 d-none d-lg-block">
+              <div class="col-5 [ d-none d-lg-block ]">
                 <nav class="navbar-menu">
                   <ul class="navbar-menu__list">
                     <li class="navbar-menu__list-item">
@@ -181,7 +199,18 @@
                 </form>
               </div>
               <!-- /.col-12 .col-lg-3 -->
-              <div class="col-2 d-none d-lg-flex justify-content-between justify-content-xl-around align-items-center">
+              <div
+                class="
+                  col-2
+                  [
+                  d-none d-lg-flex
+                  ]
+                  [
+                  justify-content-between justify-content-xl-around
+                  align-items-center
+                  ]
+                "
+              >
                 <button class="button header__btn">
                   <svg class="header__icon" width="25" height="25" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
@@ -324,7 +353,7 @@
               <!-- /.swiper-container main-slider__container -->
             </div>
             <!-- /.col-8 -->
-            <form action="#!" class="col-4 main-callback__form form-callback">
+            <form action="#!" class="col-4 form-callback">
               <h3 class="form-callback__title">Заказ обратного звонка</h3>
               <input type="text" class="form-callback__input" placeholder="ФИО" />
               <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__" />
@@ -343,7 +372,7 @@
         <!-- /.container -->
       </section>
       <!-- /.main -->
-      <section class="advantages">
+      <div class="advantages">
         <div class="container-md container-xl">
           <div class="row d-none d-md-block mb-4">
             <div class="col-lg-12">
@@ -407,23 +436,23 @@
           <!-- /.row -->
         </div>
         <!-- /.container -->
-      </section>
+      </div>
       <!-- /.advantages -->
-      <section class="goods-slider">
+      <div class="goods goods--slider">
         <div class="container">
           <div class="row mb-4">
             <div class="col-12">
-              <ul class="tabs goods-slider__tabs">
-                <li class="tabs__item goods-slider__tabs-item tabs__item--active" data-target="#stock">Акции</li>
-                <li class="tabs__item goods-slider__tabs-item" data-target="#hits">Хиты продаж</li>
-                <li class="tabs__item goods-slider__tabs-item" data-target="#novelties">Новинки</li>
+              <ul class="tabs goods-tabs">
+                <li class="tabs__item goods-tabs__item tabs__item--active" data-target="#stock">Акции</li>
+                <li class="tabs__item goods-tabs__item" data-target="#hits">Хиты продаж</li>
+                <li class="tabs__item goods-tabs__item" data-target="#novelties">Новинки</li>
               </ul>
             </div>
             <!-- /.col-lg-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-lg-12 col-lg-12--pr">
+            <div class="goods-slider col-lg-12">
               <div
                 class="
                   swiper-container
@@ -450,7 +479,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -481,7 +510,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -512,7 +541,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -543,7 +572,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -574,7 +603,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -605,7 +634,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -655,7 +684,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -686,7 +715,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -717,7 +746,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -748,7 +777,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -779,7 +808,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -810,7 +839,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -863,7 +892,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -894,7 +923,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -925,7 +954,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -956,7 +985,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -987,7 +1016,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -1018,7 +1047,7 @@
                       </button>
                       <div class="goods-slider__info-price">
                         <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost--old">60 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
                       </div>
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
@@ -1051,9 +1080,8 @@
           <!-- /.row -->
         </div>
         <!-- /.container -->
-        <div class="test"></div>
-      </section>
-      <!-- /.goods-slider -->
+      </div>
+      <!-- /.goods -->
       <section class="brands">
         <div class="container-fluid">
           <div class="row mb-4">
@@ -1852,18 +1880,25 @@
           <div class="row justify-content-between">
             <div
               class="
+                [
                 col-12 col-sm-12 col-md-4 col-lg-3
-                d-flex
+                ]
+                [
+                d-flex d-md-block
+                ]
+                [
                 flex-column flex-sm-row
-                d-md-block
+                ]
                 justify-content-between
+                [
                 mb-4 mb-sm-5 mb-md-0
+                ]
               "
             >
               <a href="#!" class="footer__logo">
                 <img src="./assets/images/svg/logo-vertical.svg" alt="Логотип" class="footer__img" />
               </a>
-              <div class="footer-contacts d-flex flex-column">
+              <div class="footer-contacts [ d-flex flex-column ]">
                 <h3 class="footer__title footer__title--small">Офис продаж:</h3>
                 <span class="footer-contacts__adress">
                   <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
@@ -1946,7 +1981,9 @@
               <!-- / -->
             </div>
             <!-- /.col-md-4 -->
-            <div class="col-12 col-sm-4 col-md-3 col-lg-5 d-flex flex-column flex-lg-row justify-content-lg-around">
+            <div
+              class="[ col-12 col-sm-4 col-md-3 col-lg-5 ] d-flex [ flex-column flex-lg-row ] justify-content-lg-around"
+            >
               <div>
                 <h3 class="footer__title">Услуги</h3>
                 <ul class="footer-list">
