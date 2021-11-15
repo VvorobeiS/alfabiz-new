@@ -12,11 +12,8 @@
   &--h2
     font-size: 28px
   &--h3
-    font-size: 16px
-  &--modal
     position: relative
     font-size: 18px
-    margin-bottom: 30px
     &:before
       content: ""
       position: absolute
@@ -110,6 +107,14 @@
   background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
   background-size: 200% auto
   box-shadow: 0 0 5px #eee
+  +hover
+    background-position: right center; /* change the direction of the change here */
+
+@mixin btn-yellow
+  color: $light-color
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%)
+  background-size: 200% auto
+  box-shadow: 0 0 20px #eee
   +hover
     background-position: right center; /* change the direction of the change here */
 

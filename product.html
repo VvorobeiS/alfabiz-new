@@ -316,128 +316,292 @@
         <!-- /.navbar -->
       </header>
       <!-- /.header -->
-      <section class="main">
+      <nav class="breadcrumb">
         <div class="container">
-          <div class="row d-none d-lg-flex">
-            <div class="col-8 main-slider">
-              <div class="swiper-container main-slider__container">
-                <div class="swiper-wrapper main-slider__wrapper">
-                  <div class="swiper-slide main-slider__slide">
-                    <a href="#!" class="main-slider__link">
-                      <img
-                        src="./assets/images/main-slider/slide-1.jpg"
-                        alt="Изображение слайдера"
-                        class="main-slider__img"
-                      />
-                    </a>
+          <div class="row [ d-none d-md-flex ]">
+            <ul class="breadcrumb-list col-12">
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Главная</a>
+              </li>
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Каталог</a>
+              </li>
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Тепловое оборудование</a>
+              </li>
+              <li class="breadcrumb-list__item">
+                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Пароконвектоматы</a>
+              </li>
+              <li class="breadcrumb-list__item d-md-none d-lg-block">
+                <span class="breadcrumb-list__page">Пароконвектомат RETIGO O623IC VISION II</span>
+              </li>
+            </ul>
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-12">
+              <h2 class="title title--h2">Пароконвектомат RETIGO O623IC VISION II</h2>
+            </div>
+            <!-- /.col-12 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.breadcrumb -->
+      <div class="product">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+              <div class="product-slider swiper-container wrapper mb-3">
+                <div class="swiper-wrapper product-slider__wrapper">
+                  <div class="swiper-slide product-slider__slide">
+                    <div class="d-flex [ justify-content-center align-items-center ] p-3">
+                      <a data-fancybox="product-gallery" href="./assets/images/goods/good-1.jpg">
+                        <img class="product-slider__img" src="./assets/images/goods/good-1.jpg" />
+                      </a>
+                    </div>
                   </div>
-                  <div class="swiper-slide main-slider__slide">
-                    <a href="#!" class="main-slider__link">
-                      <img src="./assets/images/main-slider/slide-2.jpg" alt="" class="main-slider__img" />
-                    </a>
+                  <!-- .product-slider__slide -->
+                  <div class="swiper-slide product-slider__slide">
+                    <div class="d-flex [ justify-content-center align-items-center ] p-3">
+                      <a data-fancybox="product-gallery" href="./assets/images/goods/good-2.png">
+                        <img class="product-slider__img" src="./assets/images/goods/good-2.png" />
+                      </a>
+                    </div>
                   </div>
+                  <!-- .product-slider__slide -->
                 </div>
-                <!-- /.swiper-wrapper main-slider__wrapper -->
-                <div class="swiper-pagination"></div>
-                <button class="main-slider__btn main-slider__btn--prev">
-                  <svg class="main-slider__svg" width="30" height="30" fill="currentColor">
+                <!-- /.swiper-wrapper product-slider__wrapper -->
+                <button class="product-slider__btn product-slider__btn--prev">
+                  <svg class="product-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-left" />
                   </svg>
                 </button>
-                <button class="main-slider__btn main-slider__btn--next">
-                  <svg class="main-slider__svg" width="30" height="30" fill="currentColor">
+                <button class="product-slider__btn product-slider__btn--next">
+                  <svg class="product-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-right" />
                   </svg>
                 </button>
+                <span class="vendor-code">B5473</span>
               </div>
-              <!-- /.swiper-container main-slider__container -->
+              <!-- /.swiper-container product-slider-->
+              <div class="product-panel wrapper [ d-md-none mb-3 ]">
+                <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                  <span class="cost">324 065 ₽</span>
+                  <div class="product-panel__counter">
+                    <button class="button product-panel__counter-btn">
+                      <svg class="product-panel__counter-icon" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#dash-lg" />
+                      </svg>
+                    </button>
+                    <input type="number" class="product-panel__counter-input" value="1" />
+                    <button class="button product-panel__counter-btn">
+                      <svg class="product-panel__counter-icon" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#plus-lg" />
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- /.product-panel__counter -->
+                </div>
+                <!-- /.d-flex -->
+                <button class="button product-panel__btn product-panel__btn--red mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                  </svg>
+                  В корзину
+                </button>
+                <button class="button product-panel__btn product-panel__btn--blue mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                  </svg>
+                  Сравнить
+                </button>
+                <button class="button product-panel__btn product-panel__btn--yellow mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#tag-fill" />
+                  </svg>
+                  Хочу дешевле
+                </button>
+                <span class="availability availability--success">В наличии</span>
+                <span class="availability availability--warning d-none">Нет данных</span>
+                <span class="availability availability--danger d-none">Нет в наличии</span>
+              </div>
+              <!-- /.product-panel -->
+              <div class="product-toolbar wrapper [ d-md-none mb-3 ]">
+                <div
+                  class="ya-share2 product-toolbar__share"
+                  data-curtain
+                  data-shape="round"
+                  data-limit="0"
+                  data-more-button-type="short"
+                  data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,viber,whatsapp"
+                  data-description="horizontal"
+                ></div>
+                <button class="button product-toolbar__btn">
+                  <svg class="product-toolbar__icon" width="22" height="22" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#printer-fill" />
+                  </svg>
+                </button>
+              </div>
+              <!-- /.product-toolbar -->
+              <div class="product-specifications wrapper mb-3">
+                <h2 class="product-specifications__title title title--h3">Характеристики</h2>
+                <ul class="product-specifications__list">
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Страна-изготовитель</span>
+                    <span class="product-specifications__list-value">Чешская республика</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Напряжение, В</span>
+                    <span class="product-specifications__list-value">380</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Тип гастроемкости</span>
+                    <span class="product-specifications__list-value">GN 2/3</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Температурный режим</span>
+                    <span class="product-specifications__list-value">от 30 до 300 °C</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Мощность, кВт</span>
+                    <span class="product-specifications__list-value">4,2</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Расстояние между уровнями, мм</span>
+                    <span class="product-specifications__list-value">65</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Количество уровней</span>
+                    <span class="product-specifications__list-value">6</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Панель управления</span>
+                    <span class="product-specifications__list-value">Электронная</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Способ образования пара</span>
+                    <span class="product-specifications__list-value">Инжектор</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Длина, мм</span>
+                    <span class="product-specifications__list-value">586</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Ширина, мм</span>
+                    <span class="product-specifications__list-value">683</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Высота, мм</span>
+                    <span class="product-specifications__list-value">602</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Вес-нетто, кг</span>
+                    <span class="product-specifications__list-value">62</span>
+                  </li>
+                  <li class="product-specifications__list-item">
+                    <span class="product-specifications__list-clue"> Вес-брутто, кг</span>
+                    <span class="product-specifications__list-value">70</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.product-specifications -->
+              <div class="product-description wrapper">
+                <h3 class="product-description__title title title--h3">Описание</h3>
+                <p class="product-description__text">
+                  Пароконвектомат Retigo O623IC Vision II серии Orange отвечает требованиям клиентов, в приоритете у
+                  которых стоит высокое качество и простота управления. Данные конвектоматы можно устанавливать на
+                  стандартную подставку, настенную консоль или непосредственно на стол. У пароконвектоматов Orange
+                  Vision II уже предустановлен температурный щуп и ручной душ. Функциональный дизайн подчеркивает
+                  простоту управления пароконвектоматов, цифровой дисплей позволяет выполнять настройку и управление.
+                  Все модели в базовой конфигурации оснащены функцией автоматической мойки. Пароконвектомат идеально
+                  подходит для производственных мощностей до 50 порций в день.
+                </p>
+              </div>
+              <!-- /.product-description -->
             </div>
-            <!-- /.col-8 -->
-            <form action="#!" class="col-4 form-callback">
-              <h3 class="form-callback__title">Заказ обратного звонка</h3>
-              <input type="text" class="form-callback__input" placeholder="ФИО" />
-              <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__" />
-              <input type="email" class="form-callback__input" placeholder="email" />
-              <button class="button form-callback__btn">
-                <svg class="form-callback__icon" width="12" height="12" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
-                </svg>
-                Заказать звонок
-              </button>
-            </form>
+            <!-- /.col-9-->
+            <div class="[ d-none d-md-block ] [ col-5 col-lg-4 col-xl-3 ]">
+              <div class="product-panel wrapper mb-3">
+                <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                  <span class="cost">324 065 ₽</span>
+                  <div class="product-panel__counter">
+                    <button class="button product-panel__counter-btn">
+                      <svg class="product-panel__counter-icon" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#dash-lg" />
+                      </svg>
+                    </button>
+                    <input type="number" class="product-panel__counter-input" value="1" />
+                    <button class="button product-panel__counter-btn">
+                      <svg class="product-panel__counter-icon" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#plus-lg" />
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- /.product-panel__counter -->
+                </div>
+                <!-- /.d-flex -->
+                <button class="button product-panel__btn product-panel__btn--red mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                  </svg>
+                  В корзину
+                </button>
+                <button class="button product-panel__btn product-panel__btn--blue mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                  </svg>
+                  Сравнить
+                </button>
+                <button class="button product-panel__btn product-panel__btn--yellow mb-2">
+                  <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#tag-fill" />
+                  </svg>
+                  Хочу дешевле
+                </button>
+                <span class="availability availability--success">В наличии</span>
+                <span class="availability availability--warning d-none">Нет данных</span>
+                <span class="availability availability--danger d-none">Нет в наличии</span>
+              </div>
+              <!-- /.product-panel -->
+              <div class="product-toolbar wrapper mb-3">
+                <div
+                  class="ya-share2 product-toolbar__share"
+                  data-curtain
+                  data-shape="round"
+                  data-limit="0"
+                  data-more-button-type="short"
+                  data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,viber,whatsapp"
+                  data-description="horizontal"
+                ></div>
+                <button class="button product-toolbar__btn">
+                  <svg class="product-toolbar__icon" width="22" height="22" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#printer-fill" />
+                  </svg>
+                </button>
+              </div>
+              <!-- /.product-toolbar -->
+              <div class="product-video wrapper">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/C91oDpDY51s"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <!-- /.product-video -->
+            </div>
             <!-- /.col-4 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
-      </section>
-      <!-- /.main -->
-      <div class="advantages">
-        <div class="container-md container-xl">
-          <div class="row d-none d-md-block mb-4">
-            <div class="col-lg-12">
-              <p class="advantages__text">
-                Компания «Альфа-Бизнес» является одним из лидеров по продажам<br />
-                промышленного холода, технологического, холодильного, климатического, торгового, весового оборудования.
-              </p>
-            </div>
-            <!-- /.col lg-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-lg-12">
-              <hr class="line" />
-              <ul class="advantages-list">
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рекомендуем.svg" alt="" class="advantages-list__icon" />
-                    Более 20&nbsp;лет на&nbsp;рынке HoReCa&nbsp;&amp;&nbsp;Retail
-                  </a>
-                </li>
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link"
-                    ><img src="./assets/images/svg/Склад.svg" alt="" class="advantages-list__icon" />Большой ассортимент
-                    товара в&nbsp;наличии</a
-                  >
-                </li>
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Доставка.svg" alt="" class="advantages-list__icon" />Доставка<br />
-                    по всей России</a
-                  >
-                </li>
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Гастроплощадка.svg" alt="" class="advantages-list__icon" />Действующие
-                    гастроплощадки</a
-                  >
-                </li>
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рассрочка.svg" alt="" class="advantages-list__icon" />Рассрочка без
-                    банков</a
-                  >
-                </li>
-                <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img
-                      src="./assets/images/svg/Тест-драйв.svg"
-                      alt=""
-                      class="advantages-list__icon"
-                    />Тест-драйв<br />
-                    оборудования</a
-                  >
-                </li>
-              </ul>
-              <hr class="line" />
-            </div>
-            <!-- /.col-lg-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
       </div>
-      <!-- /.advantages -->
+      <!-- /.good -->
       <div class="goods goods--slider">
         <div class="container">
           <div class="row mb-4">
@@ -1082,799 +1246,6 @@
         <!-- /.container -->
       </div>
       <!-- /.goods -->
-      <section class="brands">
-        <div class="container-fluid">
-          <div class="row mb-4">
-            <div class="col-md-12">
-              <h2 class="brands__title title title--h2">Популярные бренды</h2>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <ul class="brands-list">
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/abat.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/alto-shaam.jpg" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/atesy.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/cas.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/fimar.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/finist.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/hicold.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/hurakan.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/nordika.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/retigo.jpg" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/robot-coupe.png" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/vesta.jpg" alt="Логотип" class="brands-list__logo" />
-                </a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/SMEG.png" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/apach-cook-line.png" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/сheckedout.svg" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/mhm.svg" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/polair.png" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/rational.png" alt="Логотип" class="brands-list__logo"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-md-12">
-              <a href="#!" class="brands__link">Смотреть все бренды</a>
-            </div>
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.brands -->
-      <section class="events">
-        <div class="container-xl">
-          <div class="row row--mb-5">
-            <div class="col-md-12">
-              <ul class="tabs events-tabs">
-                <li class="tabs__item events-tabs__item tabs__item--active" data-target="#announcements">
-                  Ближайшие мастер-классы
-                </li>
-                <li class="tabs__item events-tabs__item" data-target="#reports">Отчеты с матер-классов</li>
-              </ul>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-lg-12 col-lg-12--pr">
-              <div
-                class="swiper-container events__slider-container events__slider-container--active"
-                id="announcements"
-                data-aos="fade-right"
-              >
-                <div class="swiper-wrapper events__slider-wrapper">
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/03_09-spb.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Как превратить столовую в Market Plaсe</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">3 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">Лахтинский проспект, 2/1</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">Бесплатно</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Санкт-Петербург</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/mc-picture.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">8 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">Бесплатно</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/09_09-msk-min.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">
-                          Как открыть топовый ресторан с бургерами и секреты технологий приготовления сочных Бургеров
-                        </h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">9 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 14:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">Лахтинский проспект, 2/1</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">Бесплатно</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Санкт-Петербург</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/10_09-msk-min.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Новинки осени для кондитеров</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">10 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">Бесплатно</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events//15_09.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Хлеб и выпечка по рецептам Вячеслава Погорелого</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">15 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">Бесплатно</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/29_09-msk-min.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Авторский курс «Ремесленный колбасник»</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">29 сентября 2021</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                            </svg>
-                            <span class="events-card__list-time">в 13:00</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                            </svg>
-                            <span class="events-card__list-address">проспект Андропова, 22</span>
-                          </li>
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                            </svg>
-                            <span class="events-card__list-cost">70 000 ₽</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                </div>
-                <!-- /.events__slider-wrapper -->
-                <button class="events__slider-btn events__slider-btn--prev">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
-                  </svg>
-                </button>
-                <button class="events__slider-btn events__slider-btn--next">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
-                  </svg>
-                </button>
-              </div>
-              <!-- /.events__slider-container -->
-              <div
-                class="swiper-container events__slider-container events__slider-container"
-                id="reports"
-                data-aos="fade-right"
-              >
-                <div class="swiper-wrapper events__slider-wrapper">
-                  <div class="swiper-slide events__slider-slide">
-                    <div class="events-card">
-                      <img
-                        src="./assets/images/events/mc-picture.jpg"
-                        alt="Обложка мастер-класса"
-                        class="events-card__img"
-                      />
-                      <div class="events-card__wrapper">
-                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
-                        <ul class="events-card__list">
-                          <li class="events-card__list-item">
-                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                            </svg>
-                            <span class="events-card__list-date">12 августа 2021</span>
-                          </li>
-                        </ul>
-                        <div class="events-card__footer">
-                          <!-- <span class="events-card__cost">Бесплатно</span> -->
-                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                        </div>
-                        <!-- /.events-card__footer -->
-                      </div>
-                      <!-- /.events-card__wrapper -->
-                      <span class="events-card__city">Москва</span>
-                    </div>
-                    <!-- /.events-card -->
-                  </div>
-                  <!-- /.events__slider-slide -->
-                </div>
-                <!-- /.events__slider-wrapper -->
-                <button class="events__slider-btn events__slider-btn--prev">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
-                  </svg>
-                </button>
-                <button class="events__slider-btn events__slider-btn--next">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
-                  </svg>
-                </button>
-              </div>
-              <!-- /.events__slider-container -->
-            </div>
-            <!-- /.col-lg-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.events -->
-      <section class="enterprises">
-        <div class="container-xl">
-          <div class="row mb-4">
-            <div class="col-md-12">
-              <h2 class="enterprises__title title title--h2">Подбор оборудования по типу предприятия</h2>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-          <ul class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-2 enterprises-list">
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/beer.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Бары и пабы</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/cafe.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Кафе</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/cake.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Кондитерские магазины</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/coffee.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Кофейни</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img
-                    src="./assets/images/svg/meat-grinder.svg"
-                    alt="Иконка категории"
-                    class="enterprises-list__icon"
-                  />
-                  <span class="enterprises-list__text">Мясопереработка</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/bread.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Пекарни</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/pizza.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Пиццерии</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img
-                    src="./assets/images/svg/food-and-restaurant.svg"
-                    alt="Иконка категории"
-                    class="enterprises-list__icon"
-                  />
-                  <span class="enterprises-list__text">Рестораны</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/soup.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Столовые</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img
-                    src="./assets/images/svg/grocery-cart.svg"
-                    alt="Иконка категории"
-                    class="enterprises-list__icon"
-                  />
-                  <span class="enterprises-list__text">Супермаркеты</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/fast-food.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Фастфуды</span>
-                </a>
-              </div>
-            </li>
-            <li class="col enterprises-list__item">
-              <div class="enterprises-list__content">
-                <a href="#!" class="enterprises-list__link">
-                  <img src="./assets/images/svg/food-truck.svg" alt="Иконка категории" class="enterprises-list__icon" />
-                  <span class="enterprises-list__text">Фуд-траки</span>
-                </a>
-              </div>
-            </li>
-          </ul>
-          <!-- /.row .enterprises-list-->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.enterprises -->
-      <section class="news">
-        <div class="container-lg">
-          <div class="row mb-5 justify-content-between">
-            <div class="col-6 d-flex justify-content-start align-items-center">
-              <h2 class="news__title title title--h2" data-aos="fade-right" data-aos-delay="200">Новости</h2>
-            </div>
-            <!-- /.col-md-6 -->
-            <div class="col-6 d-flex justify-content-end align-items-center">
-              <a href="#!" class="news__link" data-aos="fade-left" data-aos-delay="200">Все Новости</a>
-            </div>
-            <!-- /.col-md-6 -->
-          </div>
-          <!-- /.row -->
-          <div class="row justify-content-between align-items-center mb-5">
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="newsletter">
-                <h2 class="newsletter__title" data-aos="fade-right" data-aos-delay="200">Будь в курсе событий</h2>
-                <form
-                  action="./send.php"
-                  method="POST"
-                  class="newsletter__form form"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
-                  <input type="hidden" name="form" value="1" />
-                  <input type="email" class="newsletter__input" placeholder="Ваш Email" required name="subscribe" />
-                  <button class="button newsletter__btn" type="submit">Подписаться</button>
-                  <svg class="newsletter__icon" width="14" height="14" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
-                  </svg>
-                </form>
-              </div>
-              <!-- /.newsletter-wrapper -->
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-        <div class="test"></div>
-      </section>
-      <!-- /.news -->
-      <section class="seo">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="seo__title">Оборудование для ресторанов, пекарен, кафе и столовых</h1>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="seo-description">
-                <p class="seo-description__text">
-                  Компания «Альфа-Бизнес» работает в сфере HoReCa и Retail с 1999 года. Основным видом деятельности
-                  является поставка торгового и пищевого оборудования, комплексное оснащение предприятий торговли,
-                  общественного питания и пищевых производств.
-                </p>
-                <p class="seo-description__text">
-                  Присутствуем в 6 городах: Москве, Санкт-Петербурге, Новосибирске, Омске, Тюмени, Кургане. География
-                  наших поставок простирается от Калининграда до Владивостока. Работаем со многими транспортными
-                  компаниями, поэтому Вы получите заказ в максимально возможные быстрые сроки.<br />
-                  Сотрудничество с нами позволяет по-новому взглянуть на выбор оборудования для Ваших объектов. Мы
-                  предоставляем всестороннюю поддержку при подборе, монтаже и эксплуатации спецоборудования. Наши
-                  предложения, в том числе рассрочка, возможность тест-драйва и поддержка нашими бренд-шефами, позволят
-                  оптимизировать издержки и идеально подобрать необходимое для Вашей кухни.
-                </p>
-                <h2 class="seo-description__title title title--h2">Направления:</h2>
-                <ol class="seo-description__list">
-                  <li class="seo-description__list-item">
-                    Профессиональное кухонное оборудование для ресторанов, столовых, баров и других заведений
-                    общественного питания от ведущих российских и зарубежных производителей по выгодным ценам. В
-                    каталоге интернет-магазина более 22000 позиций.
-                    <ul class="catalog-list">
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Тепловое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Холодильное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Нейтральное технологическое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Электромеханическое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Барное и кофейное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Весовое оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Моечное оборудование</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Кухонный инвентарь</a>
-                      </li>
-                      <li class="catalog-list__item">
-                        <a href="" class="catalog-list__link">Униформа и одежда для персонала</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="seo-description__list-item">
-                    Разработка проектного решения ресторанного и торгового бизнеса с нуля «под ключ»;
-                  </li>
-                  <li class="seo-description__list-item">
-                    Доставка оборудования по всей России, монтаж и пуско-наладочные работы;
-                  </li>
-                  <li class="seo-description__list-item">Гарантийное и сервисное обслуживание.</li>
-                </ol>
-                <h2 class="seo-description__title title title--h2">
-                  Все услуги для ресторанного бизнеса в одном месте
-                </h2>
-                <p class="seo-description__text">
-                  «Альфа-Бизнес» — надежный помощник в сфере ресторанного обслуживания и HoReCa. Получите детальную
-                  информацию об ассортименте продукции, ценах и скидках от наших менеджеров. Мы поможем на всех этапах
-                  создания и реализации концепции Вашего заведения, оснастим его профессиональной техникой на выгодных
-                  условиях.
-                </p>
-              </div>
-              <!-- /.seo-description__description -->
-              <button class="button seo__btn" type="button" data-toggle="collapse">Подробнее</button>
-            </div>
-            <!-- /.col-md-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.seo -->
       <footer class="footer">
         <div class="container">
           <div class="row justify-content-between">
@@ -2033,7 +1404,7 @@
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <button type="button" class="button modal-close" data-bs-dismiss="modal">
+            <button type="button" class="button button--close" data-bs-dismiss="modal">
               <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
               </svg>
@@ -2056,10 +1427,303 @@
           </div>
         </div>
       </div>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="title title--h2" id="offcanvasExampleLabel">Фильтра</h2>
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="filters">
+            <ul class="filters-list">
+              <li class="filters-list__item">
+                <span class="filters-list__item-title mb-2">Цена</span>
+                <div class="d-flex [ justify-content-between align-items-center ]">
+                  <label class="filters-list__item-label filters-list__item-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="1000000"
+                      class="filters-list__item-input filters-list__item-input--slider"
+                      data-input="input-from"
+                    />
+                    <span class="filters-list__item-text">₽</span>
+                  </label>
+                  <label class="filters-list__item-label filters-list__item-label--slider">
+                    <input
+                      type="number"
+                      min="0"
+                      max="1000000"
+                      class="filters-list__item-input filters-list__item-input--slider"
+                      data-input="input-to"
+                    />
+                    <span class="filters-list__item-text">₽</span>
+                  </label>
+                </div>
+                <!-- ./d-flex .justify-content-between .align-items-center -->
+                <div class="filters-list__item-slider"></div>
+                <!-- /.goods-filters__list-range -->
+              </li>
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                >
+                  Производитель
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-1">
+                  <label for="filter-1_Check-1" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-1_Check-1"
+                    />
+                    <span class="filters-list__item-text">Abat</span>
+                  </label>
+                  <label for="filter-1_Check-2" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-1_Check-2"
+                    />
+                    <span class="filters-list__item-text">Rational</span>
+                  </label>
+                  <label for="filter-1_Check-3" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-1_Check-3"
+                    />
+                    <span class="filters-list__item-text">Retigo</span>
+                  </label>
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                >
+                  Страна изготовитель
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-2">
+                  <label for="filter-2_Check-1" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-2_Check-1"
+                    />
+                    <span class="filters-list__item-text">Германия</span>
+                  </label>
+                  <label for="filter-2_Check-2" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-2_Check-2"
+                    />
+                    <span class="filters-list__item-text">Италия</span>
+                  </label>
+                  <label for="filter-2_Check-3" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-2_Check-3"
+                    />
+                    <span class="filters-list__item-text">Россия</span>
+                  </label>
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                >
+                  Мощность
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-3">
+                  <div class="d-flex [ justify-content-between align-items-center ]">
+                    <label class="filters-list__item-label filters-list__item-label--slider">
+                      <input
+                        type="number"
+                        min="0"
+                        max="100"
+                        class="filters-list__item-input filters-list__item-input--slider"
+                        data-input="input-from"
+                      />
+                      <span class="filters-list__item-text">кВт</span>
+                    </label>
+                    <label class="filters-list__item-label filters-list__item-label--slider">
+                      <input
+                        type="number"
+                        min="0"
+                        max="100"
+                        class="filters-list__item-input filters-list__item-input--slider"
+                        data-input="input-to"
+                      />
+                      <span class="filters-list__item-text">кВт</span>
+                    </label>
+                  </div>
+                  <!-- ./.filters-list__item-wrapper .d-flex .justify-content-between .align-items-center -->
+                  <div class="filters-list__item-slider"></div>
+                  <!-- /.goods-filters__list-range -->
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-4"
+                >
+                  Напряжение
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-4">
+                  <label for="filter-3_Check-1" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-3_Check-1"
+                    />
+                    <span class="filters-list__item-text">220 В</span>
+                  </label>
+                  <label for="filter-3_Check-2" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-3_Check-2"
+                    />
+                    <span class="filters-list__item-text">380 В</span>
+                  </label>
+                  <label for="filter-3_Check-3" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-3_Check-3"
+                    />
+                    <span class="filters-list__item-text">Газ</span>
+                  </label>
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-5"
+                >
+                  Материал
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-5">
+                  <label for="filter-4_Check-1" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-4_Check-1"
+                    />
+                    <span class="filters-list__item-text">Нержавеющая сталь</span>
+                  </label>
+                  <label for="filter-4_Check-2" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-4_Check-2"
+                    />
+                    <span class="filters-list__item-text">Оцинкованная сталь</span>
+                  </label>
+                  <label for="filter-4_Check-3" class="filters-list__item-label">
+                    <input
+                      type="checkbox"
+                      class="filters-list__item-input filters-list__item-input--pointer"
+                      id="filter-4_Check-3"
+                    />
+                    <span class="filters-list__item-text">Аллюминий</span>
+                  </label>
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+
+              <li class="filters-list__item">
+                <button
+                  class="button filters-list__item-btn filters-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-6"
+                >
+                  Вес
+                  <svg class="filters-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-bar-down" />
+                  </svg>
+                </button>
+                <div class="filters-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-6">
+                  <div class="d-flex [ justify-content-between align-items-center ]">
+                    <label class="filters-list__item-label filters-list__item-label--slider">
+                      <input
+                        type="number"
+                        min="0"
+                        max="100"
+                        class="filters-list__item-input filters-list__item-input--slider"
+                        data-input="input-from"
+                      />
+                      <span class="filters-list__item-text">кг</span>
+                    </label>
+                    <label class="filters-list__item-label filters-list__item-label--slider">
+                      <input
+                        type="number"
+                        min="0"
+                        max="100"
+                        class="filters-list__item-input filters-list__item-input--slider"
+                        data-input="input-to"
+                      />
+                      <span class="filters-list__item-text">кг</span>
+                    </label>
+                  </div>
+                  <!-- ./d-flex .justify-content-between .align-items-center -->
+                  <div class="filters-list__item-slider"></div>
+                  <!-- /.goods-filters__list-range -->
+                </div>
+                <!-- /.filters-list__item-wrapper -->
+              </li>
+            </ul>
+            <button class="button filters__btn filters__btn--show">Показать</button>
+            <button class="button filters__btn filters__btn--reset">Сбросить</button>
+          </div>
+          <!-- /.filters -->
+        </div>
+      </div>
     </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/fancybox.umd.js"></script>
     <!-- <script src="./assets/js/aos.js"></script> -->
     <script src="./assets/js/main.js"></script>
   </body>

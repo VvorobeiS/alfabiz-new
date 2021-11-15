@@ -38,6 +38,37 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const goodSlider = new Swiper('.product-slider', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    speed: 700,
+
+    // Настройки адаптивной версии
+    breakpoints: {
+      // если браузер >= 320px
+      320: {
+        slidesPerView: 1
+      }
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.product-slider__btn--next',
+      prevEl: '.product-slider__btn--prev'
+    },
+
+    // Управление клавиатурой
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+    },
+
+    observer: true,
+    observeParents: true
+  });
+
   const goodsSlider = new Swiper('.goods-slider__container', {
     // Optional parameters
     loop: false,
