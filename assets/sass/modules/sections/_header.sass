@@ -12,6 +12,20 @@
       text-align: center
       &>img
         display: block
+  &__btn
+    display: flex
+    align-items: flex-end
+    font-family: $Montserrat
+    font-size: 14px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: $letter-spacing
+    background-color: transparent
+    color: inherit
+    +hover
+      color: $primary-color
+  &__icon
+    margin-right: 5px
   &-city
     display: flex
     align-items: center
@@ -33,23 +47,6 @@
       color: $primary-color
       &--mr-5
         margin-right: 5px
-  &__btn
-    display: flex
-    flex-direction: column
-    align-items: center
-    font-family: $Montserrat
-    font-size: 13px
-    font-weight: 400
-    font-style: normal
-    letter-spacing: $letter-spacing
-    background-color: transparent
-    color: $light-color
-    transition: $transition
-    +hover
-      color: $yellow-color
-    &--mobile
-      font-size: 12px
-      color: $text-color
     &--user
       flex-direction: row
       align-items: flex-end
@@ -60,93 +57,3 @@
     &-icon
       &--user
         margin-right: 5px
-.navbar
-  position: relative
-  padding-top: 20px
-  padding-bottom: 20px
-  background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
-  &-menu
-    &__list
-      display: flex
-      justify-content: space-between
-      align-items: center
-      &-link
-        @include link
-        color: $light-color
-        &:before
-          background-color: $light-color
-        +hover
-          color: $yellow-color
-  &-catalog
-    position: absolute
-    top: 85px
-    display: none
-    padding-top: 20px
-    background-color: $light-color
-    box-shadow: 0px 5px 10px 2px rgba(192, 8, 8, 0.3)
-    z-index: 101
-    opacity: 0
-    transition: $transition
-    &--visible
-      display: block
-      opacity: 1
-    &__tabs
-      max-width: 100%
-      margin: 0
-      margin-bottom: 20px
-      padding: 0 20px
-      justify-content: space-between
-    &__menu
-      &-item
-        position: relative
-      &-link
-        position: relative
-        display: block
-        padding: 10px 35px 10px 20px
-        font-family: $Montserrat
-        font-weight: 500
-        font-size: 14px
-        font-style: normal
-        letter-spacing: $letter-spacing
-        text-decoration: none
-        color: inherit
-        transition: $transition
-        &:before
-          content: ''
-          position: absolute
-          top: 0
-          bottom: 0
-          left: 0
-          width: 0
-          background-color: $primary-color
-        &:after
-          position: absolute
-          content: ''
-          background: url(../images/svg/caret-right-fill.svg) no-repeat
-          width: 16px
-          height: 16px
-          right: 15px
-          opacity: .5
-        +hover
-          &:before
-            width: 10px
-          &:after
-            opacity: 1
-    &__submenu
-      position: absolute
-      top: 0
-      left: 100%
-      width: 100%
-      background-color: $light-color
-      box-shadow: 5px 5px 10px 2px rgba(192, 8, 8, 0.3)
-      &-link
-        display: block
-        padding: 10px 35px 10px 20px
-        font-family: $Montserrat
-        font-weight: 500
-        font-size: 14px
-        font-style: normal
-        letter-spacing: $letter-spacing
-        text-decoration: none
-        color: inherit
-        transition: $transition

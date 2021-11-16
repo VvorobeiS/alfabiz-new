@@ -1,4 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // Закрепляем панель навигации при скролле
+  const navbar = document.querySelector('.navbar'),
+    headerTop = document.querySelector('.header__container'),
+    offset = navbar.offsetTop,
+    navbarHeight = navbar.clientHeight;
+
+  document.addEventListener('scroll', () => {
+    let scrolled = window.pageYOffset;
+    if (scrolled >= offset) {
+      headerTop.style.marginBottom = `${navbarHeight}px`;
+      navbar.classList.add('navbar--fixed');
+    } else if (scrolled <= offset) {
+      headerTop.style.marginBottom = '0px';
+      navbar.classList.remove('navbar--fixed');
+    }
+  });
+
   // Инициализиуем слайдеры
   const mainSlider = new Swiper('.main-slider__container', {
     // Optional parameters
@@ -277,7 +294,37 @@ window.addEventListener('DOMContentLoaded', () => {
       eventsSliderContent = document.querySelectorAll('.events__slider-container'),
       goodsTabs = document.querySelector('.goods-view'),
       goodsTab = document.querySelectorAll('[data-toggle=goods-tab]'),
-      goodsContent = document.querySelectorAll('[data-target=goods-content]');
+      goodsContent = document.querySelectorAll('[data-target=goods-content]'),
+      catalogMenu = document.querySelector('.navbar-catalog__menu'),
+      catalogMenuLink = document.querySelectorAll('.navbar-catalog__menu-link'),
+      catalogSubMenu = document.querySelectorAll('.navbar-catalog__submenu');
+    console.log(catalogMenuLink);
+
+    const toggleCatalogMenu = (index) => {
+      for (let i = 0; i < catalogSubMenu.length; i++) {
+        if (index === i) {
+          catalogMenuLink[i].classList.add('navbar-catalog__menu-link--active');
+          catalogSubMenu[i].classList.add('navbar-catalog__submenu--active');
+        } else {
+          catalogMenuLink[i].classList.remove('navbar-catalog__menu-link--active');
+          catalogSubMenu[i].classList.remove('navbar-catalog__submenu--active');
+        }
+      }
+    };
+
+    catalogMenu.addEventListener('mouseover', () => {
+      let target = event.target;
+      console.log(target);
+      if (target) {
+        catalogMenuLink.forEach((item, i) => {
+          if (item === target) {
+            toggleCatalogMenu(i);
+          }
+        });
+        return;
+      }
+    });
+
     const toggleGoodsSlider = (index) => {
       for (let i = 0; i < goodsSliderContent.length; i++) {
         if (index === i) {

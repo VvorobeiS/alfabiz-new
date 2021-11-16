@@ -1,0 +1,137 @@
+.navbar
+  background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
+  &>.container>.row
+    position: relative
+  &--fixed
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 101
+  &-menu
+    &__list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-link
+        @include link
+        color: $light-color
+        &:before
+          background-color: $light-color
+        +hover
+          color: $yellow-color
+  &__btn
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: $Montserrat
+    font-size: 13px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: $letter-spacing
+    background-color: transparent
+    color: $light-color
+    transition: $transition
+    +hover
+      color: $yellow-color
+    &--mobile
+      font-size: 12px
+      color: $text-color
+  &-catalog
+    position: absolute
+    top: 77px
+    display: none
+    z-index: 101
+    opacity: 0
+    &--visible
+      display: flex
+      align-items: start
+      justify-content: start
+      opacity: 1
+    &__tabs
+      max-width: 100%
+      margin: 0
+      margin-bottom: 20px
+      padding: 0 20px
+      justify-content: space-between
+    &__menu
+      display: flex
+      flex-direction: column
+      padding-top: 20px
+      box-shadow: 0px 5px 10px 2px rgba(192, 8, 8, 0.3)
+      background-color: $light-color
+      transition: $transition
+      &-link
+        position: relative
+        display: block
+        padding: 10px 35px 10px 20px
+        font-family: $Montserrat
+        font-weight: 500
+        font-size: 14px
+        font-style: normal
+        letter-spacing: $letter-spacing
+        text-decoration: none
+        color: inherit
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          width: 0
+          background-color: $primary-color
+        &:after
+          position: absolute
+          content: ''
+          background: url(../images/svg/chevron-right.svg) no-repeat
+          width: 16px
+          height: 16px
+          right: 15px
+          opacity: .5
+        +hover
+          background-color: rgba(0,0,0,0.05)
+          &:before
+            width: 10px
+          &:after
+            opacity: 1
+        &--active
+          background-color: rgba(0,0,0,0.05)
+          &:before
+            width: 10px
+          &:after
+            opacity: 1
+    &__submenu
+      margin-top: 20px
+      display: none
+      flex-direction: column
+      max-height: 70vh
+      background-color: $light-color
+      box-shadow: 5px 5px 10px 2px rgba(192, 8, 8, 0.3)
+      overflow: hidden
+      overflow-y: auto
+      &--active
+        display: flex
+      &-link
+        position: relative
+        display: block
+        padding: 10px 35px 10px 20px
+        font-family: $Montserrat
+        font-weight: 500
+        font-size: 14px
+        font-style: normal
+        letter-spacing: $letter-spacing
+        text-decoration: none
+        color: inherit
+        transition: $transition
+        &:before
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          width: 0
+          background-color: $primary-color
+        +hover
+          background-color: rgba(0,0,0,0.05)
+          &:before
+            width: 10px
