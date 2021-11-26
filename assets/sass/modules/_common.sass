@@ -54,10 +54,8 @@
   border: none
   border-radius: $border-radius
   background-color: $blue-color
-.col-md-12--pr
+.position-relative
   position: relative
-.row--mb-5
-  margin-bottom: 5rem
 input, .input
   @include input
 .contacts
@@ -90,6 +88,8 @@ input, .input
   display: block
   max-width: 208px
   max-height: 58px
+  padding: 0
+  margin: 0
   font-family: $Montserrat
   font-size: 13px
   font-weight: 300
@@ -147,8 +147,6 @@ input, .input
   cursor: pointer
 .catalog
   &-list
-    list-style: initial
-    padding-inline-start: 20px
     &__item
       line-height: 24px
       text-align: justify
@@ -190,40 +188,46 @@ input, .input
       +hover
         background-position: right center; /* change the direction of the change here */
   &-callback
+    position: relative
     display: flex
     flex-direction: column
     align-items: center
     justify-content: space-around
-    padding: 0 70px
-    background: linear-gradient( 99.6deg, rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% )
-    border: 1px solid $blue-color
-    border-radius: $border-radius
+    height: 100%
+    padding: 0 30px
+    // background: linear-gradient(115deg, rgba(192,8,8,0.8) 10%, rgba(18,64,149,0.85) 60%)
+    background-image: linear-gradient( 113.3deg, rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% )
+    text-align: center
     &__title
-      text-align: center
+      color: $light-color
+      z-index: 2
+      &:before
+        background-color: $yellow-color
     &__input
       width: 100%
       height: 35px
       padding: 0 15px
+      color: $light-color
       border: none
-      border: 1px solid $blue-color
       border-radius: $border-radius
+      background-color: rgba(255, 221, 0, 0.2)
+      z-index: 2
+      &::-webkit-input-placeholder
+        color: $light-color
+      &::-moz-placeholder
+        color: $light-color
+      &:-ms-input-placeholder
+        color: $light-color
+      &:focus
+        box-shadow: 0 0 5px #eee
     &__btn
       display: flex
       align-items: center
       margin: 0 auto
-      padding: 5px 10px
-      font-family: $Montserrat
+      padding: 10px 10px
       font-size: 14px
-      font-weight: 400
-      font-style: normal
-      letter-spacing: $letter-spacing
-      background-color: $light-color
-      color: $blue-color
-      border: 1px solid $blue-color
-      transition: $transition
-      +hover
-        color: $light-color
-        background-color: $blue-color
+      @include btn-red
+      z-index: 2
     &__icon
       margin-right: 5px
   &-user
@@ -327,10 +331,10 @@ input, .input
 .filters
   padding: 15px 15px
   background-color: $light-color
-  box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
-  border-radius: $border-radius
-  overflow: hidden
   &-list
+    margin: 0
+    padding: 0
+    list-style: none
     margin-bottom: 30px
     &__item
       display: flex
@@ -410,13 +414,12 @@ input, .input
       margin-bottom: 10px
     &--reset
       @include btn-red
-
-// .test
-//   background-image: url(../images/svg/bold-arrows.svg)
-//   background-position: bottom
-//   background-size: cover
-//   bottom: 0
-//   left: 0
-//   position: absolute
-//   right: 0
-//   top: 0
+.arrows
+  background-image: url(../images/svg/bold-arrows.svg)
+  background-position: bottom
+  background-size: cover
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0

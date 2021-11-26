@@ -317,20 +317,23 @@
       <nav class="breadcrumb">
         <div class="container">
           <div class="row [ d-none d-md-flex ]">
-            <ul class="breadcrumb-list col-12">
-              <li class="breadcrumb-list__item">
-                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Главная</a>
-              </li>
-              <li class="breadcrumb-list__item">
-                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Каталог</a>
-              </li>
-              <li class="breadcrumb-list__item">
-                <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Тепловое оборудование</a>
-              </li>
-              <li class="breadcrumb-list__item">
-                <span class="breadcrumb-list__page">Пароконвектоматы</span>
-              </li>
-            </ul>
+            <div class="col-12">
+              <ul class="breadcrumb-list">
+                <li class="breadcrumb-list__item">
+                  <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Главная</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                  <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Каталог</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                  <a href="#!" class="breadcrumb-list__page breadcrumb-list__page--link">Тепловое оборудование</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                  <span class="breadcrumb-list__page">Пароконвектоматы</span>
+                </li>
+              </ul>
+            </div>
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
@@ -403,7 +406,7 @@
           <!-- /.row -->
           <div class="row mb-3">
             <div class="col-3 [ d-none d-lg-block ]">
-              <div class="filters">
+              <div class="filters wrapper">
                 <ul class="filters-list">
                   <li class="filters-list__item">
                     <span class="filters-list__item-title mb-2">Цена</span>
@@ -680,238 +683,255 @@
               <!-- /.filters -->
             </div>
             <!-- /.col-3 -->
-            <ul class="goods-list [ col-12 col-lg-9 ]" data-target="goods-content">
-              <li class="goods-list__item">
-                <div class="d-flex [ justify-content-start align-items-start ] [ mb-2 mb-sm-0 ]">
-                  <a href="#!" class="goods-list__item-link goods-list__item-link--img">
-                    <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="goods-list__item-img" />
-                  </a>
-                  <div class="d-flex flex-column align-items-start">
-                    <a href="#!" class="goods-list__item-link mb-2">
-                      <h3 class="goods-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+            <div class="col-12 col-lg-9" data-target="goods-content">
+              <ul class="goods-list">
+                <li class="goods-list__item">
+                  <div class="d-flex [ justify-content-start align-items-start ] [ mb-2 mb-sm-0 ]">
+                    <a href="#!" class="goods-list__item-link goods-list__item-link--img">
+                      <img
+                        src="./assets/images/goods/good-1.jpg"
+                        alt="Изображение товара"
+                        class="goods-list__item-img"
+                      />
                     </a>
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Артикул: <span class="goods-list__item-info goods-list__item-info--atribbute">B5473</span></span
-                    >
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Бренд: <span class="goods-list__item-info goods-list__item-info--atribbute">Retigo</span></span
-                    >
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Страна:
-                      <span class="goods-list__item-info goods-list__item-info--atribbute"
-                        >Чешская республика</span
-                      ></span
-                    >
+                    <div class="d-flex flex-column align-items-start">
+                      <a href="#!" class="goods-list__item-link mb-2">
+                        <h3 class="goods-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                      </a>
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Артикул:
+                        <span class="goods-list__item-info goods-list__item-info--atribbute">B5473</span></span
+                      >
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Бренд: <span class="goods-list__item-info goods-list__item-info--atribbute">Retigo</span></span
+                      >
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Страна:
+                        <span class="goods-list__item-info goods-list__item-info--atribbute"
+                          >Чешская республика</span
+                        ></span
+                      >
+                    </div>
+                    <!-- /.d-flex .flex-column .align-items-start -->
                   </div>
-                  <!-- /.d-flex .flex-column .align-items-start -->
-                </div>
-                <!-- /.d-flex !wrapper for link-->
-                <div class="d-none d-md-block">
-                  <span class="cost">324 065 ₽</span>
-                </div>
-                <!-- /.d-none .d-md-block !wrapper for cost-->
-                <div class="[ d-none d-md-flex ] flex-column align-items-end">
-                  <div class="d-flex [ justify-content-between align-items-center ] mb-2">
-                    <input type="number" class="goods-list__item-input" value="1" />
-                    <button class="button goods-list__item-btn goods-list__item-btn--cart">
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="d-none d-md-block">
+                    <span class="cost">324 065 ₽</span>
+                  </div>
+                  <!-- /.d-none .d-md-block !wrapper for cost-->
+                  <div class="[ d-none d-md-flex ] flex-column align-items-end">
+                    <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                      <input type="number" class="goods-list__item-input" value="1" />
+                      <button class="button goods-list__item-btn goods-list__item-btn--cart">
+                        <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-list__item-btn mb-2">
+                      <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div
+                    class="
+                      [
+                      d-flex d-md-none
+                      ]
+                      [
+                      flex-sm-column flex-grow-1 flex-sm-grow-0
+                      ]
+                      [
+                      justify-content-end
+                      align-items-center
+                      ]
+                    "
+                  >
+                    <span class="cost [ d-md-none mb-sm-2 ]">324 065 ₽</span>
+                    <button class="button goods-list__item-btn goods-list__item-btn--cart mb-sm-2">
                       <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
                         <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
                       </svg>
-                      В корзину
                     </button>
-                  </div>
-                  <!-- /.d-flex -->
-                  <button class="button goods-list__item-btn mb-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
-                    </svg>
-                    Сравнить
-                  </button>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                </div>
-                <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
-                <div
-                  class="
-                    [
-                    d-flex d-md-none
-                    ]
-                    [
-                    flex-sm-column flex-grow-1 flex-sm-grow-0
-                    ]
-                    [
-                    justify-content-end
-                    align-items-center
-                    ]
-                  "
-                >
-                  <span class="cost [ d-md-none mb-sm-2 ]">324 065 ₽</span>
-                  <button class="button goods-list__item-btn goods-list__item-btn--cart mb-sm-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                    </svg>
-                  </button>
-                  <button class="button goods-list__item-btn mb-sm-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
-                    </svg>
-                  </button>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                </div>
-                <!-- /.d-flex .flex-column .align-items-start !mobile -->
-              </li>
-              <li class="goods-list__item">
-                <div class="d-flex [ justify-content-start align-items-start ] [ mb-2 mb-sm-0 ]">
-                  <a href="#!" class="goods-list__item-link goods-list__item-link--img">
-                    <img src="./assets/images/goods/good-2.png" alt="Изображение товара" class="goods-list__item-img" />
-                  </a>
-                  <div class="d-flex flex-column align-items-start">
-                    <a href="#!" class="goods-list__item-link mb-2">
-                      <h3 class="goods-list__item-title">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</h3>
-                    </a>
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Артикул: <span class="goods-list__item-info goods-list__item-info--atribbute">215189</span></span
-                    >
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Бренд: <span class="goods-list__item-info goods-list__item-info--atribbute">Rational</span></span
-                    >
-                    <span class="goods-list__item-info goods-list__item-info--data"
-                      >Страна:
-                      <span class="goods-list__item-info goods-list__item-info--atribbute">Германия</span></span
-                    >
-                  </div>
-                  <!-- /.d-flex .flex-column .align-items-start -->
-                </div>
-                <!-- /.d-flex !wrapper for link-->
-                <div class="[ d-none d-md-flex ] flex-column">
-                  <span class="cost cost--primary">1 131 861 ₽</span>
-                  <span class="cost cost--old">1 200 000 ₽</span>
-                </div>
-                <!-- /.d-flex !wrapper for cost-->
-                <div class="[ d-none d-md-flex ] flex-column align-items-end">
-                  <div class="d-flex [ justify-content-between align-items-center ] mb-2">
-                    <input type="number" class="goods-list__item-input" value="1" />
-                    <button class="button goods-list__item-btn goods-list__item-btn--cart">
+                    <button class="button goods-list__item-btn mb-sm-2">
                       <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                       </svg>
-                      В корзину
                     </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
                   </div>
-                  <!-- /.d-flex -->
-                  <button class="button goods-list__item-btn mb-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
-                    </svg>
-                    Сравнить
-                  </button>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                </div>
-                <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
-                <div
-                  class="
-                    [
-                    d-flex d-md-none
-                    ]
-                    [
-                    flex-sm-column flex-grow-1 flex-sm-grow-0
-                    ]
-                    [
-                    justify-content-end
-                    align-items-center
-                    ]
-                  "
-                >
-                  <div class="[ d-flex d-md-none ] flex-column mb-sm-2">
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+                <li class="goods-list__item">
+                  <div class="d-flex [ justify-content-start align-items-start ] [ mb-2 mb-sm-0 ]">
+                    <a href="#!" class="goods-list__item-link goods-list__item-link--img">
+                      <img
+                        src="./assets/images/goods/good-2.png"
+                        alt="Изображение товара"
+                        class="goods-list__item-img"
+                      />
+                    </a>
+                    <div class="d-flex flex-column align-items-start">
+                      <a href="#!" class="goods-list__item-link mb-2">
+                        <h3 class="goods-list__item-title">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</h3>
+                      </a>
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Артикул:
+                        <span class="goods-list__item-info goods-list__item-info--atribbute">215189</span></span
+                      >
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Бренд:
+                        <span class="goods-list__item-info goods-list__item-info--atribbute">Rational</span></span
+                      >
+                      <span class="goods-list__item-info goods-list__item-info--data"
+                        >Страна:
+                        <span class="goods-list__item-info goods-list__item-info--atribbute">Германия</span></span
+                      >
+                    </div>
+                    <!-- /.d-flex .flex-column .align-items-start -->
+                  </div>
+                  <!-- /.d-flex !wrapper for link-->
+                  <div class="[ d-none d-md-flex ] flex-column">
                     <span class="cost cost--primary">1 131 861 ₽</span>
                     <span class="cost cost--old">1 200 000 ₽</span>
                   </div>
-                  <!-- /.d-flex -->
-                  <button class="button goods-list__item-btn goods-list__item-btn--cart mb-sm-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                    </svg>
-                  </button>
-                  <button class="button goods-list__item-btn mb-sm-2">
-                    <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
-                      <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
-                    </svg>
-                  </button>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                </div>
-                <!-- /.d-flex .flex-column .align-items-start !mobile -->
-              </li>
-            </ul>
-            <!-- /.goods-list -->
-            <ul class="goods-table [ col-12 col-lg-9 d-none ]" data-target="goods-content">
-              <li class="goods-table__item">
-                <div class="goods-table__item-wrapper">
-                  <a href="#!" class="goods-table__item-img">
-                    <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" />
-                  </a>
-                  <a href="#!" class="goods-table__item-link">Пароконвектомат RETIGO O623IC VISION II</a>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                  <div class="d-flex [ justify-content-between align-items-center ]">
-                    <button class="button goods-table__item-btn goods-table__item-btn--cart">
-                      <svg class="goods-table__item-icon" width="20" height="20" fill="currentColor">
-                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                      </svg>
-                    </button>
-
-                    <span class="cost">324 065 ₽</span>
-                    <button class="button goods-table__item-btn">
-                      <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
-                      </svg>
-                    </button>
-                  </div>
-                  <!-- /.d-flex -->
-                </div>
-                <!-- /.goods-table__item-wrapper -->
-                <span class="vendor-code">135634</span>
-              </li>
-              <li class="goods-table__item">
-                <div class="goods-table__item-wrapper">
-                  <a href="#!" class="goods-table__item-img">
-                    <img src="./assets/images/goods/good-2.png" alt="Изображение товара" />
-                  </a>
-                  <a href="#!" class="goods-table__item-link">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</a>
-                  <span class="availability availability--success">В наличии</span>
-                  <span class="availability availability--warning d-none">Нет данных</span>
-                  <span class="availability availability--danger d-none">Нет в наличии</span>
-                  <div class="d-flex [ justify-content-between align-items-center ]">
-                    <button class="button goods-table__item-btn goods-table__item-btn--cart">
-                      <svg class="goods-table__item-icon" width="20" height="20" fill="currentColor">
-                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                      </svg>
-                    </button>
-                    <div class="d-flex flex-column">
-                      <span class="cost cost--primary">1 200 000 ₽</span>
-                      <span class="cost cost--old">1 131 861 ₽</span>
+                  <!-- /.d-flex !wrapper for cost-->
+                  <div class="[ d-none d-md-flex ] flex-column align-items-end">
+                    <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                      <input type="number" class="goods-list__item-input" value="1" />
+                      <button class="button goods-list__item-btn goods-list__item-btn--cart">
+                        <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                        В корзину
+                      </button>
                     </div>
                     <!-- /.d-flex -->
-                    <button class="button goods-table__item-btn goods-table__item-btn">
-                      <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                    <button class="button goods-list__item-btn mb-2">
+                      <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                      </svg>
+                      Сравнить
+                    </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                  </div>
+                  <!-- /.d-none .d-md-flex .flex-column .align-items-start !desktop-->
+                  <div
+                    class="
+                      [
+                      d-flex d-md-none
+                      ]
+                      [
+                      flex-sm-column flex-grow-1 flex-sm-grow-0
+                      ]
+                      [
+                      justify-content-end
+                      align-items-center
+                      ]
+                    "
+                  >
+                    <div class="[ d-flex d-md-none ] flex-column mb-sm-2">
+                      <span class="cost cost--primary">1 131 861 ₽</span>
+                      <span class="cost cost--old">1 200 000 ₽</span>
+                    </div>
+                    <!-- /.d-flex -->
+                    <button class="button goods-list__item-btn goods-list__item-btn--cart mb-sm-2">
+                      <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
+                        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                      </svg>
+                    </button>
+                    <button class="button goods-list__item-btn mb-sm-2">
+                      <svg class="goods-list__item-icon" width="14" height="14" fill="currentColor">
                         <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                       </svg>
                     </button>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
                   </div>
-                  <!-- /.d-flex -->
-                </div>
-                <!-- /.goods-table__item-wrapper -->
-                <span class="vendor-code">135634</span>
-              </li>
-            </ul>
-            <!-- /.goods-table -->
+                  <!-- /.d-flex .flex-column .align-items-start !mobile -->
+                </li>
+              </ul>
+              <!-- /.goods-list -->
+            </div>
+            <!-- /.col-12 col-lg-9 -->
+            <div class="col-12 col-lg-9 d-none" data-target="goods-content">
+              <ul class="goods-table">
+                <li class="goods-table__item">
+                  <div class="goods-table__item-wrapper">
+                    <a href="#!" class="goods-table__item-img">
+                      <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" />
+                    </a>
+                    <a href="#!" class="goods-table__item-link">Пароконвектомат RETIGO O623IC VISION II</a>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                    <div class="d-flex [ justify-content-between align-items-center ]">
+                      <button class="button goods-table__item-btn goods-table__item-btn--cart">
+                        <svg class="goods-table__item-icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+
+                      <span class="cost">324 065 ₽</span>
+                      <button class="button goods-table__item-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                  </div>
+                  <!-- /.goods-table__item-wrapper -->
+                  <span class="vendor-code">135634</span>
+                </li>
+                <li class="goods-table__item">
+                  <div class="goods-table__item-wrapper">
+                    <a href="#!" class="goods-table__item-img">
+                      <img src="./assets/images/goods/good-2.png" alt="Изображение товара" />
+                    </a>
+                    <a href="#!" class="goods-table__item-link">Пароконвектомат Rational ICOMBI CLASSIC 10-1/1</a>
+                    <span class="availability availability--success">В наличии</span>
+                    <span class="availability availability--warning d-none">Нет данных</span>
+                    <span class="availability availability--danger d-none">Нет в наличии</span>
+                    <div class="d-flex [ justify-content-between align-items-center ]">
+                      <button class="button goods-table__item-btn goods-table__item-btn--cart">
+                        <svg class="goods-table__item-icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                      <div class="d-flex flex-column">
+                        <span class="cost cost--primary">1 200 000 ₽</span>
+                        <span class="cost cost--old">1 131 861 ₽</span>
+                      </div>
+                      <!-- /.d-flex -->
+                      <button class="button goods-table__item-btn goods-table__item-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.d-flex -->
+                  </div>
+                  <!-- /.goods-table__item-wrapper -->
+                  <span class="vendor-code">135634</span>
+                </li>
+              </ul>
+              <!-- /.goods-table -->
+            </div>
+            <!-- /.col-12 col-lg-9 d-none -->
           </div>
           <!-- /.row -->
           <div class="row">
@@ -1785,7 +1805,7 @@
           </button>
         </div>
         <div class="offcanvas-body">
-          <div class="filters">
+          <div class="filters wrapper">
             <ul class="filters-list">
               <li class="filters-list__item">
                 <span class="filters-list__item-title mb-2">Цена</span>
@@ -2063,10 +2083,6 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/node_modules/nouislider/dist/nouislider.min.js"></script>
-    <!-- <script src="./assets/js/aos.js"></script> -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/bundle.js"></script>
   </body>
 </html>

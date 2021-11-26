@@ -3,26 +3,25 @@
     &:not([disabled]):hover
       @content
 @mixin title
+  position: relative
   font-family: $Open-Sans
   font-style: normal
   font-weight: 700
   letter-spacing: $letter-spacing
   color: inherit
-  text-shadow: 1px 1px 2px $blue-color
+  &:before
+    content: ""
+    position: absolute
+    bottom: -6px
+    left: 0
+    width: 60px
+    height: 3px
+    background-color: $primary-color
+    border-radius: $border-radius
   &--h2
     font-size: 28px
   &--h3
-    position: relative
     font-size: 18px
-    &:before
-      content: ""
-      position: absolute
-      bottom: -6px
-      left: 0
-      width: 60px
-      height: 3px
-      background-color: $primary-color
-      border-radius: $border-radius
 @mixin link
   position: relative
   font-family: $Montserrat
@@ -48,36 +47,44 @@
 @mixin tab
   position: relative
   display: flex
-  justify-content: space-evenly
   align-items: center
   max-width: 50%
   margin: 0 auto
   list-style: none
+  background-color: $light-color
+  border-radius: $border-radius
+  overflow: hidden
   &__item
     position: relative
+    flex-basis: 50%
+    padding: 10px 0
     font-family: $Open-Sans
-    font-size: 18px
+    font-size: 14px
     font-weight: 600
     font-style: normal
     letter-spacing: $letter-spacing
+    text-align: center
     cursor: pointer
     transition: $transition
     &:before
       content: ''
       position: absolute
-      bottom: -2px
-      width: 100%
-      height: 1px
+      top: 0
+      left: 0
+      bottom: 0
+      width: 0%
       background-color: $primary-color
       transition: $transition
     &--active
-      color: $primary-color
+      z-index: 2
+      color: $light-color
       &:before
-        width: 0
+        width: 100%
+        z-index: -1
     +hover
-      color: $primary-color
+      color: $light-color
       &:before
-        width: 0
+        width: 100%
 
 @mixin input
   font-family: $Montserrat
@@ -98,7 +105,6 @@
   color: $light-color
   background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
   background-size: 200% auto
-  box-shadow: 0 0 5px #eee
   +hover
     background-position: right center; /* change the direction of the change here */
 
@@ -106,7 +112,6 @@
   color: $light-color
   background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
   background-size: 200% auto
-  box-shadow: 0 0 5px #eee
   +hover
     background-position: right center; /* change the direction of the change here */
 
@@ -119,7 +124,7 @@
     background-position: right center; /* change the direction of the change here */
 
 @mixin wrapper
-  background-color: $light-color
-  box-shadow: 0px 0px 10px 5px rgba(180, 186, 196, 0.8)
+  background: $light-color
+  box-shadow: 0px 0px 5px 3px rgba(180, 186, 196, 0.8)
   border-radius: $border-radius
   overflow: hidden

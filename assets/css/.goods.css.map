@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAGO,AAAD,0BAAO,AAAC,CACN,OAAO,CAAE,IAAI,CAAG",
-    "sources": [
-        "../sass/modules/sections/.goods.sass"
-    ],
-    "names": [],
-    "file": ".goods.css"
-}

@@ -314,113 +314,123 @@
         <!-- /.container -->
       </div>
       <!-- /.navbar -->
-      <section class="main">
+      <section class="hero">
         <div class="container">
-          <div class="row d-none d-lg-flex">
-            <div class="col-8 main-slider">
-              <div class="swiper-container main-slider__container">
-                <div class="swiper-wrapper main-slider__wrapper">
-                  <div class="swiper-slide main-slider__slide">
+          <div class="row">
+            <div class="col-12 col-lg-8 col-xxl-9">
+              <div class="hero-slider swiper-container wrapper">
+                <div class="hero-slider__wrapper swiper-wrapper">
+                  <div class="hero-slider__slide swiper-slide">
                     <a href="#!" class="main-slider__link">
                       <img
                         src="./assets/images/main-slider/slide-1.jpg"
                         alt="Изображение слайдера"
-                        class="main-slider__img"
+                        class="hero-slider__img"
                       />
                     </a>
                   </div>
-                  <div class="swiper-slide main-slider__slide">
+                  <div class="hero-slider__slide swiper-slide">
                     <a href="#!" class="main-slider__link">
-                      <img src="./assets/images/main-slider/slide-2.jpg" alt="" class="main-slider__img" />
+                      <img src="./assets/images/main-slider/slide-2.jpg" alt="" class="hero-slider__img" />
                     </a>
                   </div>
                 </div>
-                <!-- /.swiper-wrapper main-slider__wrapper -->
+                <!-- /. main-slider__wrapper swiper-wrapper -->
                 <div class="swiper-pagination"></div>
-                <button class="main-slider__btn main-slider__btn--prev">
-                  <svg class="main-slider__svg" width="30" height="30" fill="currentColor">
+                <button class="hero-slider__btn hero-slider__btn--prev">
+                  <svg class="hero-slider__svg" width="100%" height="100%" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-left" />
                   </svg>
                 </button>
-                <button class="main-slider__btn main-slider__btn--next">
-                  <svg class="main-slider__svg" width="30" height="30" fill="currentColor">
+                <button class="hero-slider__btn hero-slider__btn--next">
+                  <svg class="hero-slider__svg" width="100%" height="100%" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-right" />
                   </svg>
                 </button>
               </div>
-              <!-- /.swiper-container main-slider__container -->
+              <!-- /.swiper-container hero-slider -->
             </div>
             <!-- /.col-8 -->
-            <form action="#!" class="col-4 form-callback">
-              <h3 class="form-callback__title">Заказ обратного звонка</h3>
-              <input type="text" class="form-callback__input" placeholder="ФИО" />
-              <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__" />
-              <input type="email" class="form-callback__input" placeholder="email" />
-              <button class="button form-callback__btn">
-                <svg class="form-callback__icon" width="12" height="12" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#telephone-inbound-fill" />
-                </svg>
-                Заказать звонок
-              </button>
-            </form>
+            <div class="[ col-4 col-xxl-3 ] [ d-none d-lg-block ]">
+              <form action="#!" class="form-callback wrapper">
+                <h3 class="form-callback__title title title--h3">Подписаться на анонсы</h3>
+                <input type="text" class="form-callback__input" placeholder="ФИО" />
+                <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__" />
+                <input type="email" class="form-callback__input" placeholder="email" />
+                <button class="button form-callback__btn">
+                  <svg class="form-callback__icon" width="12" height="12" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
+                  </svg>
+                  Отправить
+                </button>
+                <div class="arrows"></div>
+              </form>
+            </div>
             <!-- /.col-4 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.main -->
+      <!-- /.hero -->
       <div class="advantages">
-        <div class="container-md container-xl">
-          <div class="row d-none d-md-block mb-4">
+        <div class="container">
+          <div class="row [ d-none d-md-block ] mb-4">
             <div class="col-lg-12">
               <p class="advantages__text">
                 Компания «Альфа-Бизнес» является одним из лидеров по продажам<br />
                 промышленного холода, технологического, холодильного, климатического, торгового, весового оборудования.
               </p>
             </div>
-            <!-- /.col lg-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-lg-12">
+            <div class="col-12">
               <hr class="line" />
               <ul class="advantages-list">
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рекомендуем.svg" alt="" class="advantages-list__icon" />
+                    <img src="./assets/images/svg/Рекомендуем.svg" alt="Иконка" class="advantages-list__icon" />
                     Более 20&nbsp;лет на&nbsp;рынке HoReCa&nbsp;&amp;&nbsp;Retail
                   </a>
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link"
-                    ><img src="./assets/images/svg/Склад.svg" alt="" class="advantages-list__icon" />Большой ассортимент
-                    товара в&nbsp;наличии</a
+                    ><img src="./assets/images/svg/Склад.svg" alt="Иконка" class="advantages-list__icon" />Большой
+                    ассортимент товара в&nbsp;наличии</a
                   >
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Доставка.svg" alt="" class="advantages-list__icon" />Доставка<br />
+                    <img
+                      src="./assets/images/svg/Доставка.svg"
+                      alt="Иконка"
+                      class="advantages-list__icon"
+                    />Доставка<br />
                     по всей России</a
                   >
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Гастроплощадка.svg" alt="" class="advantages-list__icon" />Действующие
-                    гастроплощадки</a
+                    <img
+                      src="./assets/images/svg/Гастроплощадка.svg"
+                      alt="Иконка"
+                      class="advantages-list__icon"
+                    />Действующие гастроплощадки</a
                   >
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рассрочка.svg" alt="" class="advantages-list__icon" />Рассрочка без
-                    банков</a
+                    <img src="./assets/images/svg/Рассрочка.svg" alt="Иконка" class="advantages-list__icon" />Рассрочка
+                    без банков</a
                   >
                 </li>
                 <li class="advantages-list__item">
                   <a href="#!" class="advantages-list__link">
                     <img
                       src="./assets/images/svg/Тест-драйв.svg"
-                      alt=""
+                      alt="Иконка"
                       class="advantages-list__icon"
                     />Тест-драйв<br />
                     оборудования</a
@@ -429,37 +439,34 @@
               </ul>
               <hr class="line" />
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
       </div>
       <!-- /.advantages -->
-      <div class="goods goods--slider">
+      <div class="goods-slider">
         <div class="container">
           <div class="row mb-4">
             <div class="col-12">
               <ul class="tabs goods-tabs">
-                <li class="tabs__item goods-tabs__item tabs__item--active" data-target="#stock">Акции</li>
-                <li class="tabs__item goods-tabs__item" data-target="#hits">Хиты продаж</li>
-                <li class="tabs__item goods-tabs__item" data-target="#novelties">Новинки</li>
+                <li class="tabs__item goods-tabs__item tabs__item--active">Акции</li>
+                <li class="tabs__item goods-tabs__item">Хиты продаж</li>
+                <li class="tabs__item goods-tabs__item">Новинки</li>
               </ul>
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="goods-slider col-lg-12">
+            <div class="col-12">
               <div
-                class="
-                  swiper-container
-                  goods-slider__container goods-slider__container--stock goods-slider__container--active
-                "
-                id="stock"
+                class="goods-slider__container swiper-container goods-slider__container--active"
+                data-slider="goods-slider"
               >
-                <div class="swiper-wrapper goods-slider__wrapper">
-                  <div class="swiper-slide goods-slider__slide">
+                <div class="goods-slider__wrapper swiper-wrapper">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -490,7 +497,7 @@
                     <span class="vendor-code">135634</span>
                   </div>
                   <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -521,7 +528,7 @@
                     <span class="vendor-code">135634</span>
                   </div>
                   <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -552,7 +559,7 @@
                     <span class="vendor-code">135634</span>
                   </div>
                   <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -583,7 +590,7 @@
                     <span class="vendor-code">135634</span>
                   </div>
                   <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -614,7 +621,147 @@
                     <span class="vendor-code">135634</span>
                   </div>
                   <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                </div>
+                <!-- /.goods-slider__wrapper swiper-wrapper  -->
+                <button class="goods-slider__btn goods-slider__btn--prev">
+                  <svg class="goods-slider__svg" width="30" height="30" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
+                  </svg>
+                </button>
+                <button class="goods-slider__btn goods-slider__btn--next">
+                  <svg class="goods-slider__svg" width="30" height="30" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
+                  </svg>
+                </button>
+              </div>
+              <!-- /.goods-slider__container swiper-container  -->
+              <div class="goods-slider__container swiper-container goods-slider__container" data-slider="goods-slider">
+                <div class="goods-slider__wrapper swiper-wrapper">
+                  <div class="goods-slider__slide swiper-slide">
+                    <a href="#!" class="goods-slider__good-link">
+                      <img
+                        src="./assets/images/hero-slider/good.png"
+                        alt="Изображение товара"
+                        class="goods-slider__img"
+                      />
+                    </a>
+                    <a href="#!" class="goods-slider__category-link">Печи</a>
+                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
+                    <div class="goods-slider__info">
+                      <button class="button cart-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                      <div class="goods-slider__info-price">
+                        <span class="cost cost--primary">75 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
+                      </div>
+                      <!-- /.goods-slider__info-price -->
+                      <button class="button compare-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.goods-slider-info -->
+                    <span class="vendor-code">135634</span>
+                  </div>
+                  <!-- .goods-slider__slide -->
+                  <div class="goods-slider__slide swiper-slide">
+                    <a href="#!" class="goods-slider__good-link">
+                      <img
+                        src="./assets/images/hero-slider/good.png"
+                        alt="Изображение товара"
+                        class="goods-slider__img"
+                      />
+                    </a>
+                    <a href="#!" class="goods-slider__category-link">Печи</a>
+                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
+                    <div class="goods-slider__info">
+                      <button class="button cart-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                      <div class="goods-slider__info-price">
+                        <span class="cost cost--primary">75 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
+                      </div>
+                      <!-- /.goods-slider__info-price -->
+                      <button class="button compare-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.goods-slider-info -->
+                    <span class="vendor-code">135634</span>
+                  </div>
+                  <!-- .goods-slider__slide -->
+                  <div class="goods-slider__slide swiper-slide">
+                    <a href="#!" class="goods-slider__good-link">
+                      <img
+                        src="./assets/images/hero-slider/good.png"
+                        alt="Изображение товара"
+                        class="goods-slider__img"
+                      />
+                    </a>
+                    <a href="#!" class="goods-slider__category-link">Печи</a>
+                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
+                    <div class="goods-slider__info">
+                      <button class="button cart-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                      <div class="goods-slider__info-price">
+                        <span class="cost cost--primary">75 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
+                      </div>
+                      <!-- /.goods-slider__info-price -->
+                      <button class="button compare-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.goods-slider-info -->
+                    <span class="vendor-code">135634</span>
+                  </div>
+                  <!-- .goods-slider__slide -->
+                  <div class="goods-slider__slide swiper-slide">
+                    <a href="#!" class="goods-slider__good-link">
+                      <img
+                        src="./assets/images/hero-slider/good.png"
+                        alt="Изображение товара"
+                        class="goods-slider__img"
+                      />
+                    </a>
+                    <a href="#!" class="goods-slider__category-link">Печи</a>
+                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
+                    <div class="goods-slider__info">
+                      <button class="button cart-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
+                        </svg>
+                      </button>
+                      <div class="goods-slider__info-price">
+                        <span class="cost cost--primary">75 000 ₽</span>
+                        <span class="cost cost--old">60 000 ₽</span>
+                      </div>
+                      <!-- /.goods-slider__info-price -->
+                      <button class="button compare-btn">
+                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- /.goods-slider-info -->
+                    <span class="vendor-code">135634</span>
+                  </div>
+                  <!-- .goods-slider__slide -->
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -659,12 +806,9 @@
                 </button>
               </div>
               <!-- /.swiper-container goods-slider__container -->
-              <div
-                class="swiper-container goods-slider__container goods-slider__container--hits goods-slider__container"
-                id="hits"
-              >
-                <div class="swiper-wrapper goods-slider__wrapper">
-                  <div class="swiper-slide goods-slider__slide">
+              <div class="goods-slider__container swiper-container goods-slider__container" data-slider="goods-slider">
+                <div class="goods-slider__wrapper swiper-wrapper">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -694,8 +838,7 @@
                     <!-- /.goods-slider-info -->
                     <span class="vendor-code">135634</span>
                   </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -725,8 +868,7 @@
                     <!-- /.goods-slider-info -->
                     <span class="vendor-code">135634</span>
                   </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -756,8 +898,7 @@
                     <!-- /.goods-slider-info -->
                     <span class="vendor-code">135634</span>
                   </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -787,8 +928,7 @@
                     <!-- /.goods-slider-info -->
                     <span class="vendor-code">135634</span>
                   </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
+                  <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
                       <img
                         src="./assets/images/hero-slider/good.png"
@@ -818,40 +958,8 @@
                     <!-- /.goods-slider-info -->
                     <span class="vendor-code">135634</span>
                   </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
                 </div>
-                <!-- /.swiper-wrapper goods-slider__wrapper -->
+                <!-- /.goods-slider__wrapper swiper-wrapper  -->
                 <button class="goods-slider__btn goods-slider__btn--prev">
                   <svg class="goods-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
@@ -863,217 +971,9 @@
                   </svg>
                 </button>
               </div>
-              <!-- /.swiper-container goods-slider__container -->
-              <div
-                class="
-                  swiper-container
-                  goods-slider__container goods-slider__container--novelties goods-slider__container
-                "
-                id="novelties"
-              >
-                <div class="swiper-wrapper goods-slider__wrapper">
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                  <div class="swiper-slide goods-slider__slide">
-                    <a href="#!" class="goods-slider__good-link">
-                      <img
-                        src="./assets/images/hero-slider/good.png"
-                        alt="Изображение товара"
-                        class="goods-slider__img"
-                      />
-                    </a>
-                    <a href="#!" class="goods-slider__category-link">Печи</a>
-                    <a href="#!" class="goods-slider__good-link">UNOX CHEFTOP MIND.MapsTM 10 GN 1/1 PLUS </a>
-                    <div class="goods-slider__info">
-                      <button class="button cart-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
-                        </svg>
-                      </button>
-                      <div class="goods-slider__info-price">
-                        <span class="cost cost--primary">75 000 ₽</span>
-                        <span class="cost cost--old">60 000 ₽</span>
-                      </div>
-                      <!-- /.goods-slider__info-price -->
-                      <button class="button compare-btn">
-                        <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- /.goods-slider-info -->
-                    <span class="vendor-code">135634</span>
-                  </div>
-                  <!-- .goods-slider__slide -->
-                </div>
-                <!-- /.swiper-wrapper goods-slider__wrapper -->
-                <button class="goods-slider__btn goods-slider__btn--prev">
-                  <svg class="goods-slider__svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
-                  </svg>
-                </button>
-                <button class="goods-slider__btn goods-slider__btn--next">
-                  <svg class="goods-slider__svg" width="30" height="30" fill="currentColor">
-                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
-                  </svg>
-                </button>
-              </div>
-              <!-- /.swiper-container goods-slider__container -->
+              <!-- /.goods-slider__container swiper-container  -->
             </div>
-            <!-- /.col-lg-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
         </div>
@@ -1213,7 +1113,7 @@
       <!-- /.brands -->
       <section class="events">
         <div class="container-xl">
-          <div class="row row--mb-5">
+          <div class="row">
             <div class="col-md-12">
               <ul class="tabs events-tabs">
                 <li class="tabs__item events-tabs__item tabs__item--active" data-target="#announcements">
@@ -2056,10 +1956,6 @@
       </div>
       <!-- .modal -->
     </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="./assets/js/aos.js"></script> -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/bundle.js"></script>
   </body>
 </html>

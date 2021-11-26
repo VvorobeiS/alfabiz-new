@@ -1,4 +1,7 @@
 @media (max-width: 1399px)
+  .hero
+    &-slider
+      height: 300px
   .cost
     font-size: 16px
   .news
@@ -29,6 +32,9 @@
           font-size: 12px
 
 @media ( max-width: 1199px )
+  .hero
+    &-slider
+      height: 270px
   .availability
     font-size: 12px
   .title
@@ -42,7 +48,13 @@
     max-width: 100%
   .navbar
     &-menu__list
+      &-page
+        font-size: 14px
       &-link
+        font-size: 14px
+  .subbar
+    &-gastro
+      &__link
         font-size: 14px
   .form
     &-search
@@ -111,6 +123,10 @@
       &__list
         &-item
           font-size: 14px
+    &-timetable
+      &__list
+        &-text
+          font-size: 14px
   .enterprises
     &-list
       &__icon
@@ -157,6 +173,9 @@
   .activity
     font-size: 11px
     font-weight: 400
+  .hero
+    &-slider
+      height: 280px
   .form
     &-search
       box-shadow: 0px 0px 10px 5px rgba(192, 8, 8, 0.2)
@@ -195,16 +214,24 @@
     padding-top: 25px
     &-tabs
       max-width: 65%
-      &__item
-        font-size: 16px
     &-card
+      &__img
+        height: 150px
+      &__wrapper
+        padding: 10px
       &__title
-        font-size: 15px
+        font-size: 14px
       &__link
         font-size: 14px
       &__list
         &-item
           font-size: 13px
+    &-timetable
+      &__list
+        &-wrapper
+          grid-template-columns: 160px 145px 60px 1fr 120px
+        &-title
+          font-size: 14px
   .news
     &-item
       &__info
@@ -254,6 +281,16 @@
   .title
     &--h2
       font-size: 18px
+  .hero
+    &-slider
+      height: 210px
+      &__btn
+        width: 20px
+        height: 20px
+        &--prev
+          left: 10px
+        &--next
+          right: 10px
   .advantages
     &-list
       &__item
@@ -285,9 +322,13 @@
   .events
     &-tabs
       max-width: 85%
-      justify-content: space-around
-      &__item
-        font-size: 16px
+    &-slider
+      padding-top: 25px
+      padding-bottom: 25px
+      &__btn
+        top: 10px
+        width: 50px
+        height: 50px
     &-card
       &__wrapper
         padding: 15px
@@ -398,7 +439,6 @@
     height: 630px
     &-tabs
       max-width: 100%
-      justify-content: space-between
     &-card
       &__title
         font-size: 14px
@@ -466,6 +506,9 @@
       &__btn
         padding: 10px 20px
         font-size: 13px
+  .hero
+    &-slider
+      height: 180px
   .advantages
     &-list
       justify-content: around
@@ -502,11 +545,11 @@
           margin-left: 30px
   .events
     height: 620px
-    &-tabs
-      flex-direction: column
-      &__item
-        &:nth-child(-n+1)
-          margin-bottom: 10px
+    // &-tabs
+    //   flex-direction: column
+    //   &__item
+    //     &:nth-child(-n+1)
+    //       margin-bottom: 10px
   .newsletter
     padding: 30px 20px 40px
     &__title

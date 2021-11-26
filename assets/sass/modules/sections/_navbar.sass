@@ -1,4 +1,5 @@
 .navbar
+  position: relative
   background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
   &>.container>.row
     position: relative
@@ -13,6 +14,34 @@
       display: flex
       justify-content: space-between
       align-items: center
+      margin: 0
+      padding: 0
+      list-style: none
+      &-page
+        position: relative
+        display: block
+        font-family: $Montserrat
+        font-weight: 500
+        font-size: 16px
+        font-style: normal
+        letter-spacing: $letter-spacing
+        color: $yellow-color
+        // &:before
+        //   content: ''
+        //   position: absolute
+        //   top: 0
+        //   left: 0
+        //   right: 0
+        //   height: 5px
+        //   background-color: $primary-color
+        // &:after
+        //   content: ''
+        //   position: absolute
+        //   bottom: 0
+        //   left: 0
+        //   right: 0
+        //   height: 5px
+        //   background-color: $primary-color
       &-link
         @include link
         color: $light-color
@@ -57,6 +86,9 @@
     &__menu
       display: flex
       flex-direction: column
+      margin: 0
+      padding: 0
+      list-style: none
       padding-top: 20px
       box-shadow: 0px 5px 10px 2px rgba(192, 8, 8, 0.3)
       background-color: $light-color
@@ -101,10 +133,13 @@
           &:after
             opacity: 1
     &__submenu
-      margin-top: 20px
       display: none
       flex-direction: column
       max-height: 70vh
+      margin: 0
+      padding: 0
+      list-style: none
+      margin-top: 20px
       background-color: $light-color
       box-shadow: 5px 5px 10px 2px rgba(192, 8, 8, 0.3)
       overflow: hidden
@@ -135,3 +170,39 @@
           background-color: rgba(0,0,0,0.05)
           &:before
             width: 10px
+.subbar
+  &--fixed
+    position: fixed
+    top: 77px
+    left: 0
+    right: 0
+    z-index: 101
+  &-gastro
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0
+    padding: 10px
+    list-style: none
+    background-color: rgba(255, 255, 255, 0.9)
+    box-shadow: 0px 5px 10px 2px rgba(192, 8, 8, 0.3)
+    border-bottom-right-radius: $border-radius
+    border-bottom-left-radius: $border-radius
+    &__link
+      @include link
+      display: block
+      width: 100%
+        // &:before
+        //   content: ''
+        //   position: absolute
+        //   top: 0
+        //   left: 0
+        //   bottom: 0
+        //   width: 5px
+        //   background-color: $primary-color
+        //   transition: $transition
+        //   z-index: -1
+        // +hover
+        //   color: $light-color
+          // &:before
+          //   width: 100%
