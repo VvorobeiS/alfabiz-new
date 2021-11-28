@@ -1,18 +1,27 @@
 .brands
   padding-top: 50px
   padding-bottom: 50px
-  &__title
-    text-align: center
   &__link
+    @include link
+  &__logo
+    &-link
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 15px
+      text-decoration: none
+      text-align: center
+      background: $light-color
+      box-shadow: 0px 0px 5px 3px rgba(180, 186, 196, 0.8)
+      border-radius: $border-radius
+      overflow: hidden
+      transition: $transition
+      +hover
+        box-shadow: 0px 0px 5px 3px $blue-color
+  &__img
     display: block
-    font-family: $Montserrat
-    font-weight: 400
-    font-size: 13px
-    font-style: normal
-    letter-spacing: $letter-spacing
-    color: inherit
-    text-decoration: none
-    text-align: center
+    height: 50px
+    object-fit: initial
   &-list
     display: flex
     flex-wrap: wrap
@@ -22,10 +31,20 @@
     padding: 0
     list-style: none
     &__item
-      padding: 20px
-    &__link
-      display: block
-      text-align: center
-    &__logo
-      width: 100%
-      height: 100%
+      padding: 10px
+  &-slider
+    position: relative
+    display: none
+    &__btn
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-color: transparent
+      color: $blue-color
+      z-index: 2
+      &--prev
+        left: 0
+      &--next
+        right: 0

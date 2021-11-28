@@ -57,7 +57,7 @@
   &__item
     position: relative
     flex-basis: 50%
-    padding: 10px 0
+    padding: 8px 0
     font-family: $Open-Sans
     font-size: 14px
     font-weight: 600
@@ -73,8 +73,14 @@
       left: 0
       bottom: 0
       width: 0%
-      background-color: $primary-color
       transition: $transition
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      bottom: 0
+      left: 0
+      height: 0px
     &--active
       z-index: 2
       color: $light-color
@@ -82,9 +88,8 @@
         width: 100%
         z-index: -1
     +hover
-      color: $light-color
-      &:before
-        width: 100%
+      &:after
+        height: 3px
 
 @mixin input
   font-family: $Montserrat
@@ -119,7 +124,6 @@
   color: $light-color
   background-image: linear-gradient(to right, #F7971E 0%, #FFD200 51%, #F7971E 100%)
   background-size: 200% auto
-  box-shadow: 0 0 20px #eee
   +hover
     background-position: right center; /* change the direction of the change here */
 

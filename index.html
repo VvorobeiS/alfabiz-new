@@ -131,7 +131,7 @@
               </button>
               <button class="button header__btn header__btn--mobile">
                 <svg class="header__btn-icon header__btn-icon--mobile" width="25" height="25" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                 </svg>
                 Сравнить
               </button>
@@ -211,7 +211,7 @@
             >
               <button class="button navbar__btn">
                 <svg class="navbar__icon" width="25" height="25" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                 </svg>
                 Сравнить
               </button>
@@ -318,10 +318,10 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8 col-xxl-9">
-              <div class="hero-slider swiper-container wrapper">
+              <div class="hero-slider swiper-container wrapper" data-slider="hero-slider">
                 <div class="hero-slider__wrapper swiper-wrapper">
                   <div class="hero-slider__slide swiper-slide">
-                    <a href="#!" class="main-slider__link">
+                    <a href="#!" class="hero-slider__link">
                       <img
                         src="./assets/images/main-slider/slide-1.jpg"
                         alt="Изображение слайдера"
@@ -330,12 +330,12 @@
                     </a>
                   </div>
                   <div class="hero-slider__slide swiper-slide">
-                    <a href="#!" class="main-slider__link">
+                    <a href="#!" class="hero-slider__link">
                       <img src="./assets/images/main-slider/slide-2.jpg" alt="" class="hero-slider__img" />
                     </a>
                   </div>
                 </div>
-                <!-- /. main-slider__wrapper swiper-wrapper -->
+                <!-- /. hero-slider__wrapper swiper-wrapper -->
                 <div class="swiper-pagination"></div>
                 <button class="hero-slider__btn hero-slider__btn--prev">
                   <svg class="hero-slider__svg" width="100%" height="100%" fill="currentColor">
@@ -353,7 +353,7 @@
             <!-- /.col-8 -->
             <div class="[ col-4 col-xxl-3 ] [ d-none d-lg-block ]">
               <form action="#!" class="form-callback wrapper">
-                <h3 class="form-callback__title title title--h3">Подписаться на анонсы</h3>
+                <h3 class="form-callback__title title title--h3">Свяжитесь со мной</h3>
                 <input type="text" class="form-callback__input" placeholder="ФИО" />
                 <input type="tel" class="form-callback__input" placeholder="+7(___)-___-__-__" />
                 <input type="email" class="form-callback__input" placeholder="email" />
@@ -375,10 +375,10 @@
       <!-- /.hero -->
       <div class="advantages">
         <div class="container">
-          <div class="row [ d-none d-md-block ] mb-4">
-            <div class="col-lg-12">
+          <div class="row mb-4">
+            <div class="col-12">
               <p class="advantages__text">
-                Компания «Альфа-Бизнес» является одним из лидеров по продажам<br />
+                Компания &laquo;Альфа-Бизнес&raquo; является одним из&nbsp;лидеров по&nbsp;продажам<br />
                 промышленного холода, технологического, холодильного, климатического, торгового, весового оборудования.
               </p>
             </div>
@@ -387,57 +387,121 @@
           <!-- /.row -->
           <div class="row">
             <div class="col-12">
-              <hr class="line" />
               <ul class="advantages-list">
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рекомендуем.svg" alt="Иконка" class="advantages-list__icon" />
+                  <a href="#!" class="advantages__link">
+                    <img src="./assets/images/svg/Рекомендуем.svg" alt="Иконка" class="advantages__icon" />
                     Более 20&nbsp;лет на&nbsp;рынке HoReCa&nbsp;&amp;&nbsp;Retail
                   </a>
                 </li>
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link"
-                    ><img src="./assets/images/svg/Склад.svg" alt="Иконка" class="advantages-list__icon" />Большой
+                  <a href="#!" class="advantages__link"
+                    ><img src="./assets/images/svg/Склад.svg" alt="Иконка" class="advantages__icon" />Большой
                     ассортимент товара в&nbsp;наличии</a
                   >
                 </li>
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img
-                      src="./assets/images/svg/Доставка.svg"
-                      alt="Иконка"
-                      class="advantages-list__icon"
-                    />Доставка<br />
+                  <a href="#!" class="advantages__link">
+                    <img src="./assets/images/svg/Доставка.svg" alt="Иконка" class="advantages__icon" />Доставка<br />
                     по всей России</a
                   >
                 </li>
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
+                  <a href="#!" class="advantages__link">
                     <img
                       src="./assets/images/svg/Гастроплощадка.svg"
                       alt="Иконка"
-                      class="advantages-list__icon"
+                      class="advantages__icon"
                     />Действующие гастроплощадки</a
                   >
                 </li>
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
-                    <img src="./assets/images/svg/Рассрочка.svg" alt="Иконка" class="advantages-list__icon" />Рассрочка
+                  <a href="#!" class="advantages__link">
+                    <img src="./assets/images/svg/Рассрочка.svg" alt="Иконка" class="advantages__icon" />Рассрочка<br />
                     без банков</a
                   >
                 </li>
                 <li class="advantages-list__item">
-                  <a href="#!" class="advantages-list__link">
+                  <a href="#!" class="advantages__link">
                     <img
                       src="./assets/images/svg/Тест-драйв.svg"
                       alt="Иконка"
-                      class="advantages-list__icon"
+                      class="advantages__icon"
                     />Тест-драйв<br />
                     оборудования</a
                   >
                 </li>
               </ul>
-              <hr class="line" />
+              <div class="advantages-slider swiper-container" data-slider="advantages-slider">
+                <div class="advantages-slider__wrapper swiper-wrapper">
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link">
+                      <img src="./assets/images/svg/Рекомендуем.svg" alt="Иконка" class="advantages__icon" />
+                      Более 20&nbsp;лет на&nbsp;рынке HoReCa&nbsp;&amp;&nbsp;Retail
+                    </a>
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link"
+                      ><img src="./assets/images/svg/Склад.svg" alt="Иконка" class="advantages__icon" />Большой
+                      ассортимент товара в&nbsp;наличии</a
+                    >
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link">
+                      <img src="./assets/images/svg/Доставка.svg" alt="Иконка" class="advantages__icon" />Доставка<br />
+                      по всей России</a
+                    >
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link">
+                      <img
+                        src="./assets/images/svg/Гастроплощадка.svg"
+                        alt="Иконка"
+                        class="advantages__icon"
+                      />Действующие<br />
+                      гастроплощадки</a
+                    >
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link">
+                      <img
+                        src="./assets/images/svg/Рассрочка.svg"
+                        alt="Иконка"
+                        class="advantages__icon"
+                      />Рассрочка<br />
+                      без банков</a
+                    >
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                  <div class="advantages-slider__slide swiper-slide">
+                    <a href="#!" class="advantages__link">
+                      <img
+                        src="./assets/images/svg/Тест-драйв.svg"
+                        alt="Иконка"
+                        class="advantages__icon"
+                      />Тест-драйв<br />
+                      оборудования</a
+                    >
+                  </div>
+                  <!-- .advantages-slider__slide -->
+                </div>
+                <!-- /.advantages-slider__wrapper swiper-wrapper  -->
+                <button class="advantages-slider__btn button advantages-slider__btn--prev">
+                  <svg class="advantages-slider__svg" width="100%" height="100%" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-left" />
+                  </svg>
+                </button>
+                <button class="advantages-slider__btn button advantages-slider__btn--next">
+                  <svg class="advantages-slider__svg" width="100%" height="100%" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-right" />
+                  </svg>
+                </button>
+              </div>
+              <!-- /.advantages-slider swiper-container  -->
             </div>
             <!-- /.col-12 -->
           </div>
@@ -460,9 +524,13 @@
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 position-relative">
               <div
-                class="goods-slider__container swiper-container goods-slider__container--active"
+                class="
+                  goods-slider__container
+                  swiper-container
+                  goods-slider__container--stock goods-slider__container--active
+                "
                 data-slider="goods-slider"
               >
                 <div class="goods-slider__wrapper swiper-wrapper">
@@ -489,7 +557,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -520,7 +588,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -551,7 +619,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -582,7 +650,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -613,7 +681,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -635,7 +703,10 @@
                 </button>
               </div>
               <!-- /.goods-slider__container swiper-container  -->
-              <div class="goods-slider__container swiper-container goods-slider__container" data-slider="goods-slider">
+              <div
+                class="goods-slider__container swiper-container goods-slider__container--hits"
+                data-slider="goods-slider"
+              >
                 <div class="goods-slider__wrapper swiper-wrapper">
                   <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
@@ -660,7 +731,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -691,7 +762,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -722,7 +793,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -753,7 +824,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -784,7 +855,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -806,7 +877,10 @@
                 </button>
               </div>
               <!-- /.swiper-container goods-slider__container -->
-              <div class="goods-slider__container swiper-container goods-slider__container" data-slider="goods-slider">
+              <div
+                class="goods-slider__container swiper-container goods-slider__container--novelties"
+                data-slider="goods-slider"
+              >
                 <div class="goods-slider__wrapper swiper-wrapper">
                   <div class="goods-slider__slide swiper-slide">
                     <a href="#!" class="goods-slider__good-link">
@@ -831,7 +905,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -861,7 +935,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -891,7 +965,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -921,7 +995,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -951,7 +1025,7 @@
                       <!-- /.goods-slider__info-price -->
                       <button class="button compare-btn">
                         <svg class="goods-slider__icon" width="20" height="20" fill="currentColor">
-                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart" />
+                          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
                         </svg>
                       </button>
                     </div>
@@ -979,161 +1053,232 @@
         </div>
         <!-- /.container -->
       </div>
-      <!-- /.goods -->
+      <!-- /.goods-slider -->
       <section class="brands">
-        <div class="container-fluid">
+        <div class="container container-fluid">
           <div class="row mb-4">
-            <div class="col-md-12">
+            <div class="col-12 d-flex justify-content-start">
               <h2 class="brands__title title title--h2">Популярные бренды</h2>
             </div>
-            <!-- /.col-md-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
-          <div class="row">
+          <div class="row mb-4">
             <ul class="brands-list">
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/abat.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/abat.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/alto-shaam.jpg" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/alto-shaam.jpg" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/atesy.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/atesy.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/cas.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/cas.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/fimar.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/fimar.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/finist.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/finist.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/hicold.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/hicold.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/hurakan.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/hurakan.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/nordika.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/nordika.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/retigo.jpg" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/retigo.jpg" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/robot-coupe.png" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/robot-coupe.png" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link">
-                  <img src="./assets/images/brands/vesta.jpg" alt="Логотип" class="brands-list__logo" />
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link">
+                  <img src="./assets/images/brands/vesta.jpg" alt="Логотип" class="brands__img" />
                 </a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/SMEG.png" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/SMEG.png" alt="Логотип" class="brands__img"
                 /></a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/apach-cook-line.png" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/apach-cook-line.png" alt="Логотип" class="brands__img"
                 /></a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/сheckedout.svg" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/сheckedout.svg" alt="Логотип" class="brands__img"
                 /></a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/mhm.svg" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/mhm.svg" alt="Логотип" class="brands__img"
                 /></a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/polair.png" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/polair.png" alt="Логотип" class="brands__img"
                 /></a>
               </li>
 
-              <li class="col-4 col-md-2 brands-list__item">
-                <a href="#!" class="brands-list__link"
-                  ><img src="./assets/images/brands/rational.png" alt="Логотип" class="brands-list__logo"
+              <li class="brands-list__item [ col-4 col-md-2 ]">
+                <a href="#!" class="brands__logo-link"
+                  ><img src="./assets/images/brands/rational.png" alt="Логотип" class="brands__img"
                 /></a>
               </li>
             </ul>
+            <div class="brands-slider swiper-container" data-slider="brands-slider">
+              <div class="brands-slider__wrapper swiper-wrapper">
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/abat.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/alto-shaam.jpg" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/atesy.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/cas.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/fimar.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/finist.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/hicold.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+                <div class="brands-slider__slide swiper-slide">
+                  <a href="#!" class="brands__logo-link">
+                    <img src="./assets/images/brands/hurakan.png" alt="Иконка" class="brands__img" />
+                  </a>
+                </div>
+                <!-- .brands-slider__slide -->
+              </div>
+              <!-- /.brands-slider__wrapper swiper-wrapper  -->
+              <button class="brands-slider__btn button brands-slider__btn--prev">
+                <svg class="brands-slider__svg" width="100%" height="100%" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-left" />
+                </svg>
+              </button>
+              <button class="brands-slider__btn button brands-slider__btn--next">
+                <svg class="brands-slider__svg" width="100%" height="100%" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-right" />
+                </svg>
+              </button>
+            </div>
+            <!-- /.brands-slider swiper-container  -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-12 d-flex justify-content-end">
               <a href="#!" class="brands__link">Смотреть все бренды</a>
             </div>
+            <!-- /. -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
       <!-- /.brands -->
-      <section class="events">
-        <div class="container-xl">
-          <div class="row">
-            <div class="col-md-12">
+      <section class="events-slider">
+        <div class="container position-relative">
+          <div class="row mb-5">
+            <div class="col-12">
+              <h2 class="events-slider__title title title--h2">Мастер-классы</h2>
+            </div>
+            <!-- /.col-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="row mb-3">
+            <div class="col-12">
               <ul class="tabs events-tabs">
-                <li class="tabs__item events-tabs__item tabs__item--active" data-target="#announcements">
-                  Ближайшие мастер-классы
-                </li>
-                <li class="tabs__item events-tabs__item" data-target="#reports">Отчеты с матер-классов</li>
+                <li class="tabs__item events-tabs__item tabs__item--active">Анонсы</li>
+                <li class="tabs__item events-tabs__item">Отчеты</li>
               </ul>
             </div>
-            <!-- /.col-md-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-lg-12 col-lg-12--pr">
+            <div class="col-12">
               <div
-                class="swiper-container events__slider-container events__slider-container--active"
-                id="announcements"
+                class="events-slider__container swiper-container events-slider__container--active"
+                data-slider="events-slider"
+                data-tab="events-tabs"
                 data-aos="fade-right"
               >
-                <div class="swiper-wrapper events__slider-wrapper">
-                  <div class="swiper-slide events__slider-slide">
+                <div class="events-slider__wrapper swiper-wrapper">
+                  <div class="events-slider__slide swiper-slide wrapper">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/03_09-spb.jpg"
@@ -1178,8 +1323,8 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
+                  <!-- events-slider__slide  -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/mc-picture.jpg"
@@ -1224,8 +1369,8 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
+                  <!-- events-slider__slide -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/09_09-msk-min.jpg"
@@ -1272,8 +1417,8 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
+                  <!-- events-slider__slide -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/10_09-msk-min.jpg"
@@ -1318,8 +1463,8 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
+                  <!-- events-slider__slide -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events//15_09.jpg"
@@ -1364,8 +1509,8 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
-                  <div class="swiper-slide events__slider-slide">
+                  <!-- events-slider__slide -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/29_09-msk-min.jpg"
@@ -1410,28 +1555,116 @@
                     </div>
                     <!-- /.events-card -->
                   </div>
-                  <!-- /.events__slider-slide -->
+                  <!-- events-slider__slide -->
                 </div>
-                <!-- /.events__slider-wrapper -->
-                <button class="events__slider-btn events__slider-btn--prev">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
+                <!-- /.events-slider__wrapper -->
+                <button class="events-slider__btn events-slider__btn--prev">
+                  <svg class="events-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
                   </svg>
                 </button>
-                <button class="events__slider-btn events__slider-btn--next">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
+                <button class="events-slider__btn events-slider__btn--next">
+                  <svg class="events-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
                   </svg>
                 </button>
               </div>
-              <!-- /.events__slider-container -->
+              <!-- /.events-slider__container -->
               <div
-                class="swiper-container events__slider-container events__slider-container"
-                id="reports"
+                class="events-slider__container swiper-container"
+                data-slider="events-slider"
+                data-tab="events-tabs"
                 data-aos="fade-right"
               >
-                <div class="swiper-wrapper events__slider-wrapper">
-                  <div class="swiper-slide events__slider-slide">
+                <div class="events-slider__wrapper swiper-wrapper">
+                  <div class="events-slider__slide swiper-slide">
+                    <div class="events-card">
+                      <img
+                        src="./assets/images/events/mc-picture.jpg"
+                        alt="Обложка мастер-класса"
+                        class="events-card__img"
+                      />
+                      <div class="events-card__wrapper">
+                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <ul class="events-card__list">
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
+                            </svg>
+                            <span class="events-card__list-date">12 августа 2021</span>
+                          </li>
+                        </ul>
+                        <div class="events-card__footer">
+                          <!-- <span class="events-card__cost">Бесплатно</span> -->
+                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                        </div>
+                        <!-- /.events-card__footer -->
+                      </div>
+                      <!-- /.events-card__wrapper -->
+                      <span class="events-card__city">Москва</span>
+                    </div>
+                    <!-- /.events-card -->
+                  </div>
+                  <!-- /.events__slider-slide -->
+                  <div class="events-slider__slide swiper-slide">
+                    <div class="events-card">
+                      <img
+                        src="./assets/images/events/mc-picture.jpg"
+                        alt="Обложка мастер-класса"
+                        class="events-card__img"
+                      />
+                      <div class="events-card__wrapper">
+                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <ul class="events-card__list">
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
+                            </svg>
+                            <span class="events-card__list-date">12 августа 2021</span>
+                          </li>
+                        </ul>
+                        <div class="events-card__footer">
+                          <!-- <span class="events-card__cost">Бесплатно</span> -->
+                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                        </div>
+                        <!-- /.events-card__footer -->
+                      </div>
+                      <!-- /.events-card__wrapper -->
+                      <span class="events-card__city">Москва</span>
+                    </div>
+                    <!-- /.events-card -->
+                  </div>
+                  <!-- /.events__slider-slide -->
+                  <div class="events-slider__slide swiper-slide">
+                    <div class="events-card">
+                      <img
+                        src="./assets/images/events/mc-picture.jpg"
+                        alt="Обложка мастер-класса"
+                        class="events-card__img"
+                      />
+                      <div class="events-card__wrapper">
+                        <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                        <ul class="events-card__list">
+                          <li class="events-card__list-item">
+                            <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
+                            </svg>
+                            <span class="events-card__list-date">12 августа 2021</span>
+                          </li>
+                        </ul>
+                        <div class="events-card__footer">
+                          <!-- <span class="events-card__cost">Бесплатно</span> -->
+                          <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                        </div>
+                        <!-- /.events-card__footer -->
+                      </div>
+                      <!-- /.events-card__wrapper -->
+                      <span class="events-card__city">Москва</span>
+                    </div>
+                    <!-- /.events-card -->
+                  </div>
+                  <!-- /.events__slider-slide -->
+                  <div class="events-slider__slide swiper-slide">
                     <div class="events-card">
                       <img
                         src="./assets/images/events/mc-picture.jpg"
@@ -1461,19 +1694,19 @@
                   </div>
                   <!-- /.events__slider-slide -->
                 </div>
-                <!-- /.events__slider-wrapper -->
-                <button class="events__slider-btn events__slider-btn--prev">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
+                <!-- /.events-slider__wrapper -->
+                <button class="events-slider__btn events-slider__btn--prev">
+                  <svg class="events-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
                   </svg>
                 </button>
-                <button class="events__slider-btn events__slider-btn--next">
-                  <svg class="events__slider-svg" width="30" height="30" fill="currentColor">
+                <button class="events-slider__btn events-slider__btn--next">
+                  <svg class="events-slider__svg" width="30" height="30" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
                   </svg>
                 </button>
               </div>
-              <!-- /.events__slider-container -->
+              <!-- /.events-slider__container -->
             </div>
             <!-- /.col-lg-12 -->
           </div>
@@ -1481,8 +1714,8 @@
         </div>
         <!-- /.container -->
       </section>
-      <!-- /.events -->
-      <section class="enterprises">
+      <!-- /.events-slider mobile -->
+      <section class="enterprises d-none">
         <div class="container-xl">
           <div class="row mb-4">
             <div class="col-md-12">
@@ -1607,20 +1840,44 @@
       </section>
       <!-- /.enterprises -->
       <section class="news">
-        <div class="container-lg">
-          <div class="row mb-5 justify-content-between">
-            <div class="col-6 d-flex justify-content-start align-items-center">
+        <div class="container">
+          <div class="row justify-content-between mb-5">
+            <div class="col-6 [ d-flex justify-content-start align-items-center ]">
               <h2 class="news__title title title--h2" data-aos="fade-right" data-aos-delay="200">Новости</h2>
             </div>
-            <!-- /.col-md-6 -->
-            <div class="col-6 d-flex justify-content-end align-items-center">
+            <!-- /.col-6 -->
+            <div class="col-6 [ d-flex justify-content-end align-items-center ]">
               <a href="#!" class="news__link" data-aos="fade-left" data-aos-delay="200">Все Новости</a>
             </div>
-            <!-- /.col-md-6 -->
+            <!-- /.col-6 -->
           </div>
           <!-- /.row -->
-          <div class="row justify-content-between align-items-center mb-5">
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="row [ d-none d-lg-flex ] [ justify-content-between align-items-center ] mb-5">
+            <div class="news-item [ col-12 col-sm-6 col-md-3 ]" data-aos="fade-left" data-aos-delay="200">
+              <div class="news-item__info">
+                <span class="news-item__date">23 МАРТА 2020</span>
+                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+              </div>
+              <!-- /.news-item__info -->
+              <a href="#!" class="news-item__link">Подробнее</a>
+            </div>
+            <div class="news-item [ col-12 col-sm-6 col-md-3 ]" data-aos="fade-left" data-aos-delay="200">
+              <div class="news-item__info">
+                <span class="news-item__date">23 МАРТА 2020</span>
+                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+              </div>
+              <!-- /.news-item__info -->
+              <a href="!#" class="news-item__link">Подробнее</a>
+            </div>
+            <div class="news-item [ col-12 col-sm-6 col-md-3 ]" data-aos="fade-left" data-aos-delay="200">
+              <div class="news-item__info">
+                <span class="news-item__date">23 МАРТА 2020</span>
+                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+              </div>
+              <!-- /.news-item__info -->
+              <a href="#!" class="news-item__link">Подробнее</a>
+            </div>
+            <div class="news-item [ col-12 col-sm-6 col-md-3 ]" data-aos="fade-left" data-aos-delay="200">
               <div class="news-item__info">
                 <span class="news-item__date">23 МАРТА 2020</span>
                 <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
@@ -1628,36 +1885,70 @@
               <!-- /.news-item__info -->
               <a href="" class="news-item__link">Подробнее</a>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+          </div>
+          <!-- /.row -->
+          <div class="row d-lg-none mb-5">
+            <div class="col-12 position-relative">
+              <div class="news-slider swiper-container" data-slider="news-slider">
+                <div class="news-slider__wrapper swiper-wrapper">
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-item__info">
+                      <span class="news-item__date">23 МАРТА 2020</span>
+                      <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+                    </div>
+                    <!-- /.news-item__info -->
+                    <a href="#!" class="news-item__link">Подробнее</a>
+                  </div>
+                  <!-- .news-slider__slide -->
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-item__info">
+                      <span class="news-item__date">23 МАРТА 2020</span>
+                      <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+                    </div>
+                    <!-- /.news-item__info -->
+                    <a href="#!" class="news-item__link">Подробнее</a>
+                  </div>
+                  <!-- .news-slider__slide -->
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-item__info">
+                      <span class="news-item__date">23 МАРТА 2020</span>
+                      <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+                    </div>
+                    <!-- /.news-item__info -->
+                    <a href="#!" class="news-item__link">Подробнее</a>
+                  </div>
+                  <!-- .news-slider__slide -->
+                  <div class="news-slider__slide swiper-slide">
+                    <div class="news-item__info">
+                      <span class="news-item__date">23 МАРТА 2020</span>
+                      <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
+                    </div>
+                    <!-- /.news-item__info -->
+                    <a href="#!" class="news-item__link">Подробнее</a>
+                  </div>
+                  <!-- .news-slider__slide -->
+                </div>
+                <!-- /.news-slider__wrapper swiper-wrapper  -->
+                <button class="news-slider__btn news-slider__btn--prev">
+                  <svg class="news-slider__svg" width="30" height="30" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-left-short" />
+                  </svg>
+                </button>
+                <button class="news-slider__btn news-slider__btn--next">
+                  <svg class="news-slider__svg" width="30" height="30" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#arrow-right-short" />
+                  </svg>
+                </button>
               </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
+              <!-- /.news-slider swiper-container  -->
             </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-3 news-item" data-aos="fade-left" data-aos-delay="200">
-              <div class="news-item__info">
-                <span class="news-item__date">23 МАРТА 2020</span>
-                <h3 class="news-item__title">29 Motivational Quotes for&nbsp;Work Environments</h3>
-              </div>
-              <!-- /.news-item__info -->
-              <a href="" class="news-item__link">Подробнее</a>
-            </div>
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-md-12">
-              <div class="newsletter">
-                <h2 class="newsletter__title" data-aos="fade-right" data-aos-delay="200">Будь в курсе событий</h2>
+            <div class="col-12">
+              <div class="newsletter wrapper">
+                <h2 class="newsletter__title title title--h2" data-aos="fade-right" data-aos-delay="200">Будь в курсе событий</h2>
                 <form
                   action="./send.php"
                   method="POST"
@@ -1672,15 +1963,15 @@
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#envelope-fill" />
                   </svg>
                 </form>
+                <div class="arrows"></div>
               </div>
-              <!-- /.newsletter-wrapper -->
+              <!-- /.newsletter -->
             </div>
-            <!-- /.col-md-12 -->
+            <!-- /.col-12 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
-        <div class="test"></div>
       </section>
       <!-- /.news -->
       <section class="seo">
@@ -1694,7 +1985,7 @@
           <!-- /.row -->
           <div class="row">
             <div class="col-md-12">
-              <div class="seo-description">
+              <div class="seo-description wrapper">
                 <p class="seo-description__text">
                   Компания «Альфа-Бизнес» работает в сфере HoReCa и Retail с 1999 года. Основным видом деятельности
                   является поставка торгового и пищевого оборудования, комплексное оснащение предприятий торговли,
