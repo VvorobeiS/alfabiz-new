@@ -1,0 +1,39 @@
+{
+  "name": "alfabiz-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.9",
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "nouislider": "^15.5.0",
+    "prettier": "^2.3.2",
+    "swiper": "^6.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js",
+    "dev": "webpack --config webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VvorobeiS/alfabiz-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VvorobeiS/alfabiz-new/issues"
+  },
+  "homepage": "https://github.com/VvorobeiS/alfabiz-new#readme"
+}
