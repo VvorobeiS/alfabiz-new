@@ -408,6 +408,39 @@ input, .input
       margin-bottom: 10px
     &--reset
       @include btn-red
+.pagination
+  padding: 10px 15px
+  &__list
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0
+    padding: 0
+    list-style: none
+    &-item
+      &:not(:last-child)
+        margin-right: 5px
+    &-page
+      display: flex
+      justify-content: center
+      align-items: center
+      font-family: $Open-Sans
+      font-size: 14px
+      font-weight: 600
+      font-style: normal
+      letter-spacing: $letter-spacing
+      text-decoration: none
+      color: $light-color
+      width: 25px
+      height: 25px
+      background-color: $blue-color
+      border-radius: 50%
+      &--link
+        text-decoration: none
+        color: $text-color
+        background-color: $light-color
+        +hover
+          background: rgba(0,0,0,0.1)
 .arrows
   background-image: url(../images/svg/bold-arrows.svg)
   background-position: bottom
