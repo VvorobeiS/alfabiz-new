@@ -5,23 +5,23 @@ const toggleNavbar = () => {
     headerTop = document.querySelector('.header__container'),
     offset = navbar.offsetTop,
     navbarHeight = navbar.clientHeight;
-  if (document.querySelector('.subbar')) {
-    subbarHeight = subbar.clientHeight;
+  if (subbar) {
+    var subbarHeight = subbar.clientHeight;
   }
 
   document.addEventListener('scroll', () => {
     let scrolled = window.pageYOffset;
-    if (scrolled >= offset) {
+    if (scrolled >= offset && !subbar) {
       headerTop.style.marginBottom = `${navbarHeight}px`;
       navbar.classList.add('navbar--fixed');
-    } else if (scrolled <= offset) {
+    } else if (scrolled <= offset && !subbar) {
       headerTop.style.marginBottom = '0px';
       navbar.classList.remove('navbar--fixed');
-    } else if (scrolled >= offset && document.querySelector('.subbar')) {
+    } else if (scrolled >= offset && subbar) {
       headerTop.style.marginBottom = `${navbarHeight + subbarHeight}px`;
       navbar.classList.add('navbar--fixed');
       subbar.classList.add('subbar--fixed');
-    } else if (scrolled <= offset && document.querySelector('.subbar')) {
+    } else if (scrolled <= offset && subbar) {
       headerTop.style.marginBottom = '0px';
       navbar.classList.remove('navbar--fixed');
       subbar.classList.remove('subbar--fixed');

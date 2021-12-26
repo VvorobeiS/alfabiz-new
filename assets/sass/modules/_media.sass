@@ -1,25 +1,12 @@
 @media (max-width: 1399px)
-  .hero
-    &-slider
-      height: 300px
-  .cost
-    font-size: 16px
+  .about
+    &__img
+      max-width: 50%
   .brands
     &__img
       height: 40px
-  .news
-    &-item
-      &__info
-        height: 282px
-  .goods
-    &-list
-      &__item
-        &-title
-          font-size: 16px
-    &-table
-      &__item
-        &-img
-          height: 200px
+  .cost
+    font-size: 16px
   .filters
     &-list
       &__item
@@ -33,36 +20,34 @@
             font-size: 12px
         &-text
           font-size: 12px
-
-@media ( max-width: 1199px )
+  .goods
+    &-list
+      &__item
+        &-title
+          font-size: 16px
+    &-table
+      &__item
+        &-img
+          height: 200px
   .hero
     &-slider
-      height: 270px
-  .availability
-    font-size: 12px
-  .title
-    &--h2
-      font-size: 26px
-  .button
-    &-catalog
-      padding-right: 20px
-      padding-left: 20px
+      height: 300px
+  .news
+    &-item
+      &__info
+        height: 282px
+      &__img
+        width: 241px
+        height: 241px
+    &-wrapper
+      grid-gap: 1.5rem
+
+@media ( max-width: 1199px )
+  .about
+    &__title
+      font-size: 28px
   .activity
     max-width: 100%
-  .navbar
-    &-menu__list
-      &-page
-        font-size: 14px
-      &-link
-        font-size: 14px
-  .subbar
-    &-gastro
-      &__link
-        font-size: 14px
-  .form
-    &-search
-      &__input
-        padding-left: 15px
   .advantages
     &__title
       font-size: 28px
@@ -70,6 +55,66 @@
       font-size: 15px
     &__link
       font-size: 13px
+  .availability
+    font-size: 12px
+  .brands
+    &-list
+      &__item
+        padding: 15px
+  .button
+    &-catalog
+      padding-right: 20px
+      padding-left: 20px
+  .catalog
+    &-list
+      &__link
+        font-size: 15px
+  .contacts
+    &__map
+      height: 450px
+  .enterprises
+    &-list
+      &__icon
+        width: 70px
+      &__text
+        font-size: 13px
+  .events
+    height: 675px
+    &-card
+      &__img
+        height: 220px
+      &__title
+        font-size: 16px
+      &__link
+        font-size: 15px
+      &__list
+        &-item
+          font-size: 14px
+    &-timetable
+      &__list
+        &-text
+          font-size: 14px
+  .filters
+    &-list
+      &__item
+        &-title
+          font-size: 14px
+          &-label
+            &--slider
+              width: 90px
+              padding: 0 5px
+          &-input
+            &--slider
+              padding: 0 5px
+          &__btn
+            font-size: 13px
+  .form
+    &-search
+      &__input
+        padding-left: 15px
+  .footer
+    &__title
+      font-size: 15px
   .goods
     &-list
       &__item
@@ -92,52 +137,22 @@
           padding: 10px
         &-btn
           padding: 10px
-  .filters
-    &-list
-      &__item
-        &-title
-          font-size: 14px
-          &-label
-            &--slider
-              width: 90px
-              padding: 0 5px
-          &-input
-            &--slider
-              padding: 0 5px
-          &__btn
-            font-size: 13px
-  .brands
-    &-list
-      &__item
-        padding: 15px
-  .events
-    height: 675px
-    &-card
-      &__img
-        height: 220px
-      &__title
-        font-size: 16px
-      &__link
-        font-size: 15px
-      &__list
-        &-item
-          font-size: 14px
-    &-timetable
-      &__list
-        &-text
-          font-size: 14px
-  .enterprises
-    &-list
-      &__icon
-        width: 70px
-      &__text
-        font-size: 13px
+  .hero
+    &-slider
+      height: 270px
+  .navbar
+    &-menu__list
+      &-page
+        font-size: 14px
+      &-link
+        font-size: 14px
   .news
     &-item
       &__info
         height: 237px
-      &__title
-        font-size: 16px
+      &__img
+        width: 196px
+        height: 196px
   .newsletter
     &__input
       width: 370px
@@ -157,35 +172,25 @@
       &__list
         &-item
           font-size: 15px
-  .catalog
-    &-list
+  .subbar
+    &-gastro
       &__link
-        font-size: 15px
-  .footer
-    &__title
-      font-size: 15px
-
-@media (max-width: 991px)
+        font-size: 14px
   .title
     &--h2
-      font-size: 20px
-  .button-catalog
-    &--mobile
-      display: flex
+      font-size: 26px
+
+@media (max-width: 991px)
+  .about
+    &__title
+      font-size: 22px
   .activity
     font-size: 11px
     font-weight: 400
-  .hero
-    padding-bottom: 25px
-    &-slider
-      height: 280px
-  .form
-    &-search
-      box-shadow: 0px 0px 10px 5px rgba(192, 8, 8, 0.2)
-      &__input
-        padding-left: 135px
   .advantages
     padding-bottom: 25px
+    &--pt
+      padding-top: 25px
     &__title
       font-size: 22px
     &__text
@@ -198,19 +203,11 @@
       display: none
     &-slider
       display: block
-  .goods
-    &-tabs
-      max-width: 60%
-    &-sorting
-      &__title
-        font-size: 13px
-  .product
-    &-panel
-      &__btn
-        font-size: 13px
-    &-specifications
-      &__title
-        font-size: 16px
+    &-description
+      &__icon
+        width: 170px
+      &__text
+        font-size: 14px
   .brands
     padding-top: 25px
     padding-bottom: 25px
@@ -224,6 +221,20 @@
         box-shadow: none
     &__img
       height: 55px
+  .button-catalog
+    &--mobile
+      display: flex
+  .catalog
+    &-list
+      &__link
+        font-size: 14px
+  .contacts
+    &__tabs
+      flex-wrap: wrap
+      &-item
+        flex-basis: 33.3%
+  .event
+    padding-bottom: 25px
   .events
     padding-top: 25px
     &-card
@@ -244,6 +255,27 @@
           grid-template-columns: 160px 145px 60px 1fr 120px
         &-title
           font-size: 14px
+  .form
+    &-search
+      box-shadow: 0px 0px 10px 5px rgba(192, 8, 8, 0.2)
+      &__input
+        padding-left: 135px
+  .footer
+    padding-top: 25px
+    padding-bottom: 25px
+    &-list
+      &__link
+        font-size: 13px
+  .goods
+    &-tabs
+      max-width: 60%
+    &-sorting
+      &__title
+        font-size: 13px
+  .hero
+    padding-bottom: 25px
+    &-slider
+      height: 280px
   .news
     padding-top: 25px
     padding-bottom: 25px
@@ -266,6 +298,13 @@
       height: 45px
     &__btn
       font-size: 14px
+  .product
+    &-panel
+      &__btn
+        font-size: 13px
+    &-specifications
+      &__title
+        font-size: 16px
   .services
     &-wrapper
       grid-template-columns: 1fr 1fr
@@ -288,31 +327,11 @@
         &__list
           &-item
             font-size: 14px
-  .catalog
-    &-list
-      &__link
-        font-size: 14px
-  .footer
-    padding-top: 25px
-    padding-bottom: 25px
-    &-list
-      &__link
-        font-size: 13px
-
-@media (max-width: 767px)
   .title
     &--h2
-      font-size: 18px
-  .hero
-    &-slider
-      height: 210px
-      &__btn
-        width: 20px
-        height: 20px
-        &--prev
-          left: 10px
-        &--next
-          right: 10px
+      font-size: 20px
+
+@media (max-width: 767px)
   .advantages
     &__link
       padding: 0 20px
@@ -322,11 +341,54 @@
       &__btn
         width: 20px
         height: 20px
+  .banner
+    display: none
   .brands
     &-slider
       &__btn
         width: 20px
         height: 20px
+  .catalog
+    &-list
+      &__link
+        font-size: 13px
+  .categories
+    padding-bottom: 25px
+    &-list
+      margin-bottom: 0
+      &__link
+        height: 160px
+  .events
+    &-slider
+      padding-top: 25px
+      padding-bottom: 25px
+      &__btn
+        top: 10px
+        width: 50px
+        height: 50px
+        &--prev
+          right: 70px
+    &-card
+      &__wrapper
+        padding: 15px
+  .footer
+    &__logo
+      margin-bottom: 0
+    &__img
+      width: 140px
+    &-contacts
+      margin-bottom: 0
+      &__adress
+        font-size: 13px
+      &__tel
+        font-size: 15px
+    &-socials
+      &__list
+        flex-direction: column
+        &-item
+          &:not(:last-child)
+            margin-right: 0
+            margin-bottom: 15px
   .goods
     &-tabs
       max-width: 80%
@@ -346,21 +408,16 @@
       &-item
         &__img
           height: 190px
-  .events
+  .hero
     &-slider
-      padding-top: 25px
-      padding-bottom: 25px
+      height: 210px
       &__btn
-        top: 10px
-        width: 50px
-        height: 50px
+        width: 20px
+        height: 20px
         &--prev
-          right: 70px
-    &-card
-      &__wrapper
-        padding: 15px
-  .row--mb-5
-    margin-bottom: 6rem
+          left: 10px
+        &--next
+          right: 10px
   .news
     &-item
       &:nth-child(-n+2)
@@ -375,8 +432,12 @@
         transform: translateY(-75%)
     &-slider
       &__btn
+        top: 120%
+        transform: translateY(-120%)
         width: 50px
         height: 50px
+  .row--mb-5
+    margin-bottom: 6rem
   .seo
     &-description
       &__text
@@ -384,51 +445,65 @@
       &__list
         &-item
           font-size: 13px
-  .catalog
-    &-list
-      &__link
-        font-size: 13px
-  .categories
-    padding-bottom: 25px
-    &-list
-      margin-bottom: 0
-      &__link
-        height: 160px
-  .banner
-    display: none
-  .footer
-    &__logo
-      margin-bottom: 0
-    &__img
-      width: 140px
-    &-contacts
-      margin-bottom: 0
-      &__adress
-        font-size: 13px
-      &__tel
-        font-size: 15px
-    &-socials
-      &__list
-        flex-direction: column
-        &-item
-          &:not(:last-child)
-            margin-right: 0
-            margin-bottom: 15px
+  .title
+    &--h2
+      font-size: 18px
 
 @media (max-width: 575px)
-  .header
-    &__logo
-      &--mobile
-        margin-right: 10px
-    &__btn
-      &--mobile
+  .about
+    &__title
+      font-size: 18px
+  .advantages
+    &-description
+      &__item
+        flex-direction: column
         &:not(:last-child)
-          margin-right: 10px
-  .menu-burger
-    width: 36px
-    height: 36px
+          margin-bottom: 25px
+      &__wrapper
+        &--order
+          order: 1
+      &__icon
+        width: 150px
+        margin-bottom: 15px
+      &__title
+        margin: 0 auto
+        margin-bottom: 20px
   .availability
     display: none
+  .categories
+    &-list
+      &__link
+        height: 200px
+  .contacts
+    &__map
+      height: 400px
+  .enterprises
+    &-list
+      &__icon
+        width: 60px
+  .events
+    height: 630px
+    &-tabs
+      max-width: 100%
+    &-card
+      &__title
+        font-size: 14px
+      &__img
+        height: 180px
+  .footer
+    &__logo
+      margin-bottom: 20px
+    &__img
+      width: 160px
+    &-contacts
+      margin-bottom: 20px
+    &-socials
+      &__list
+        flex-direction: row
+        &-item
+          &:not(:last-child)
+            margin-right: 45px
+            margin-bottom: 0
   .goods
     &-tab
       max-width: 75%
@@ -462,33 +537,22 @@
           width: initial
           padding: 10px 10px
           margin-left: 10px
-  .product
-    &-slider
-      &__img
-        height: 170px
-  .events
-    height: 630px
-    &-tabs
-      max-width: 100%
-    &-card
-      &__title
-        font-size: 14px
-      &__img
-        height: 180px
-  .enterprises
-    &-list
-      &__icon
-        width: 60px
+  .header
+    &__logo
+      &--mobile
+        margin-right: 10px
+    &__btn
+      &--mobile
+        &:not(:last-child)
+          margin-right: 10px
+  .menu-burger
+    width: 36px
+    height: 36px
   .news
     &-slider
-      &__btn
-        top: 115%
-        transform: translateY(-115%)
-        &--prev
-          left: initial
-          right: 70px
-        &--next
-          right: 15px
+      &__slide
+        &-title
+          font-size: 14px
   .newsletter
     &__form
       height: 112px
@@ -510,35 +574,39 @@
       top: 21px
       left: 20px
       transform: none
+  .product
+    &-slider
+      &__img
+        height: 170px
   .services
     &-wrapper
       grid-template-columns: 1fr
-  .categories
-    &-list
-      &__link
-        height: 200px
-  .footer
-    &__logo
-      margin-bottom: 20px
-    &__img
-      width: 160px
-    &-contacts
-      margin-bottom: 20px
-    &-socials
-      &__list
-        flex-direction: row
-        &-item
-          &:not(:last-child)
-            margin-right: 45px
-            margin-bottom: 0
 
 @media ( min-width: 320px )  and ( max-width: 480px )
-  .title
-    &--modal
-      font-size: 16px
+  .about
+    display: none
   .button
     &-catalog
       display: none
+  .categories
+    &-list
+      &__link
+        height: 150px
+      &__title
+        font-size: 12px
+  .contacts
+    &__tabs
+      &-item
+        flex-basis: 50%
+    &__map
+      height: 350px
+  .events
+    height: 620px
+    // &-tabs
+    //   flex-direction: column
+    //   &__item
+    //     &:nth-child(-n+1)
+    //       margin-bottom: 10px
   .form
     &-search
       height: 35px
@@ -550,9 +618,6 @@
       &__btn
         padding: 10px 20px
         font-size: 13px
-  .hero
-    &-slider
-      height: 180px
   .goods
     &-tabs
       flex-direction: column
@@ -580,30 +645,23 @@
           width: 180px
           height: 180px
           margin: 0 auto
-  .product
-    &-specifications
-      &__list
-        &-value
-          margin-left: 30px
-  .events
-    height: 620px
-    // &-tabs
-    //   flex-direction: column
-    //   &__item
-    //     &:nth-child(-n+1)
-    //       margin-bottom: 10px
+  .hero
+    &-slider
+      height: 180px
   .newsletter
     padding: 30px 20px 40px
     &__title
       font-size: 22px
     &__input
       width: 265px
+  .product
+    &-specifications
+      &__list
+        &-value
+          margin-left: 30px
   .seo
     &__title
       font-size: 18px
-  .categories
-    &-list
-      &__link
-        height: 150px
-      &__title
-        font-size: 12px
+  .title
+    &--modal
+      font-size: 16px

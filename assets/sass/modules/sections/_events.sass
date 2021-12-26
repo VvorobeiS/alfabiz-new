@@ -1,5 +1,11 @@
 .events
   padding-bottom: 50px
+  &--height-auto
+    height: auto !important
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 2rem
   &-tabs
     max-width: 40%
     padding: 0
@@ -48,6 +54,9 @@
         color: #5A7184
   &-card
     position: relative
+    &--style
+      @include wrapper
+      background-color: rgba(0,0,0,0.05)
     &__city
       position: absolute
       top: 30px

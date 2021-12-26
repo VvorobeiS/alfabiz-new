@@ -1,0 +1,58 @@
+.contacts
+  padding-bottom: 50px
+  &__tabs
+    max-width: 100%
+    padding: 0
+    &-item
+      background-color: rgba(0,0,0,0.05)
+      &:before
+        background-color: $blue-color
+      &:after
+        background-color: $blue-color
+  &__map
+    display: none
+    width: 100%
+    height: 500px
+    background-image: url(../images/map-bg.jpg)
+    background-position: center center
+    @include wrapper
+    &--active
+      display: block
+  &-info
+    display: flex
+    flex-direction: column
+    align-items: start
+    &__adress
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+      font-family: $Montserrat
+      font-size: 14px
+      font-weight: 300
+      font-style: normal
+      letter-spacing: $letter-spacing
+    &__tel
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+      font-family: $Montserrat
+      font-size: 18px
+      font-weight: 500
+      font-style: normal
+      letter-spacing: $letter-spacing
+      color: inherit
+      text-decoration: none
+    &__mail
+      display: flex
+      align-items: center
+      font-family: $Montserrat
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      color: inherit
+      text-decoration: none
+    &__icon
+      width: 16px
+      height: 16px
+      margin-right: 5px

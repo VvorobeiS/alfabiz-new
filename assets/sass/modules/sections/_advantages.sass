@@ -1,5 +1,7 @@
 .advantages
   padding-bottom: 50px
+  &--pt
+    padding-top: 50px
   &__title
     font-family: $Open-Sans
     font-size: 32px
@@ -61,3 +63,36 @@
         left: 0
       &--next
         right: 0
+  &-description
+    display: flex
+    flex-direction: column
+    margin: 0
+    padding: 0
+    list-style: none
+    &__item
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      &:not(:last-child)
+        margin-bottom: 50px
+    &__wrapper
+      display: flex
+      justify-content: center
+      align-items: start
+      flex-direction: column
+      flex-basis: 50%
+    &__title
+      margin-bottom: 20px
+    &__icon
+      display: block
+      width: 200px
+      margin: 0 auto
+    &__text
+      margin: 0
+      font-family: $Montserrat
+      font-size: 16px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: $letter-spacing
+      line-height: 24px
+      text-align: justify

@@ -10,9 +10,11 @@ import rangeSlider from './modules/rangeSlider';
 import tabsEventsSlider from './modules/tabsEventsSlider';
 import tabsGoodsContent from './modules/tabsGoodsContent';
 import tabsGoodsSlider from './modules/tabsGoodsSlider';
+import tabsContacts from './modules/tabsContacts';
 import toggeleCatalog from './modules/toggleCatalog';
 import toggleCollapse from './modules/toggleCollapse';
 import toggleNavbar from './modules/toggleNavbar';
+import map from './modules/map';
 
 // Слайдеры
 sliders();
@@ -24,9 +26,11 @@ rangeSlider();
 tabsEventsSlider();
 tabsGoodsContent();
 tabsGoodsSlider();
+tabsContacts();
 // Активация кнопки Каталог
 toggeleCatalog();
 // Сворачиваемый контент
 toggleCollapse();
 // Фиксация меню при скролле
 toggleNavbar();
+map();
