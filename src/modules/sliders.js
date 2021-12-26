@@ -187,7 +187,7 @@ const sliders = () => {
     // }
   });
 
-  const goodSlider = new Swiper('.product-slider', {
+  const productSlider = new Swiper('.product-slider', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
@@ -205,6 +205,54 @@ const sliders = () => {
     navigation: {
       nextEl: '.product-slider__btn--next',
       prevEl: '.product-slider__btn--prev'
+    },
+
+    // Управление клавиатурой
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+    },
+
+    observer: true,
+    observeParents: true
+  });
+
+  const eventSlider = new Swiper('[data-slider=event-slider]', {
+    // Optional parameters
+    loop: false,
+    slidesPerView: 1,
+    speed: 700,
+
+    // Настройки адаптивной версии
+    breakpoints: {
+      // если браузер >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // если браузер >= 575px
+      575: {
+        slidesPerView: 2
+      },
+      // если браузер >= 768px
+      769: {
+        slidesPerView: 2
+      },
+      // если браузер >= 992px
+      992: {
+        slidesPerView: 3
+      },
+      // если браузер >= 1200px
+      1200: {
+        slidesPerView: 4
+      }
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.event-slider__btn--next',
+      prevEl: '.event-slider__btn--prev',
+      disabledClass: 'event-slider__btn--disabled'
     },
 
     // Управление клавиатурой
