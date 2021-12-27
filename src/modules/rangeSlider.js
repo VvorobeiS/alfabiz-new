@@ -1,3 +1,4 @@
+import noUiSlider from 'nouislider';
 // Добавляем noUiSlider
 const rangeSlider = () => {
   const rangeSlidersTrack = document.querySelectorAll('.filters-list__item-slider'),

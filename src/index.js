@@ -1,11 +1,11 @@
 // Vendors
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '@fancyapps/ui/dist/fancybox.umd';
-import 'nouislider/dist/nouislider.min';
 
 // Common
 import sliders from './modules/sliders';
 import accordionsFilters from './modules/accordionsFilters';
+import accordionsMenu from './modules/accordionsMenu';
 import rangeSlider from './modules/rangeSlider';
 import tabsEventsSlider from './modules/tabsEventsSlider';
 import tabsGoodsContent from './modules/tabsGoodsContent';
@@ -20,6 +20,8 @@ import map from './modules/map';
 sliders();
 // Аккордеоны для фильтров
 accordionsFilters();
+// Аккордеоны для меню-бургер
+accordionsMenu();
 // Инициализация NoUiSlider
 rangeSlider();
 // Табы

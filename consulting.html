@@ -42,7 +42,7 @@
               <a href="#!" class="header__logo header__logo--mobile">
                 <img src="./assets/images/svg/logo-mini.svg" alt="Логотип" />
               </a>
-              <div class="menu-burger">
+              <div class="menu-burger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
                 <span class="menu-burger__line menu-burger__line--yellow"></span>
                 <span class="menu-burger__line menu-burger__line--red"></span>
                 <span class="menu-burger__line menu-burger__line--blue"></span>
@@ -74,7 +74,7 @@
                 ]
               "
             >
-              <button class="button header__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button class="button header__btn" data-bs-toggle="modal" data-bs-target="#userModal">
                 <svg class="header__btn-icon" width="20" height="20" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
                 </svg>
@@ -84,12 +84,7 @@
                 <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
                 </svg>
-                <button
-                  class="button header-city__btn"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <button class="button header-city__btn" data-bs-toggle="dropdown" aria-expanded="false">
                   Москва
                   <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
                     <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#caret-down-fill" />
@@ -109,37 +104,29 @@
               <!-- /.header-city -->
             </div>
             <!-- /.col-md-3 .col-lg-3 -->
-            <div
-              class="
-                [
-                col-8 col-sm-5 col-md-4
-                ]
-                [
-                d-flex d-lg-none
-                ]
-                [
-                justify-content-end justify-content-sm-between
-                align-items-center
-                ]
-              "
-            >
-              <button class="button header__btn header__btn--mobile">
-                <svg class="header__btn-icon header__btn-icon--mobile" width="25" height="25" fill="currentColor">
+            <div class="[ col-8 col-sm-5 col-md-4 ] [ d-flex d-lg-none ] [ justify-content-end align-items-center ]">
+              <button class="button header__btn header__btn--mobile" data-bs-toggle="modal" data-bs-target="#userModal">
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person-fill" />
                 </svg>
-                Войти
               </button>
-              <button class="button header__btn header__btn--mobile">
-                <svg class="header__btn-icon header__btn-icon--mobile" width="25" height="25" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+              <button
+                class="button header__btn header__btn--mobile"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBrands"
+              >
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#building" />
                 </svg>
-                Сравнить
               </button>
-              <button class="button header__btn header__btn--mobile">
-                <svg class="header__btn-icon header__btn-icon--mobile" width="25" height="25" fill="currentColor">
+              <button
+                class="button header__btn header__btn--mobile"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart"
+              >
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
                 </svg>
-                Корзина
               </button>
             </div>
             <!-- /.col-2 -->
@@ -211,15 +198,16 @@
             >
               <button class="button navbar__btn">
                 <svg class="navbar__icon" width="25" height="25" fill="currentColor">
-                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#bar-chart-fill" />
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#building" />
                 </svg>
-                Сравнить
+                Бренды
               </button>
-              <button class="button navbar__btn">
+              <button class="button navbar__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
                 <svg class="navbar__icon" width="25" height="25" fill="currentColor">
                   <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart-fill" />
                 </svg>
                 Корзина
+                <span class="navbar__btn-amount">2</span>
               </button>
             </div>
             <!-- /.col-2 -->
@@ -346,7 +334,7 @@
       <main class="main">
         <nav class="breadcrumb">
           <div class="container">
-            <div class="row [ d-none d-md-flex ]">
+            <div class="row">
               <div class="col-12">
                 <ul class="breadcrumb-list">
                   <li class="breadcrumb-list__item">
@@ -445,10 +433,13 @@
             <div class="row">
               <div class="col-12">
                 <div
-                  class="events-slider__container swiper-container events-slider__container--active"
+                  class="
+                    events-slider__container
+                    swiper-container
+                    events-slider__container--active events-slider__container--announcements
+                  "
                   data-slider="events-slider"
                   data-tab="events-tabs"
-                  data-aos="fade-right"
                 >
                   <div class="events-slider__wrapper swiper-wrapper">
                     <div class="events-slider__slide swiper-slide wrapper">
@@ -487,7 +478,7 @@
                             </li>
                           </ul>
                           <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -535,7 +526,7 @@
                             </li>
                           </ul>
                           <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -547,29 +538,27 @@
                       <!-- /.events-card -->
                     </div>
                     <!-- events-slider__slide -->
-                    <div class="events-slider__slide swiper-slide">
+                    <div class="events-slider__slide swiper-slide wrapper">
                       <div class="events-card">
                         <img
-                          src="./assets/images/events/09_09-msk-min.jpg"
+                          src="./assets/images/events/03_09-spb.jpg"
                           alt="Обложка мастер-класса"
                           class="events-card__img"
                         />
                         <div class="events-card__wrapper">
-                          <h3 class="events-card__title">
-                            Как открыть топовый ресторан с бургерами и секреты технологий приготовления сочных Бургеров
-                          </h3>
+                          <h3 class="events-card__title">Как превратить столовую в Market Plaсe</h3>
                           <ul class="events-card__list">
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                               </svg>
-                              <span class="events-card__list-date">9 сентября 2021</span>
+                              <span class="events-card__list-date">3 сентября 2021</span>
                             </li>
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
                               </svg>
-                              <span class="events-card__list-time">в 14:00</span>
+                              <span class="events-card__list-time">в 13:00</span>
                             </li>
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -585,7 +574,7 @@
                             </li>
                           </ul>
                           <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -596,22 +585,22 @@
                       </div>
                       <!-- /.events-card -->
                     </div>
-                    <!-- events-slider__slide -->
+                    <!-- events-slider__slide  -->
                     <div class="events-slider__slide swiper-slide">
                       <div class="events-card">
                         <img
-                          src="./assets/images/events/10_09-msk-min.jpg"
+                          src="./assets/images/events/mc-picture.jpg"
                           alt="Обложка мастер-класса"
                           class="events-card__img"
                         />
                         <div class="events-card__wrapper">
-                          <h3 class="events-card__title">Новинки осени для кондитеров</h3>
+                          <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
                           <ul class="events-card__list">
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                               </svg>
-                              <span class="events-card__list-date">10 сентября 2021</span>
+                              <span class="events-card__list-date">8 сентября 2021</span>
                             </li>
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -633,7 +622,7 @@
                             </li>
                           </ul>
                           <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -645,21 +634,69 @@
                       <!-- /.events-card -->
                     </div>
                     <!-- events-slider__slide -->
-                    <div class="events-slider__slide swiper-slide">
+                    <div class="events-slider__slide swiper-slide wrapper">
                       <div class="events-card">
                         <img
-                          src="./assets/images/events//15_09.jpg"
+                          src="./assets/images/events/03_09-spb.jpg"
                           alt="Обложка мастер-класса"
                           class="events-card__img"
                         />
                         <div class="events-card__wrapper">
-                          <h3 class="events-card__title">Хлеб и выпечка по рецептам Вячеслава Погорелого</h3>
+                          <h3 class="events-card__title">Как превратить столовую в Market Plaсe</h3>
                           <ul class="events-card__list">
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
                                 <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
                               </svg>
-                              <span class="events-card__list-date">15 сентября 2021</span>
+                              <span class="events-card__list-date">3 сентября 2021</span>
+                            </li>
+                            <li class="events-card__list-item">
+                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
+                              </svg>
+                              <span class="events-card__list-time">в 13:00</span>
+                            </li>
+                            <li class="events-card__list-item">
+                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
+                              </svg>
+                              <span class="events-card__list-address">Лахтинский проспект, 2/1</span>
+                            </li>
+                            <li class="events-card__list-item">
+                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
+                              </svg>
+                              <span class="events-card__list-cost">Бесплатно</span>
+                            </li>
+                          </ul>
+                          <div class="events-card__footer">
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                              >Подробнее</a
+                            >
+                          </div>
+                          <!-- /.events-card__footer -->
+                        </div>
+                        <!-- /.events-card__wrapper -->
+                        <span class="events-card__city">Санкт-Петербург</span>
+                      </div>
+                      <!-- /.events-card -->
+                    </div>
+                    <!-- events-slider__slide  -->
+                    <div class="events-slider__slide swiper-slide">
+                      <div class="events-card">
+                        <img
+                          src="./assets/images/events/mc-picture.jpg"
+                          alt="Обложка мастер-класса"
+                          class="events-card__img"
+                        />
+                        <div class="events-card__wrapper">
+                          <h3 class="events-card__title">Сэндвичи, бургеры, брускетты и пануццо</h3>
+                          <ul class="events-card__list">
+                            <li class="events-card__list-item">
+                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
+                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
+                              </svg>
+                              <span class="events-card__list-date">8 сентября 2021</span>
                             </li>
                             <li class="events-card__list-item">
                               <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
@@ -681,55 +718,7 @@
                             </li>
                           </ul>
                           <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
-                              >Подробнее</a
-                            >
-                          </div>
-                          <!-- /.events-card__footer -->
-                        </div>
-                        <!-- /.events-card__wrapper -->
-                        <span class="events-card__city">Москва</span>
-                      </div>
-                      <!-- /.events-card -->
-                    </div>
-                    <!-- events-slider__slide -->
-                    <div class="events-slider__slide swiper-slide">
-                      <div class="events-card">
-                        <img
-                          src="./assets/images/events/29_09-msk-min.jpg"
-                          alt="Обложка мастер-класса"
-                          class="events-card__img"
-                        />
-                        <div class="events-card__wrapper">
-                          <h3 class="events-card__title">Авторский курс «Ремесленный колбасник»</h3>
-                          <ul class="events-card__list">
-                            <li class="events-card__list-item">
-                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#calendar-event" />
-                              </svg>
-                              <span class="events-card__list-date">29 сентября 2021</span>
-                            </li>
-                            <li class="events-card__list-item">
-                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#clock" />
-                              </svg>
-                              <span class="events-card__list-time">в 13:00</span>
-                            </li>
-                            <li class="events-card__list-item">
-                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt" />
-                              </svg>
-                              <span class="events-card__list-address">проспект Андропова, 22</span>
-                            </li>
-                            <li class="events-card__list-item">
-                              <svg class="events-card__list-svg" width="15" height="15" fill="currentColor">
-                                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cash" />
-                              </svg>
-                              <span class="events-card__list-cost">70 000 ₽</span>
-                            </li>
-                          </ul>
-                          <div class="events-card__footer">
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a href="./event.html" class="events-card__link" target="_blank" rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -756,7 +745,7 @@
                 </div>
                 <!-- /.events-slider__container -->
                 <div
-                  class="events-slider__container swiper-container"
+                  class="events-slider__container swiper-container events-slider__container--reports"
                   data-slider="events-slider"
                   data-tab="events-tabs"
                   data-aos="fade-right"
@@ -781,7 +770,11 @@
                           </ul>
                           <div class="events-card__footer">
                             <!-- <span class="events-card__cost">Бесплатно</span> -->
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a
+                              href="./event-report.html"
+                              class="events-card__link"
+                              target="_blank"
+                              rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -812,7 +805,11 @@
                           </ul>
                           <div class="events-card__footer">
                             <!-- <span class="events-card__cost">Бесплатно</span> -->
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a
+                              href="./event-report.html"
+                              class="events-card__link"
+                              target="_blank"
+                              rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -843,7 +840,11 @@
                           </ul>
                           <div class="events-card__footer">
                             <!-- <span class="events-card__cost">Бесплатно</span> -->
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a
+                              href="./event-report.html"
+                              class="events-card__link"
+                              target="_blank"
+                              rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -874,7 +875,11 @@
                           </ul>
                           <div class="events-card__footer">
                             <!-- <span class="events-card__cost">Бесплатно</span> -->
-                            <a href="#!" class="events-card__link" target="_blank" rel="noopener noreferrer"
+                            <a
+                              href="./event-report.html"
+                              class="events-card__link"
+                              target="_blank"
+                              rel="noopener noreferrer"
                               >Подробнее</a
                             >
                           </div>
@@ -907,7 +912,7 @@
           </div>
           <!-- /.container -->
         </section>
-        <!-- /.events-slider mobile -->
+        <!-- /.events-slider -->
       </main>
       <!-- /.main -->
       <footer class="footer">
@@ -1023,7 +1028,7 @@
                 <h3 class="footer__title">Услуги</h3>
                 <ul class="footer-list">
                   <li class="footer-list__item">
-                    <a href="#!" class="footer-list__link">Аренда гастроплощадки</a>
+                    <a href="#!" class="footer-list__link">Аренда оборудования</a>
                   </li>
                   <li class="footer-list__item">
                     <a href="#!" class="footer-list__link">Рассрочка без банков</a>
@@ -1043,9 +1048,7 @@
                   <li class="footer-list__item">
                     <a href="#!" class="footer-list__link">Новости</a>
                   </li>
-                  <li class="footer-list__item">
-                    <a href="#!" class="footer-list__link">Доставка и оплата</a>
-                  </li>
+
                   <li class="footer-list__item">
                     <a href="#!" class="footer-list__link">О компании</a>
                   </li>
@@ -1065,7 +1068,7 @@
       <!-- /.footer -->
       <div class="overlay"></div>
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+      <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <button type="button" class="button button--close" data-bs-dismiss="modal">
@@ -1092,6 +1095,236 @@
         </div>
       </div>
       <!-- .modal -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header flex-column align-items-start">
+          <div class="header-city dropdown mb-3">
+            <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
+              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#geo-alt-fill" />
+            </svg>
+            <button class="button header-city__btn" data-bs-toggle="dropdown" aria-expanded="false">
+              Москва
+              <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#caret-down-fill" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link dropdown-menu__link--active" href="#">Москва</a>
+              </li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Курган</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Новосибирск</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Омск</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Санкт-Петербург</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Тюмень</a></li>
+            </ul>
+          </div>
+          <!-- /.header-city -->
+          <div class="header__contacts">
+            <span class="header__contacts-adress">м. Коломенская пр. Андропова, 22</span>
+            <a class="header__contacts-tel" href="tel:+">+7 (495)136-66-22</a>
+            <a class="header__contacts-email" href="mailto:">moscow@alfa-biz.ru</a>
+          </div>
+          <!-- /.header__contacts -->
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="menu">
+            <form action="#!" class="form-search mb-3">
+              <input type="text" class="form-search__input" placeholder="Название товара" required />
+              <button class="button form-search__btn">
+                <svg class="form-search__icon" width="15" height="15" fill="currentColor">
+                  <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#search" />
+                </svg>
+              </button>
+            </form>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                >
+                  Каталог
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-1">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Барное и кофейное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Весовое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Моечное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Нейтральное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Оборудование для раздачи готовых блюд</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Посуда и инвентарь</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Санитарно-гигиеническое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Упаковочное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Холодильное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Электромеханическое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Униформа и одежда для персонала</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                >
+                  Гастроплощадки
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-2">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="./gastro.html" class="submenu-list__link">Главная</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./events.html" class="submenu-list__link">Мастер-классы</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./events-reports.html" class="submenu-list__link">Отчеты с мастер классов</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./consulting.html" class="submenu-list__link">Консалтинг</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./specialists.html" class="submenu-list__link">Наши специалисты</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./partners.html" class="submenu-list__link">Партнеры</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                >
+                  Услуги
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-3">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="./services.html  " class="submenu-list__link">Главная</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Аренда оборудования</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Рассрочка без банков</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Выезд специалиста</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Тест-драйв</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Проектирование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Разработка меню</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <a href="./news.html" class="menu-list__item-link">Новости</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="./company.html" class="menu-list__item-link">О компании</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="./contacts.html" class="menu-list__item-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.menu -->
+        </div>
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart">
+        <div class="offcanvas-header">
+          <h2 class="title title--h2">Корзина</h2>
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart">
+            <ul class="cart-list">
+              <li class="cart-list__item">
+                <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="cart-list__item-img" />
+                <h3 class="cart-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                <span class="cart-list__item-amount">1</span>
+                <span class="cart-list__item-cost">324 065 ₽</span>
+                <button type="button" class="button button--close">
+                  <svg class="modal-close__icon" width="10" height="10" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+                  </svg>
+                </button>
+              </li>
+              <li class="cart-list__item">
+                <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="cart-list__item-img" />
+                <h3 class="cart-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                <span class="cart-list__item-amount">1</span>
+                <span class="cart-list__item-cost">324 065 ₽</span>
+                <button type="button" class="button button--close">
+                  <svg class="modal-close__icon" width="10" height="10" fill="currentColor">
+                    <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#x-lg" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#!" class="cart__link">Оформить заказ</a>
+              <span class="cost">Итого: 648 130 ₽</span>
+            </div>
+            <!-- /.d-flex -->
+          </div>
+          <!-- /.cart -->
+        </div>
+      </div>
+      <!-- /.offcanvas -->
     </div>
     <script src="./assets/js/bundle.js"></script>
   </body>

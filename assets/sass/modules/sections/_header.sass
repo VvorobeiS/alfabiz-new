@@ -22,6 +22,10 @@
     letter-spacing: $letter-spacing
     background-color: transparent
     color: inherit
+    &--mobile
+      color: $light-color
+      &:not(:last-child)
+        margin-right: 25px
     +hover
       color: $primary-color
   &__icon

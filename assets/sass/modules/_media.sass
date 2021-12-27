@@ -222,6 +222,8 @@
         width: 170px
       &__text
         font-size: 14px
+  .body
+    padding-top: 74px
   .brands
     padding-top: 25px
     padding-bottom: 25px
@@ -278,8 +280,6 @@
   .form
     &-search
       box-shadow: 0px 0px 10px 5px rgba(192, 8, 8, 0.2)
-      &__input
-        padding-left: 135px
   .footer
     padding-top: 25px
     padding-bottom: 25px
@@ -304,10 +304,20 @@
     &-sorting
       &__title
         font-size: 13px
+  .header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    box-shadow: 0px 10px 10px 0px rgba(204, 203, 198, 0.2)
+    z-index: 100
+    background: linear-gradient(90deg, rgba(18,64,149,0.8) 10%, rgba(192,8,8,0.8) 50%, rgba(18,64,149,0.8) 90%)
   .hero
     padding-bottom: 25px
     &-slider
       height: 280px
+  .navbar
+    display: none
   .news
     padding-top: 25px
     padding-bottom: 25px
@@ -390,6 +400,19 @@
       margin-bottom: 0
       &__link
         height: 160px
+  .cart
+    &__link
+      padding: 10px 10px
+    &-list
+      &__item
+        flex-wrap: wrap
+        &-img
+          display: none
+        &-title
+          font-size: 14px
+          margin-bottom: 10px
+        &-amount
+          flex-basis: 50%
   .events
     &-slider
       padding-top: 25px
@@ -477,6 +500,8 @@
         transform: translateY(-120%)
         width: 50px
         height: 50px
+  .offcanvas-cart
+    width: 100%
   .row--mb-5
     margin-bottom: 6rem
   .seo
@@ -511,6 +536,8 @@
         margin-bottom: 20px
   .availability
     display: none
+  .body
+    padding-top: 61px
   .categories
     &-list
       &__link
@@ -589,10 +616,6 @@
     &__logo
       &--mobile
         margin-right: 10px
-    &__btn
-      &--mobile
-        &:not(:last-child)
-          margin-right: 10px
   .menu-burger
     width: 36px
     height: 36px
@@ -632,6 +655,8 @@
 
 @media ( min-width: 320px )  and ( max-width: 480px )
   .about
+    display: none
+  .brand
     display: none
   .button
     &-catalog
