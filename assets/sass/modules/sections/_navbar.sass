@@ -23,31 +23,6 @@
       margin: 0
       padding: 0
       list-style: none
-      &-page
-        position: relative
-        display: block
-        font-family: $Montserrat
-        font-weight: 500
-        font-size: 16px
-        font-style: normal
-        letter-spacing: $letter-spacing
-        color: $yellow-color
-        // &:before
-        //   content: ''
-        //   position: absolute
-        //   top: 0
-        //   left: 0
-        //   right: 0
-        //   height: 5px
-        //   background-color: $primary-color
-        // &:after
-        //   content: ''
-        //   position: absolute
-        //   bottom: 0
-        //   left: 0
-        //   right: 0
-        //   height: 5px
-        //   background-color: $primary-color
       &-link
         @include link
         color: $light-color
@@ -55,6 +30,12 @@
           background-color: $light-color
         +hover
           color: $yellow-color
+        &--active
+          color: $yellow-color
+          pointer-events: none
+          cursor: default
+          &:before
+            content: none
   &__btn
     position: relative
     display: flex
@@ -160,6 +141,7 @@
           &:after
             opacity: 1
         &--active
+          pointer-events: none
           background-color: rgba(0,0,0,0.05)
           &:before
             width: 10px
@@ -203,6 +185,13 @@
           background-color: rgba(0,0,0,0.05)
           &:before
             width: 10px
+        &--active
+          pointer-events: none
+          background-color: rgba(0,0,0,0.05)
+          &:before
+            width: 10px
+          &:after
+            opacity: 1
 .subbar
   &--fixed
     position: fixed

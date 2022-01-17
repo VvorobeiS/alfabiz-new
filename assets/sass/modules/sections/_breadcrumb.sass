@@ -18,15 +18,17 @@
         &:after
           content: '/'
           margin-right: 4px
-    &__page
+    &__link
       font-family: $Montserrat
       font-weight: 500
       font-size: 12px
       font-style: normal
       letter-spacing: $letter-spacing
+      text-decoration: none
       color: inherit
-      &--link
-        transition: $transition
-        text-decoration: none
-        +hover
-          color: $primary-color
+      transition: $transition
+      +hover
+        color: $primary-color
+      &--active
+        pointer-events: none
+        cursor: default
