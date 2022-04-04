@@ -318,6 +318,47 @@ const sliders = () => {
     observeParents: true
   });
 
+  const compareSlider = new Swiper('[data-slider=compare-slider]', {
+    // Optional parameters
+    loop: false,
+    slidesPerView: 3,
+    speed: 700,
+    spaceBetween: 15,
+
+    // Настройки адаптивной версии
+    breakpoints: {
+      // если браузер >= 320px
+      320: {
+        slidesPerView: 1
+      },
+      // если браузер >= 768px
+      768: {
+        slidesPerView: 2
+      },
+      // если браузер >= 992px
+      992: {
+        slidesPerView: 3
+      }
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.compare-slider__btn--next',
+      prevEl: '.compare-slider__btn--prev',
+      disabledClass: 'compare-slider__btn--disabled'
+    },
+
+    // Управление клавиатурой
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true
+    },
+
+    observer: true,
+    observeParents: true
+  });
+
   const eventsSlider = new Swiper('[data-slider=events-slider]', {
     // Optional parameters
     loop: false,

@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Альфа-Бизнес</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./assets/css/aos.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header class="header">
+        <div class="container header__container">
+          <div class="row [ align-items-center justify-content-between ]">
+            <div class="col-3 [ d-none d-lg-block ]">
+              <a href="#!" class="header__logo">
+                <img src="./assets/images/svg/logo.svg" alt="Логотип" />
+              </a>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div
+              class="
+                [
+                col-4 col-sm-3 col-md-2
+                ]
+                [
+                d-flex d-lg-none
+                ]
+                [
+                justify-content-start justify-content-sm-between
+                align-items-center
+                ]
+              "
+            >
+              <a href="#!" class="header__logo header__logo--mobile">
+                <img src="./assets/images/svg/logo-mini.svg" alt="Логотип" />
+              </a>
+              <div class="menu-burger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                <span class="menu-burger__line menu-burger__line--yellow"></span>
+                <span class="menu-burger__line menu-burger__line--red"></span>
+                <span class="menu-burger__line menu-burger__line--blue"></span>
+              </div>
+              <!-- /.menu-burger -->
+            </div>
+            <!-- /.col-2 -->
+            <div class="[ col-4 col-md-6 col-lg-5 col-xl-3 ] [ d-none d-sm-block ]">
+              <p class="activity">Оборудование для баров, кафе, ресторанов, магазинов и производств</p>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-3 d-none d-xl-block">
+              <div class="contacts-info">
+                <span class="contacts-info__adress">
+                  <svg class="contacts-info__icon" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#geo-alt-fill" />
+                  </svg>
+                  м. Коломенская пр. Андропова, 22
+                </span>
+                <a class="contacts-info__tel" href="tel:+74951366622">
+                  <svg class="contacts-info__icon" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#telephone-outbound-fill" />
+                  </svg>
+                  +7 (495)136-66-22
+                </a>
+                <a class="contacts-info__mail" href="mailto:moscow@alfa-biz.ru">
+                  <svg class="contacts-info__icon" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#envelope-fill" />
+                  </svg>
+                  moscow@alfa-biz.ru
+                </a>
+              </div>
+              <!-- /.contacts-info -->
+            </div>
+            <!-- /.col-3 d-none d-xl-block -->
+            <div
+              class="
+                [
+                col-4 col-xl-3
+                ]
+                [
+                d-none d-lg-flex
+                ]
+                [
+                justify-content-between justify-content-xl-around
+                align-items-center
+                ]
+              "
+            >
+              <button class="button header__btn" data-bs-toggle="modal" data-bs-target="#userModal">
+                <svg class="header__btn-icon" width="20" height="20" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#person-fill" />
+                </svg>
+                Войти
+              </button>
+              <div class="header-city dropdown">
+                <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#geo-alt-fill" />
+                </svg>
+                <button class="button header-city__btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  Москва
+                  <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#caret-down-fill" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link dropdown-menu__link--active" href="#">Москва</a>
+                  </li>
+                  <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Курган</a></li>
+                  <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Новосибирск</a></li>
+                  <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Омск</a></li>
+                  <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Санкт-Петербург</a></li>
+                  <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Тюмень</a></li>
+                </ul>
+              </div>
+              <!-- /.header-city -->
+            </div>
+            <!-- /.col-md-3 .col-lg-3 -->
+            <div class="[ col-8 col-sm-5 col-md-4 ] [ d-flex d-lg-none ] [ justify-content-end align-items-center ]">
+              <button class="button header__btn header__btn--mobile" data-bs-toggle="modal" data-bs-target="#userModal">
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#person-fill" />
+                </svg>
+              </button>
+              <button
+                class="button header__btn header__btn--mobile"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBrands"
+              >
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#building" />
+                </svg>
+              </button>
+              <button
+                class="button header__btn header__btn--mobile"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasCart"
+              >
+                <svg class="header__btn-icon header__btn-icon--mobile" width="23" height="23" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#cart-fill" />
+                </svg>
+              </button>
+            </div>
+            <!-- /.col-2 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </header>
+      <!-- /.header -->
+      <div class="navbar">
+        <div class="container">
+          <div class="row align-items-center p-3">
+            <div class="col-2 d-flex [ justify-content-center align-items-center ]">
+              <button class="button button-catalog" data-toggle="catalog">
+                <svg class="button-catalog__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#list" />
+                </svg>
+                Каталог
+              </button>
+            </div>
+            <!-- /.col-2 -->
+            <div class="col-7">
+              <div class="navbar-wrapper">
+                <nav class="navbar-menu">
+                  <ul class="navbar-menu__list">
+                    <li class="navbar-menu__list-item">
+                      <a href="./gastro.html" class="navbar-menu__list-link navbar-menu__list-link--active"
+                        >Гастроплощадки</a
+                      >
+                    </li>
+                    <li class="navbar-menu__list-item">
+                      <a href="./services.html" class="navbar-menu__list-link">Услуги</a>
+                    </li>
+                    <li class="navbar-menu__list-item">
+                      <a href="./news.html" class="navbar-menu__list-link">Новости</a>
+                    </li>
+                    <li class="navbar-menu__list-item">
+                      <a href="./company.html" class="navbar-menu__list-link">О компании</a>
+                    </li>
+                    <li class="navbar-menu__list-item">
+                      <a href="./contacts.html" class="navbar-menu__list-link">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <button class="button navbar__btn navbar__btn--search" data-toggle="form-search">
+                  <svg class="navbar__icon" width="15" height="15" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#search" />
+                  </svg>
+                </button>
+                <form action="#!" class="form-search">
+                  <input type="text" class="form-search__input" placeholder="Название товара" required />
+                  <button
+                    class="form-search__btn button form-search__btn--close"
+                    data-toggle="form-search"
+                    type="reset"
+                  >
+                    <svg class="form-search__icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x" />
+                    </svg>
+                  </button>
+                  <button class="button form-search__btn">
+                    <svg class="form-search__icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#search" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <!-- /.navbar-wrapper -->
+            </div>
+            <!-- /.col-7 -->
+            <div class="col-3 d-flex [ justify-content-between justify-content-xl-around align-items-center ]">
+              <button class="button navbar__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBrands">
+                <svg class="navbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#building" />
+                </svg>
+                Бренды
+              </button>
+              <a href="./compare.html" class="button navbar__btn">
+                <svg class="navbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#bar-chart-fill" />
+                </svg>
+                Сравнить
+                <span class="navbar__btn-amount">2</span>
+              </a>
+              <button class="button navbar__btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+                <svg class="navbar__icon" width="25" height="25" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#cart-fill" />
+                </svg>
+                Корзина
+                <span class="navbar__btn-amount">2</span>
+              </button>
+            </div>
+            <!-- /.col-3 -->
+            <div class="col-12 navbar-catalog">
+              <ul class="navbar-catalog__menu">
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link navbar-catalog__menu-link--active">
+                    Барное и кофейное оборудование
+                  </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Весовое оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Моечное оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Нейтральное оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Оборудование для раздачи готовых блюд </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Посуда и инвентарь </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Санитарно-гигиеническое оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Тепловое оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Упаковочное оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Холодильное оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Электромеханическое оборудование </a>
+                </li>
+                <li class="navbar-catalog__menu-item">
+                  <a href="#!" class="navbar-catalog__menu-link"> Униформа и одежда для персонала </a>
+                </li>
+              </ul>
+              <ul class="navbar-catalog__submenu navbar-catalog__submenu--active">
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link navbar-catalog__submenu-link--active">
+                    Аппараты для горячего шоколада
+                  </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Граниторы </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Комбайны барные </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Блендеры </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Диспенсеры горячих напитков </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Измельчители льда </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Кофемашины </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Кофемолки </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Льдогенераторы кубикового льда </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Миксеры для молочных коктейлей </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Соковыжималки </a>
+                </li>
+                <li class="navbar-catalog__submenu-item">
+                  <a href="#!" class="navbar-catalog__submenu-link"> Сокоохладители </a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-catalog -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.navbar -->
+      <main class="main">
+        <nav class="breadcrumb">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <ul class="breadcrumb-list">
+                  <li class="breadcrumb-list__item">
+                    <a href="#!" class="breadcrumb-list__link">Главная</a>
+                  </li>
+                  <li class="breadcrumb-list__item">
+                    <a href="#!" class="breadcrumb-list__link breadcrumb-list__link--active">Оформление заказа </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.col-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+              <div class="col-12">
+                <h2 class="breadcrumb__title title title--h2">Оформление заказа</h2>
+              </div>
+              <!-- /.col-12 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </nav>
+        <!-- /.breadcrumb -->
+        <div class="product">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-7 col-lg-8 col-xl-9">
+                <div class="product-cart">
+                  <ul class="product-cart__list">
+                    <li class="product-cart__item">
+                      <a href="#!" class="product-cart__link">
+                        <img src="./assets/images/goods/good-1.jpg" alt="" class="product-cart__img" />
+                        <h3 class="product-cart__title">Пароконвектомат Retigo O623IC Vision II</h3>
+                      </a>
+                      <div class="product-panel product-cart__cost">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                          <span class="cost mb-1">324 065 ₽</span>
+                          <div class="product-panel__counter">
+                            <button class="button product-panel__counter-btn">
+                              <svg class="product-panel__counter-icon" fill="currentColor">
+                                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#dash-lg" />
+                              </svg>
+                            </button>
+                            <input type="number" class="product-panel__counter-input" value="1" />
+                            <button class="button product-panel__counter-btn">
+                              <svg class="product-panel__counter-icon" fill="currentColor">
+                                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#plus-lg" />
+                              </svg>
+                            </button>
+                          </div>
+                          <!-- /.product-panel__counter -->
+                        </div>
+                        <!-- /.d-flex flex-column align-items-center justify-content-center -->
+                      </div>
+                      <!-- /.product-panel .product-cart__cost -->
+                      <ul class="product-cart__shipper">
+                        <li class="product-cart__shipper-item">
+                          <span class="product-cart__shipper-title">Поставщик</span>
+                          <span class="product-cart__shipper-title">Дата</span>
+                          <span class="product-cart__shipper-title">Закуп</span>
+                        </li>
+                        <li class="product-cart__shipper-item">
+                          <span class="product-cart__shipper-text">EquipCenter</span>
+                          <span class="product-cart__shipper-text">16.01</span>
+                          <span class="product-cart__shipper-text">946 335 ₽</span>
+                        </li>
+                      </ul>
+                      <button type="button" class="button button--close" data-bs-dismiss="modal">
+                        <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+                          <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x" />
+                        </svg>
+                      </button>
+                    </li>
+                    <li class="product-cart__item">
+                      <a href="#!" class="product-cart__link">
+                        <img src="./assets/images/goods/good-1.jpg" alt="" class="product-cart__img" />
+                        <h3 class="product-cart__title">Пароконвектомат Retigo O623IC Vision II</h3>
+                      </a>
+                      <div class="product-panel product-cart__cost">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                          <span class="cost mb-1">324 065 ₽</span>
+                          <div class="product-panel__counter">
+                            <button class="button product-panel__counter-btn">
+                              <svg class="product-panel__counter-icon" fill="currentColor">
+                                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#dash-lg" />
+                              </svg>
+                            </button>
+                            <input type="number" class="product-panel__counter-input" value="1" />
+                            <button class="button product-panel__counter-btn">
+                              <svg class="product-panel__counter-icon" fill="currentColor">
+                                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#plus-lg" />
+                              </svg>
+                            </button>
+                          </div>
+                          <!-- /.product-panel__counter -->
+                        </div>
+                        <!-- /.d-flex flex-column align-items-center justify-content-center -->
+                      </div>
+                      <!-- /.product-panel .product-cart__cost -->
+                      <ul class="product-cart__shipper">
+                        <li class="product-cart__shipper-item">
+                          <span class="product-cart__shipper-title">Поставщик</span>
+                          <span class="product-cart__shipper-title">Дата</span>
+                          <span class="product-cart__shipper-title">Закуп</span>
+                        </li>
+                        <li class="product-cart__shipper-item">
+                          <span class="product-cart__shipper-text">EquipCenter</span>
+                          <span class="product-cart__shipper-text">16.01</span>
+                          <span class="product-cart__shipper-text">946 335 ₽</span>
+                        </li>
+                      </ul>
+                      <button type="button" class="button button--close" data-bs-dismiss="modal">
+                        <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+                          <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x" />
+                        </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.product-cart -->
+                <div class="product-panel wrapper [ d-md-none mb-3 ]">
+                  <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                    <span class="product-panel__text">Итого:</span>
+                    <span class="cost">324 065 ₽</span>
+                  </div>
+                  <!-- /.d-flex -->
+                  <button class="button product-panel__btn product-panel__btn--red mb-2">
+                    <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#cart-fill" />
+                    </svg>
+                    Оформить заказ
+                  </button>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex flex-column align-items-start">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1"> Скидка </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2"> Наценка </label>
+                      </div>
+                    </div>
+                    <!-- /.d-flex -->
+                    <input type="number" class="product-panel__input" placeholder="%" />
+                  </div>
+                  <!-- /.d-flex -->
+                  <button
+                    class="button product-panel__btn product-panel__btn--blue"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Служебное КП
+                    <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#caret-down-fill" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Vesta</a></li>
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Рассрочка</a></li>
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Тест-драйв</a></li>
+                  </ul>
+                </div>
+                <!-- /.product-panel -->
+              </div>
+              <!-- /.col-9-->
+              <div class="[ d-none d-md-block ] [ col-5 col-lg-4 col-xl-3 ]">
+                <div class="product-panel wrapper mb-3">
+                  <div class="d-flex [ justify-content-between align-items-center ] mb-2">
+                    <span class="product-panel__text">Итого:</span>
+                    <span class="cost">324 065 ₽</span>
+                  </div>
+                  <!-- /.d-flex -->
+                  <button class="button product-panel__btn product-panel__btn--red mb-2">
+                    <svg class="product-panel__icon" width="14" height="14" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#cart-fill" />
+                    </svg>
+                    Оформить заказ
+                  </button>
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex flex-column align-items-start">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                        <label class="form-check-label" for="flexRadioDefault1"> Скидка </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="flexRadioDefault2"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexRadioDefault2"> Наценка </label>
+                      </div>
+                    </div>
+                    <!-- /.d-flex -->
+                    <input type="number" class="product-panel__input" placeholder="%" />
+                  </div>
+                  <!-- /.d-flex -->
+                  <button
+                    class="button product-panel__btn product-panel__btn--blue"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Служебное КП
+                    <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./assets/images/svg/bootstrap-icons.svg#caret-down-fill" />
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Vesta</a></li>
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Рассрочка</a></li>
+                    <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Тест-драйв</a></li>
+                  </ul>
+                </div>
+                <!-- /.product-panel -->
+              </div>
+              <!-- /.col-4 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.product -->
+      </main>
+      <!-- /.main -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div
+              class="
+                [
+                col-12 col-sm-12 col-md-4 col-lg-3
+                ]
+                [
+                d-flex d-md-block
+                ]
+                [
+                flex-column flex-sm-row
+                ]
+                justify-content-between
+                [
+                mb-4 mb-sm-5 mb-md-0
+                ]
+              "
+            >
+              <a href="#!" class="footer__logo">
+                <img src="./assets/images/svg/logo-vertical.svg" alt="Логотип" class="footer__img" />
+              </a>
+              <div class="footer-contacts [ d-flex flex-column ]">
+                <h3 class="footer__title footer__title--small">Офис продаж:</h3>
+                <span class="footer-contacts__adress">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#geo-alt-fill" />
+                  </svg>
+                  м. Коломенская пр. Андропова, 22
+                </span>
+                <a class="footer-contacts__tel" href="tel:+">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#telephone-outbound-fill" />
+                  </svg>
+                  +7 (495)136-66-22
+                </a>
+                <a class="footer-contacts__mail" href="mailto:">
+                  <svg class="footer-contacts__icon" width="14" height="14" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#envelope-fill" />
+                  </svg>
+                  moscow@alfa-biz.ru
+                </a>
+              </div>
+              <!-- /.footer-contacts -->
+              <div class="footer-socials">
+                <ul class="footer-socials__list">
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./assets/images/svg/bootstrap-icons.svg#instagram" /></svg
+                    ></a>
+                  </li>
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./assets/images/svg/bootstrap-icons.svg#facebook" /></svg
+                    ></a>
+                  </li>
+                  <li class="footer-socials__list-item">
+                    <a href="#!" class="footer-socials__list-link"
+                      ><svg class="footer-socials__icon" width="20" height="20" fill="currentColor">
+                        <use xlink:href="./assets/images/svg/bootstrap-icons.svg#youtube" /></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.footer-socials -->
+            </div>
+            <!-- /.col-md-3 -->
+            <div class="col-12 col-sm-8 col-md-5 col-lg-4">
+              <div>
+                <h3 class="footer__title">Каталог</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Тепловое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Холодильное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Нейтральное технологическое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Электромеханическое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Барное и кофейное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Весовое оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Моечное оборудование</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Посуда, кухоный и барный инвертарь</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Униформа и одежда для персонала ресторона</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+            </div>
+            <!-- /.col-md-4 -->
+            <div
+              class="[ col-12 col-sm-4 col-md-3 col-lg-5 ] d-flex [ flex-column flex-lg-row ] justify-content-lg-around"
+            >
+              <div>
+                <h3 class="footer__title">Услуги</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Аренда оборудования</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Рассрочка без банков</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Тест-драйв оборудования</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+              <div>
+                <h3 class="footer__title">О компании</h3>
+                <ul class="footer-list">
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Мастер-классы</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Новости</a>
+                  </li>
+
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">О компании</a>
+                  </li>
+                  <li class="footer-list__item">
+                    <a href="#!" class="footer-list__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- / -->
+            </div>
+            <!-- /.col-md-5 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /.footer -->
+      <div class="overlay"></div>
+      <!-- /.overlay -->
+      <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="button button--close" data-bs-dismiss="modal">
+              <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+              </svg>
+            </button>
+            <div class="modal-body">
+              <h3 class="title title--h3 mb-4">Вход в личный кабинет</h3>
+              <form action="#!" class="form-user">
+                <input type="email" class="form-user__input" placeholder="Email" required />
+                <input type="password" class="form-user__input" placeholder="Пароль" required />
+                <span class="form-user__checkbox">
+                  <input type="checkbox" checked />
+                  Запомнить меня
+                </span>
+                <div class="form-user__buttons">
+                  <button class="button form-user__btn">Войти</button>
+                  <button class="button form-user__btn form-user__btn--registration">Регистрация</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .modal -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header flex-column align-items-start">
+          <div class="header-city dropdown mb-3">
+            <svg class="header-city__icon header-city__icon--mr-5" width="14" height="14" fill="currentColor">
+              <use xlink:href="./assets/images/svg/bootstrap-icons.svg#geo-alt-fill" />
+            </svg>
+            <button class="button header-city__btn" data-bs-toggle="dropdown" aria-expanded="false">
+              Москва
+              <svg class="header-city__btn-icon" width="13" height="13" fill="currentColor">
+                <use xlink:href="./assets/images/svg/bootstrap-icons.svg#caret-down-fill" />
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-menu__item">
+                <a class="dropdown-menu__link dropdown-menu__link--active" href="#">Москва</a>
+              </li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Курган</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Новосибирск</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Омск</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Санкт-Петербург</a></li>
+              <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">Тюмень</a></li>
+            </ul>
+          </div>
+          <!-- /.header-city -->
+          <div class="header__contacts">
+            <span class="header__contacts-adress">м. Коломенская пр. Андропова, 22</span>
+            <a class="header__contacts-tel" href="tel:+">+7 (495)136-66-22</a>
+            <a class="header__contacts-email" href="mailto:">moscow@alfa-biz.ru</a>
+          </div>
+          <!-- /.header__contacts -->
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="menu">
+            <form action="#!" class="form-search mb-3">
+              <input type="text" class="form-search__input" placeholder="Название товара" required />
+              <button class="button form-search__btn">
+                <svg class="form-search__icon" width="15" height="15" fill="currentColor">
+                  <use xlink:href="./assets/images/svg/bootstrap-icons.svg#search" />
+                </svg>
+              </button>
+            </form>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-1"
+                >
+                  Каталог
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-1">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Барное и кофейное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Весовое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Моечное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Нейтральное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Оборудование для раздачи готовых блюд</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Посуда и инвентарь</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Санитарно-гигиеническое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Упаковочное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Холодильное оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Электромеханическое оборудование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="#!" class="submenu-list__link">Униформа и одежда для персонала</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-2"
+                >
+                  Гастроплощадки
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-2">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="./gastro.html" class="submenu-list__link">Главная</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./events.html" class="submenu-list__link">Мастер-классы</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./events-reports.html" class="submenu-list__link">Отчеты с мастер классов</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./consulting.html" class="submenu-list__link">Консалтинг</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./specialists.html" class="submenu-list__link">Наши специалисты</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./partners.html" class="submenu-list__link">Партнеры</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <button
+                  class="button menu-list__item-btn menu-list__item-title"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-3"
+                >
+                  Услуги
+                  <svg class="menu-list__item-icon" width="20" height="20" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#chevron-down" />
+                  </svg>
+                </button>
+                <div class="menu-list__item-wrapper [ accordion-collapse collapse ]" id="collapse-3">
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item">
+                      <a href="./services.html  " class="submenu-list__link">Главная</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Аренда оборудования</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Рассрочка без банков</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Выезд специалиста</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Тест-драйв</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Проектирование</a>
+                    </li>
+                    <li class="submenu-list__item">
+                      <a href="./service.html" class="submenu-list__link">Разработка меню</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.menu-list__item-wrapper -->
+              </li>
+              <li class="menu-list__item">
+                <a href="./news.html" class="menu-list__item-link">Новости</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="./company.html" class="menu-list__item-link">О компании</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="./contacts.html" class="menu-list__item-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.menu -->
+        </div>
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart">
+        <div class="offcanvas-header">
+          <h2 class="title title--h2">Корзина</h2>
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart">
+            <ul class="cart-list">
+              <li class="cart-list__item">
+                <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="cart-list__item-img" />
+                <h3 class="cart-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                <span class="cart-list__item-amount">1</span>
+                <span class="cart-list__item-cost">324 065 ₽</span>
+                <button type="button" class="button button--close">
+                  <svg class="modal-close__icon" width="10" height="10" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+                  </svg>
+                </button>
+              </li>
+              <li class="cart-list__item">
+                <img src="./assets/images/goods/good-1.jpg" alt="Изображение товара" class="cart-list__item-img" />
+                <h3 class="cart-list__item-title">Пароконвектомат RETIGO O623IC VISION II</h3>
+                <span class="cart-list__item-amount">1</span>
+                <span class="cart-list__item-cost">324 065 ₽</span>
+                <button type="button" class="button button--close">
+                  <svg class="modal-close__icon" width="10" height="10" fill="currentColor">
+                    <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="#!" class="cart__link">Оформить заказ</a>
+              <span class="cost">Итого: 648 130 ₽</span>
+            </div>
+            <!-- /.d-flex -->
+          </div>
+          <!-- /.cart -->
+        </div>
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-end" id="offcanvasBrands">
+        <div class="offcanvas-header">
+          <h2 class="title title--h2">Бренды</h2>
+          <button type="button" class="button button--close" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+            <svg class="modal-close__icon" width="18" height="18" fill="currentColor">
+              <use xlink:href="./assets/images/svg/bootstrap-icons.svg#x-lg" />
+            </svg>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="brands p-0">
+            <ul class="brands__list">
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Retigo</a>
+              </li>
+              <li class="brands__list-item">
+                <a href="#!" class="brands__list-link">Rational</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.brand -->
+        </div>
+      </div>
+      <!-- /.offcanvas -->
+    </div>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>

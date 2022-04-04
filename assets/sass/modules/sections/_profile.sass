@@ -1,0 +1,88 @@
+.profile
+  padding-bottom: 25px
+  &__tabs
+    max-width: 100%
+    padding: 0
+    &-item
+      background-color: rgba(0,0,0,0.05)
+      &:before
+        background-color: $blue-color
+      &:after
+        background-color: $blue-color
+  &__btn
+    display: flex
+    align-items: flex-end
+    font-family: $Montserrat
+    font-size: 14px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: $letter-spacing
+    background-color: transparent
+    color: inherit
+    transition: $transition
+    +hover
+      color: $primary-color
+  &__content
+    display: none
+    &--active
+      display: block
+  &__table
+    margin: 0
+    padding: 15px 0
+    list-style: none
+    &-item
+      &:not(:last-child)
+        border-bottom: 1px solid $blue-color
+    &-wrapper
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    &-link
+      text-decoration: none
+      color: $text-color
+      +hover
+        background-color: $blue-color
+        color: $light-color
+    &-title
+      padding: 10px 10px
+      font-family: $Open-Sans
+      font-weight: 700
+      font-size: 16px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      text-align: center
+      color: inherit
+      &:not(:last-child)
+        border-right: 1px solid $blue-color
+    &-text
+      padding: 10px 10px
+      font-family: $Montserrat
+      font-weight: 400
+      font-size: 16px
+      font-style: normal
+      letter-spacing: $letter-spacing
+      text-align: center
+      transition: $transition
+      color: inherit
+      &:not(:last-child)
+        border-right: 1px solid $blue-color
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 15px
+    &-input
+      flex-basis: 49%
+      height: 40px
+      padding-left: 10px
+      border: 1px solid $blue-color
+      border-radius: $border-radius
+      color: $text-color
+      margin-bottom: 10px
+      &:nth-last-child(-n+2)
+        margin-bottom: 10px
+    &-btn
+      @include btn-blue
+      padding: 10px 15px
+      margin: 0 auto
+      font-size: 14px

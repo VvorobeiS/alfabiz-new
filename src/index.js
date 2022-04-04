@@ -11,9 +11,11 @@ import tabsEventsSlider from './modules/tabsEventsSlider';
 import tabsGoodsContent from './modules/tabsGoodsContent';
 import tabsGoodsSlider from './modules/tabsGoodsSlider';
 import tabsContacts from './modules/tabsContacts';
+import tabsProfile from './modules/tabsProfile';
 import toggeleCatalog from './modules/toggleCatalog';
 import toggleCollapse from './modules/toggleCollapse';
 import toggleNavbar from './modules/toggleNavbar';
+import toggleSearch from './modules/toggleSearch';
 import map from './modules/map';
 
 // Слайдеры
@@ -29,10 +31,13 @@ tabsEventsSlider();
 tabsGoodsContent();
 tabsGoodsSlider();
 tabsContacts();
+tabsProfile();
 // Активация кнопки Каталог
 toggeleCatalog();
 // Сворачиваемый контент
 toggleCollapse();
 // Фиксация меню при скролле
 toggleNavbar();
+// Переключатель поисковой строки
+toggleSearch();
 map();
